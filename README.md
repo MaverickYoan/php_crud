@@ -43,7 +43,7 @@ Le projet inclut trois services Docker :
    - Root password : root
 
 3. **pgAdmin** : Interface d'administration PostgreSQL
-   - Accessible sur `http://localhost:8080`
+   - Accessible sur `http://localhost:8082`
    - Email : <admin@admin.com>
    - Mot de passe : admin
 
@@ -87,7 +87,7 @@ Le projet inclut trois services Docker :
 2. Accédez à votre application comme d'habitude :
 
    - Application PHP : <http://localhost:8000>
-   - pgAdmin : <http://localhost:8080>
+   - pgAdmin : <http://localhost:8082>
 
 3. Pour arrêter les containers :
 
@@ -129,7 +129,7 @@ Le projet inclut trois services Docker :
 1. Placez vos fichiers PHP dans le dossier `src/`
 2. Les modifications sont automatiquement prises en compte grâce au montage du volume
 3. Pour les modifications de la base de données :
-   - Utilisez pgAdmin (<http://localhost:8080>)
+   - Utilisez pgAdmin (<http://localhost:8082>)
    - Ou modifiez directement le fichier `data/data.sql`
 
 ## Commandes utiles

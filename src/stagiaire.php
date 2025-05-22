@@ -15,11 +15,13 @@ require "diconnect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stagiaire.css">
+    <link rel="icon" href="1175127.webp" type="image/x-svg">
+
     <title>Yo</title>
 </head>
 
 <body>
-    <h1>Page de Yo</h1>
+    <h1>Page de io</h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>
 </body>

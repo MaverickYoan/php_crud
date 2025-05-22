@@ -32,7 +32,7 @@ require "diconnect.php";
     <meta charset=utf-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/x-png">
+    <link rel="icon" href="1175127.webp" type="image/x-svg">
     <title>php_crud</title><!-- TITRE -->
 </head>
 
@@ -57,7 +57,7 @@ require "diconnect.php";
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <td style="border:1px solid black;">4</td>
+                <td style="border:1px solid black;">123</td>
                 <td style="border:1px solid black;">yoan</td>
                 <td style="border:1px solid black;">dym</td>
                 <td style="border:1px solid black;">noAction</td>
