@@ -37,11 +37,15 @@ print_r($interns);
 <!-- BODY -->
 
 <body id="content">
+
     <h1>test</h1>
     <p>créer table sql interns</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
-
+    <pre><?php
+            print_r($interns)
+            ?></pre>
+    <!-- // * Table interns -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
@@ -51,11 +55,24 @@ print_r($interns);
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <td style="border:1px solid black;">0</td>
+                <td style="border:1px solid black;">10</td>
                 <td style="border:1px solid black;">yoan</td>
-                <td style="border:1px solid black; display: flex; justify-content: center;">dym</td>
+                <td style="border:1px solid black;">dym</td>
                 <td style="border:1px solid black;">noAction</td>
             </tr>
+
+            <?php
+            foreach ($interns as $intern) {
+                echo
+                "<tr>
+                <td>" . $intern['id'] . "</td>
+                <td>" . $intern['firstName'] . "</td>
+                <td>" . $intern['lastName'] . "</td>
+                </tr>";
+            }
+
+            ?>
+
         </tbody>
     </table>
 
