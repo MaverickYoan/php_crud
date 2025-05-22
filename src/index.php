@@ -14,7 +14,7 @@ $query->execute();
 $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table interns
-print_r($interns);
+// print_r($interns);
 
 require "diconnect.php";
 ?>
@@ -80,11 +80,12 @@ require "diconnect.php";
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
-            <li><a class="links" href="#welcome">Home</a></li>
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
+
+            <a href="/">Back to menu</a>
         </ul>
     </nav>
 

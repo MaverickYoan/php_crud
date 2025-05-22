@@ -34,7 +34,7 @@ services:
       PGADMIN_CONFIG_SERVER_MODE: 'False'
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
     ports:
-      - '8082:80' # on définit le port pour accéder à pgadmin (localhost:8082) - incrémenter si le port est déjà utilisé par un autre projet
+      - '8082:80' # on définit le port pour accéder à pgadmin (localhost:8080) - incrémenter si le port est déjà utilisé par un autre projet
     volumes:
       - ./data/servers.json:/pgadmin4/servers.json
     depends_on:
