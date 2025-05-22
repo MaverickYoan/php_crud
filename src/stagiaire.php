@@ -1,3 +1,13 @@
+<?php
+require_once "connect.php";
+
+$id = $_GET["id"];
+print_r($id);
+
+$sql = "SELECT * FROM interns WHERE id=";
+require "diconnect.php";
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 

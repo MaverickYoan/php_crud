@@ -1,5 +1,5 @@
 <?php
-require_once("connect.php");
+require_once "connect.php";
 
 // * sql SELECT
 $sql = "SELECT * FROM interns";
@@ -17,6 +17,8 @@ $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table interns
 print_r($interns);
+
+require "diconnect.php";
 ?>
 
 
