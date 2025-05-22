@@ -7,8 +7,6 @@ $sql = "SELECT * FROM interns";
 // * préparation de la requête sql
 $query = $db->prepare($sql);
 
-// * préparation de la requête sql
-
 // * exécution de la requête sql
 $query->execute();
 
@@ -83,7 +81,7 @@ require "diconnect.php";
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="#welcome">Home</a></li>
-            <li><a class="links" href="#shop">Shop</a></li>
+            <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="#contact">Contact</a></li>
         </ul>
     </nav>
