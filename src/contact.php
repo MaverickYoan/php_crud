@@ -31,14 +31,14 @@ require "diconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="1175127.webp" type="image/x-svg">
-    <title>php_crud</title><!-- TITRE -->
+    <title>Contact_php_crud</title><!-- TITRE -->
 </head>
 
 <!-- BODY -->
 
 <body id="content">
 
-    <h1>Index</h1>
+    <h1>Contact</h1>
     <p>créer table sql interns</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>

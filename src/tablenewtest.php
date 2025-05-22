@@ -2,7 +2,7 @@
 require_once "connect.php";
 
 // * sql SELECT
-$sql = "SELECT * FROM interns";
+$sql = "SELECT * FROM tablenewtest";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -11,7 +11,7 @@ $query = $db->prepare($sql);
 $query->execute();
 
 // * récupération des données de la requête sql
-$interns = $query->fetchAll(PDO::FETCH_ASSOC);
+$tablenewtest = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table interns
 print_r($interns);
@@ -31,20 +31,18 @@ require "diconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="1175127.webp" type="image/x-svg">
-    <title>php_crud</title><!-- TITRE -->
+    <title>tablenewtest_php_crud</title><!-- TITRE -->
 </head>
 
 <!-- BODY -->
 
 <body id="content">
 
-    <h1>Index</h1>
+    <h1>tablenewtest</h1>
     <p>créer table sql interns</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
-    <pre><?php
-            print_r($interns)
-            ?></pre>
+
     <!-- // * Table interns -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
@@ -61,17 +59,6 @@ require "diconnect.php";
                 <td style="border:1px solid black;">noAction</td>
             </tr>
 
-            <?php
-            foreach ($interns as $intern): ?>
-                <tr>
-                    <td><?= $intern['id'] ?></td>
-                    <td><?= $intern['firstName'] ?></td>
-                    <td><?= $intern['lastName'] ?></td>
-                    <td><a href="stagiaire.php?id=<?= $intern['id'] ?>">Infos</a></td>
-
-                </tr>
-            <?php endforeach ?>
-
         </tbody>
     </table>
 
@@ -83,7 +70,6 @@ require "diconnect.php";
             <li><a class="links" href="#welcome">Home</a></li>
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
         </ul>
     </nav>

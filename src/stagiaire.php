@@ -34,7 +34,7 @@ require "diconnect.php";
 </head>
 
 <body>
-    <h1>Page de io</h1>
+    <h1>Stagiaire</h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>
     <a href="/">Back to menu</a>
