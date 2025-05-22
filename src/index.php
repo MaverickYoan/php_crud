@@ -55,23 +55,22 @@ print_r($interns);
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <td style="border:1px solid black;">10</td>
+                <td style="border:1px solid black;">4</td>
                 <td style="border:1px solid black;">yoan</td>
                 <td style="border:1px solid black;">dym</td>
                 <td style="border:1px solid black;">noAction</td>
             </tr>
 
             <?php
-            foreach ($interns as $intern) {
-                echo
-                "<tr>
-                <td>" . $intern['id'] . "</td>
-                <td>" . $intern['firstName'] . "</td>
-                <td>" . $intern['lastName'] . "</td>
-                </tr>";
-            }
+            foreach ($interns as $intern): ?>
+                <tr>
+                    <td><?= $intern['id'] ?></td>
+                    <td><?= $intern['firstName'] ?></td>
+                    <td><?= $intern['lastName'] ?></td>
+                    <td><a href="stagiaire.php?id=<?= $intern['id'] ?>">Infos</a></td>
 
-            ?>
+                </tr>
+            <?php endforeach ?>
 
         </tbody>
     </table>
