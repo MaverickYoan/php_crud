@@ -3,7 +3,7 @@ services:
     image: php:8.3-apache
     container_name: project_crud_php
     ports:
-      - '8007:80' # on définit le port pour accéder à l'application (localhost:8000) - incrémenter si le port est déjà utilisé par un autre projet
+      - '8000:80' # on définit le port pour accéder à l'application (localhost:8000) - incrémenter si le port est déjà utilisé par un autre projet
     volumes:
       - ./src:/var/www/html # on monte le dossier courant dans le dossier /var/www/html du container
     build:
