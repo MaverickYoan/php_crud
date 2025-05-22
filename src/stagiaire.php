@@ -27,9 +27,9 @@ require "diconnect.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="stagiaire.css">
-    <link rel="icon" href="1175127.webp" type="image/x-svg">
-
+    <!-- TITRE -->
     <title><?= $intern["firstName"] ?></title>
 </head>
 

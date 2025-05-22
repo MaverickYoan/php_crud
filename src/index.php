@@ -29,9 +29,10 @@ require "diconnect.php";
     <!-- // - 2 - META -->
     <meta charset=utf-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link rel="icon" href="favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="1175127.webp" type="image/x-svg">
-    <title>php_crud</title><!-- TITRE -->
+    <!-- TITRE -->
+    <title>Index_php_crud</title>
 </head>
 
 <!-- BODY -->
