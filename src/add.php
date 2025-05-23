@@ -3,10 +3,10 @@
 if ($_POST) {
     print_r($_POST);
 
-    // * Définitions de variables
+    // * Définitions de la variable firstName
     $firstName = $_POST["firstName"];
 
-    // * Définitions de variables
+    // * Définitions de la variable lastName
     $lastName = $_POST["lastName"];
 
     // * Check si connexion réussie
@@ -18,14 +18,23 @@ if ($_POST) {
     // * préparation de la base de données SQL
     $query = $db->prepare($sql);
 
-    // * Exécution de bindValue firstName dans la base de données SQL
+    // * Rattacher les valeurs de bindValue firstName à la requête SQL
     $query->bindValue(":firstName", $firstName, PDO::PARAM_STR_CHAR);
 
-    // * Exécution de bindValue lastName dans la base de données SQL
+    // * Rattacher les valeurs de bindValue lastName à la requête SQL
     $query->bindValue(":lastName", $lastName, PDO::PARAM_STR_CHAR);
 
+    // * Exécution de la requête SQL
+    $query->execute();
+
     // * close de la fonction connexion réussie
-    require "diconnect.php";
+    require "disconnect.php";
+
+    // * Renvoyer le nouvel utilisateur à la page d'accueil après ajout
+    header("Location: src\index.php");
+
+    // * Pour terminer toutes exécution de scripts
+    exit;
 }
 ?>
 
@@ -42,6 +51,8 @@ if ($_POST) {
 </head>
 
 <body>
+
+    <img width="10%" src="user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
     <!-- NAVBAR -->
     <nav class="navbar">

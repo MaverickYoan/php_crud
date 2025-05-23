@@ -18,7 +18,7 @@ $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 print_r($interns);
 
 // * close de la fonction connexion réussie
-require "diconnect.php";
+require "disconnect.php";
 ?>
 
 

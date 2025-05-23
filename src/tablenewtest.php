@@ -16,7 +16,7 @@ $tablenewtest = $query->fetchAll(PDO::FETCH_ASSOC);
 // * afficher la table interns
 print_r($interns);
 
-require "diconnect.php";
+require "disconnect.php";
 ?>
 
 

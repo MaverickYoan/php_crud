@@ -21,7 +21,7 @@ $query->execute();
 $intern = $query->fetch();
 print_r($intern);
 
-require "diconnect.php";
+require "disconnect.php";
 
 ?>
 
