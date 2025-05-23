@@ -42,14 +42,13 @@ require "diconnect.php";
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
+            <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
-
             <a href="/">Back to menu</a>
         </ul>
     </nav>
 
     <hr />
-
 
     <h1>Stagiaire</h1>
     <p>Prénom : Yo</p>

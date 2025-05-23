@@ -63,8 +63,6 @@ require "diconnect.php";
         </tbody>
     </table>
 
-
-
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
@@ -72,7 +70,6 @@ require "diconnect.php";
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
-
             <a href="/">Back to menu</a>
         </ul>
     </nav>
