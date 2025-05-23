@@ -1,8 +1,6 @@
 <?php
 require_once "connect.php";
 
-// $id = "public.users.id";
-
 // * Est-ce que les champs de formulaire sont définis
 if (
     isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
@@ -23,8 +21,8 @@ if (
     // * exécution de la requête sql
     $query->execute();
 
-    $intern = $query->fetch();
-    print_r($intern);
+    $user = $query->fetch();
+    print_r($user);
 
     require "disconnect.php";
 }
@@ -33,13 +31,12 @@ if (
 <!-- http://localhost:8000/stagiaire.php?id=3 -->
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-svg">
-    <link rel="stylesheet" href="stagiaire.css">
     <!-- TITRE -->
     <?php
     if (isset($stagiaire));
@@ -53,7 +50,7 @@ if (
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
+            <li><a class="links" href="http://localhost:8000/users.php">users</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <a href="/">Back to menu</a>
@@ -71,7 +68,7 @@ if (
     // else:
     ?>
 
-    <p>user nok</p>
+    <!-- <p>user nok</p> -->
 
     <?php
     // endif;

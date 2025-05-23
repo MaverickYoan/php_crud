@@ -14,14 +14,14 @@ $query->execute();
 $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table users
-// print_r($users);
+print_r($users);
 
 require "disconnect.php";
 ?>
 
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <!-- HEAD -->
 
@@ -49,25 +49,35 @@ require "disconnect.php";
     <!-- // * Table users -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
-            <!-- <th style="border:1px solid black;">id</th> -->
-            <th style="border:1px solid black;">firstname</th>
-            <th style="border:1px solid black;">lastname</th>
+            <th style="border:1px solid black;">id</th>
+            <th style="border:1px solid black;">first_name</th>
+            <th style="border:1px solid black;">last_name</th>
+            <!-- <th style="border:1px solid black;">action</th> -->
+            <th style="border:1px solid black;">voir</th>
+            <th style="border:1px solid black;">supprimer</th>
+
+
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <!-- <td style="border:1px solid black;">123</td> -->
+                <td style="border:1px solid black;">999</td>
                 <td style="border:1px solid black;">yoan</td>
                 <td style="border:1px solid black;">dym</td>
+                <!-- <td style="border:1px solid black;">no action</td> -->
+                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
+                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+
             </tr>
 
             <?php
-            foreach ($users as $intern): ?>
-                <tr>
-                    <td><?= $intern['id'] ?></td>
-                    <td><?= $intern['firstname'] ?></td>
-                    <td><?= $intern['lastname'] ?></td>
-                    <td><a href="stagiaire.php?id=<?= $intern['id'] ?>">Infos</a></td>
+            foreach ($users as $user): ?>
 
+                <tr>
+                    <td><?= $user['id'] ?></td>
+                    <td><?= $user['first_name'] ?></td>
+                    <td><?= $user['last_name'] ?></td>
+                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
+                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
                 </tr>
             <?php endforeach ?>
 
@@ -86,7 +96,7 @@ require "disconnect.php";
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
+            <li><a class="links" href="http://localhost:8000/users.php">users</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <a href="/">Back to menu</a>
