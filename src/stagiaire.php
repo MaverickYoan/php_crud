@@ -1,6 +1,8 @@
 <?php
 require_once "connect.php";
 
+// $id = "public.interns.id";
+
 $id = $_GET["id"];
 print_r($id);
 
@@ -30,7 +32,7 @@ require "diconnect.php";
     <link rel="icon" href="favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="stagiaire.css">
     <!-- TITRE -->
-    <title><?= $intern["firstName"] ?></title>
+    <title>Stagiaire_php_crud</title>
 </head>
 
 <body>
@@ -39,6 +41,7 @@ require "diconnect.php";
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
 
             <a href="/">Back to menu</a>
@@ -51,7 +54,6 @@ require "diconnect.php";
     <h1>Stagiaire</h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>
-    <a href="/">Back to menu</a>
 </body>
 
 </html>

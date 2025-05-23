@@ -76,7 +76,7 @@ require "diconnect.php";
         </tbody>
     </table>
 
-
+    <a href="./add.php"><button></button></a>
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -91,8 +91,6 @@ require "diconnect.php";
     </nav>
 
     <hr />
-
-
 
     <?php
 

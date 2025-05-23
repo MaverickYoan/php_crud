@@ -70,6 +70,7 @@ require "diconnect.php";
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/tablenewtest.php">tablenewtest</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
 
             <a href="/">Back to menu</a>
