@@ -14,7 +14,7 @@ $query->execute();
 $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table users
-print_r($users);
+// print_r($users);
 
 require "disconnect.php";
 ?>
@@ -43,41 +43,39 @@ require "disconnect.php";
     <p>créer table sql users</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL users</h1>
-    <pre><?php
-            // print_r($users)
-            ?></pre>
+
     <!-- // * Table users -->
     <table style="border:1px solid black;">
+        <!-- <pre> -->
+        <?php
+        print_r($users)
+        ?>
+        <!-- </pre> -->
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">first_name</th>
-            <th style="border:1px solid black;">last_name</th>
-            <!-- <th style="border:1px solid black;">action</th> -->
-            <th style="border:1px solid black;">voir</th>
-            <th style="border:1px solid black;">supprimer</th>
-
-
+            <th style="border:1px solid black;">Prénom</th>
+            <th style="border:1px solid black;">Nom</th>
+            <th style="border:1px solid black;">Action</th>
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
                 <td style="border:1px solid black;">001</td>
                 <td style="border:1px solid black;">yoan</td>
                 <td style="border:1px solid black;">ydm</td>
-                <!-- <td style="border:1px solid black;">no action</td> -->
-                <td style="border:1px solid black;">-</td>
-                <td style="border:1px solid black;">-</td>
-
+                <td style="border:1px solid black;">no action</td>
             </tr>
 
             <?php
-            foreach ($users as $user): ?>
+            foreach ($users as $stagiaire): ?>
 
                 <tr>
-                    <td><?= $user['id'] ?></td>
-                    <td><?= $user['first_name'] ?></td>
-                    <td><?= $user['last_name'] ?></td>
-                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
-                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+                    <td><?= $stagiaire['id'] ?> </td>
+                    <td><?= $stagiaire['first_name'] ?> </td>
+                    <td><?= $stagiaire['last_name'] ?> </td>
+                    <td>
+                        <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
+                        <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
+                    </td>
                 </tr>
             <?php endforeach ?>
 
@@ -91,6 +89,9 @@ require "disconnect.php";
 
     <br>
 
+    <?php echo "helluuuuu"; ?>
+
+    <hr>
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
