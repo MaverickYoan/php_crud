@@ -80,9 +80,7 @@ if ($_POST) {
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/users.php">users</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>
@@ -91,11 +89,13 @@ if ($_POST) {
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
+        <label for="id">id</label>
+        <input type="int" Name="id" required>
         <label for="first_name">Prénom</label>
-        <input type="text" Name="last_name" required>
+        <input type="text" Name="first_name" required>
         <label for="last_name">Nom</label>
         <input type="text" Name="last_name" required>
-        <button type="submit">Ajouter</button>
+        <input type="submit" value="Ajouter">
     </form>
 
 </body>

@@ -35,7 +35,7 @@ if (
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-svg">
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
     <!-- TITRE -->
     <?php
     // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
@@ -51,9 +51,7 @@ if (
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/users.php">users</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>

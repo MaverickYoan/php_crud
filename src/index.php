@@ -59,7 +59,7 @@ require "disconnect.php";
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <td style="border:1px solid black;">001</td>
+                <td style="border:1px solid black;">3</td>
                 <td style="border:1px solid black;">yoan</td>
                 <td style="border:1px solid black;">ydm</td>
                 <td style="border:1px solid black;">no action</td>
@@ -97,9 +97,7 @@ require "disconnect.php";
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/users.php">users</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>
