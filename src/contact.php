@@ -94,6 +94,9 @@ require "diconnect.php";
     <hr />
 
 
+    <hr />
+    <img width="10%" src="user-3-16403 (1).gif" alt="gif d'utilisateur animé de couleurs">
+    <br>
 
     <?php
 

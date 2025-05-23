@@ -51,7 +51,8 @@ require "diconnect.php";
     </nav>
 
     <hr />
-
+    <img width="10%" src="w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
+    <br>
     <h1>Stagiaire</h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>

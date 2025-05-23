@@ -77,7 +77,7 @@ require "diconnect.php";
 
     <hr />
 
-
+    <img width="10%" src="comparaison-animation-gif-transparent.gif" alt="Terre qui tourne sur elle-même">
 
     <?php
 

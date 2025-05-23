@@ -1,3 +1,18 @@
+<?php
+// * Afficher les données rentrées dans le formualire de $_POST
+if ($_POST);
+print_r($_POST);
+
+// * Requête SQL pour ajouter des données (finir le commentaire)
+$sql = "INSERT INTO interns (firstName, lastName) VALUES "
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,14 +36,15 @@
         </ul>
     </nav>
 
-    <p style="border: 1px solid black; width: fit-content; background-color: green;">Ajouter un stagiaire</p>
+    <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un stagiaire</b></p>
+
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="firstName">Prénom</label>
         <input type="text" name="firstName" required>
         <label for="lastName">Nom</label>
         <input type="text" name="lastName" required>
-        <button type="submit">Envoyer</button>
+        <button type="submit">Ajouter</button>
     </form>
 
 </body>
