@@ -8,7 +8,7 @@ const PORT = "5432";
 try {
     //code pour connexion réussie...
     $db = new PDO("pgsql:host= " . SERVER_NAME . ";port=" . PORT . ";dbname=" . DB_NAME . ";", USERNAME, PASSWORD);
-    echo "connexion réussie";
+    // echo "connexion réussie";
 } catch (PDOException $e) {
     //code pour connexion nok...
     //throw $th;

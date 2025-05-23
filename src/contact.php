@@ -3,7 +3,7 @@
 require_once "connect.php";
 
 // * sql SELECT
-$sql = "SELECT * FROM interns";
+$sql = "SELECT * FROM formation";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -12,10 +12,10 @@ $query = $db->prepare($sql);
 $query->execute();
 
 // * récupération des données de la requête sql
-$interns = $query->fetchAll(PDO::FETCH_ASSOC);
+$formation = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// * afficher la table interns
-print_r($interns);
+// * afficher la table formation
+print_r($formation);
 
 // * close de la fonction connexion réussie
 require "disconnect.php";
@@ -42,18 +42,18 @@ require "disconnect.php";
 <body id="content">
 
     <h1>Contact</h1>
-    <p>créer table sql interns</p>
+    <p>créer table sql formation</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL formation</h1>
     <pre><?php
-            print_r($interns)
+            print_r($formation)
             ?></pre>
-    <!-- // * Table interns -->
+    <!-- // * Table formation -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">firstName</th>
-            <th style="border:1px solid black;">lastName</th>
+            <th style="border:1px solid black;">first_name</th>
+            <th style="border:1px solid black;">last_name</th>
             <th style="border:1px solid black;">actions</th>
         </thead>
         <tbody style="border:1px solid black;">
@@ -65,11 +65,11 @@ require "disconnect.php";
             </tr>
 
             <?php
-            foreach ($interns as $intern): ?>
+            foreach ($formation as $intern): ?>
                 <tr>
                     <td><?= $intern['id'] ?></td>
-                    <td><?= $intern['firstName'] ?></td>
-                    <td><?= $intern['lastName'] ?></td>
+                    <td><?= $intern['first_name'] ?></td>
+                    <td><?= $intern['last_name'] ?></td>
                     <td><a href="stagiaire.php?id=<?= $intern['id'] ?>">Infos</a></td>
 
                 </tr>

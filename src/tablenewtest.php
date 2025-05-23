@@ -13,8 +13,8 @@ $query->execute();
 // * récupération des données de la requête sql
 $tablenewtest = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// * afficher la table interns
-print_r($interns);
+// * afficher la table formation
+print_r($formation);
 
 require "disconnect.php";
 ?>
@@ -40,16 +40,16 @@ require "disconnect.php";
 <body id="content">
 
     <h1>tablenewtest</h1>
-    <p>créer table sql interns</p>
+    <p>créer table sql formation</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL formation</h1>
 
-    <!-- // * Table interns -->
+    <!-- // * Table formation -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">firstName</th>
-            <th style="border:1px solid black;">lastName</th>
+            <th style="border:1px solid black;">first_name</th>
+            <th style="border:1px solid black;">last_name</th>
             <th style="border:1px solid black;">actions</th>
         </thead>
         <tbody style="border:1px solid black;">

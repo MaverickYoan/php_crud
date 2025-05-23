@@ -1,28 +1,32 @@
 <?php
 // * Afficher les données rentrées dans le formualire de $_POST
 if ($_POST) {
-    print_r($_POST);
+    // print_r($_POST);
 
-    // * Définitions de la variable firstName
-    $firstName = $_POST["firstName"];
+    // * Enlève les balises HTML et PHP des STING
+    $first_name = strip_tags($_POST["first_name"]);
+    $first_name = strip_tags($_POST["last_name"]);
 
-    // * Définitions de la variable lastName
-    $lastName = $_POST["lastName"];
+    // * Définitions de la variable first_name
+    $first_name = $_POST["first_name"];
+
+    // * Définitions de la variable last_name
+    $last_name = $_POST["last_name"];
 
     // * Check si connexion réussie
     require_once "connect.php";
 
     // * Requête SQL pour ajouter des données (finir le commentaire)
-    $sql = "INSERT INTO interns (firstName, lastName) VALUES (:firstName, :lastName);";
+    $sql = "INSERT INTO formation (first_name, last_name) VALUES (:first_name, :last_name)";
 
     // * préparation de la base de données SQL
     $query = $db->prepare($sql);
 
-    // * Rattacher les valeurs de bindValue firstName à la requête SQL
-    $query->bindValue(":firstName", $firstName, PDO::PARAM_STR_CHAR);
+    // * Rattacher les valeurs de bindValue first_name à la requête SQL
+    $query->bindValue(":first_name", $first_name, PDO::PARAM_STR_CHAR);
 
-    // * Rattacher les valeurs de bindValue lastName à la requête SQL
-    $query->bindValue(":lastName", $lastName, PDO::PARAM_STR_CHAR);
+    // * Rattacher les valeurs de bindValue last_name à la requête SQL
+    $query->bindValue(":last_name", $last_name, PDO::PARAM_STR_CHAR);
 
     // * Exécution de la requête SQL
     $query->execute();
@@ -31,7 +35,7 @@ if ($_POST) {
     require "disconnect.php";
 
     // * Renvoyer le nouvel utilisateur à la page d'accueil après ajout
-    header("Location: src\index.php");
+    header("Location: index.php");
 
     // * Pour terminer toutes exécution de scripts
     exit;
@@ -70,10 +74,10 @@ if ($_POST) {
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
-        <label for="firstName">Prénom</label>
-        <input type="text" Name="firstName" required>
-        <label for="lastName">Nom</label>
-        <input type="text" Name="lastName" required>
+        <label for="first_name">Prénom</label>
+        <input type="text" Name="first_name" required>
+        <label for="last_name">Nom</label>
+        <input type="text" Name="last_name" required>
         <button type="submit">Ajouter</button>
     </form>
 

@@ -1,7 +1,7 @@
 <?php
 require_once "connect.php";
 
-// $id = "public.interns.id";
+// $id = "public.formation.id";
 
 
 // * Définitions de variables
@@ -9,7 +9,7 @@ $id = $_GET["id"];
 print_r($id);
 
 // * sql SELECT
-$sql = "SELECT * FROM interns WHERE id = :id";
+$sql = "SELECT * FROM formation WHERE id = :id";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
