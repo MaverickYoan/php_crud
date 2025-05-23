@@ -3,7 +3,7 @@
 require_once "connect.php";
 
 // * sql SELECT
-$sql = "SELECT * FROM formation";
+$sql = "SELECT * FROM users";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -12,10 +12,10 @@ $query = $db->prepare($sql);
 $query->execute();
 
 // * récupération des données de la requête sql
-$formation = $query->fetchAll(PDO::FETCH_ASSOC);
+$users = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// * afficher la table formation
-print_r($formation);
+// * afficher la table users
+print_r($users);
 
 // * close de la fonction connexion réussie
 require "disconnect.php";
@@ -42,13 +42,13 @@ require "disconnect.php";
 <body id="content">
 
     <h1>Contact</h1>
-    <p>créer table sql formation</p>
+    <p>créer table sql users</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL formation</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL users</h1>
     <pre><?php
-            print_r($formation)
+            print_r($users)
             ?></pre>
-    <!-- // * Table formation -->
+    <!-- // * Table users -->
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
@@ -65,7 +65,7 @@ require "disconnect.php";
             </tr>
 
             <?php
-            foreach ($formation as $intern): ?>
+            foreach ($users as $intern): ?>
                 <tr>
                     <td><?= $intern['id'] ?></td>
                     <td><?= $intern['first_name'] ?></td>
@@ -102,11 +102,11 @@ require "disconnect.php";
 
     <?php
 
-    // Affiche toutes les informations, comme le ferait INFO_ALL
+    // Affiche toutes les inuserss, comme le ferait INFO_ALL
     // phpinfo();
 
-    // Affiche uniquement le module d'information.
-    // phpinfo(8) fournirait les mêmes informations.
+    // Affiche uniquement le module d'inusers.
+    // phpinfo(8) fournirait les mêmes inuserss.
     // phpinfo(INFO_MODULES);
 
     ?>

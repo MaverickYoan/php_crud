@@ -1,15 +1,20 @@
 <?php
 require_once "connect.php";
 
-// $id = "public.formation.id";
+// $id = "public.users.id";
 
+// * Est-ce que les champs de formulaire sont définis
+if (
+    isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
+    && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
+){
 
 // * Définitions de variables
 $id = $_GET["id"];
 print_r($id);
 
 // * sql SELECT
-$sql = "SELECT * FROM formation WHERE id = :id";
+$sql = "SELECT * FROM users WHERE id = :id";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -22,7 +27,7 @@ $intern = $query->fetch();
 print_r($intern);
 
 require "disconnect.php";
-
+}
 ?>
 
 <!-- http://localhost:8000/stagiaire.php?id=3 -->
@@ -36,6 +41,9 @@ require "disconnect.php";
     <link rel="icon" href="favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="stagiaire.css">
     <!-- TITRE -->
+    <?php
+    if (isset($stagiaire));
+    ?>
     <title>Stagiaire_php_crud</title>
 </head>
 
@@ -58,6 +66,17 @@ require "disconnect.php";
     <h1>Stagiaire</h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>
+
+    <?php
+    else:
+?>
+
+<p>user nok</p>
+
+    <?php
+    endif;
+?>
+
 </body>
 
 </html>

@@ -3,42 +3,60 @@
 if ($_POST) {
     // print_r($_POST);
 
-    // * Enlève les balises HTML et PHP des STING
-    $first_name = strip_tags($_POST["first_name"]);
-    $first_name = strip_tags($_POST["last_name"]);
+    // * Est-ce que les champs de formulaire sont définis
+    if (
+        isset($_POST["first_name"])
+        && isset($_POST["last_name"])
+        && !empty($_POST["first_name"])
+        && !empty($_POST["last_name"])
+    ) {
 
-    // * Définitions de la variable first_name
-    $first_name = $_POST["first_name"];
+        // * Enlève les balises HTML et PHP des STRING
+        $first_name = strip_tags($_POST["first_name"]);
+        $first_name = strip_tags($_POST["last_name"]);
 
-    // * Définitions de la variable last_name
-    $last_name = $_POST["last_name"];
+        // * Définition de la variable id
+        // $id = $_POST["id"];
 
-    // * Check si connexion réussie
-    require_once "connect.php";
+        // * Définition de la variable first_name
+        $first_name = $_POST["first_name"];
 
-    // * Requête SQL pour ajouter des données (finir le commentaire)
-    $sql = "INSERT INTO formation (first_name, last_name) VALUES (:first_name, :last_name)";
+        // * Définition de la variable last_name
+        $last_name = $_POST["last_name"];
 
-    // * préparation de la base de données SQL
-    $query = $db->prepare($sql);
+        // * Check si connexion réussie
+        require_once "connect.php";
 
-    // * Rattacher les valeurs de bindValue first_name à la requête SQL
-    $query->bindValue(":first_name", $first_name, PDO::PARAM_STR_CHAR);
+        // * Requête SQL pour ajouter des données (finir le commentaire)
+        $sql = "INSERT INTO users (first_name, last_name) VALUES (:first_name, :last_name)";
 
-    // * Rattacher les valeurs de bindValue last_name à la requête SQL
-    $query->bindValue(":last_name", $last_name, PDO::PARAM_STR_CHAR);
+        // * préparation de la base de données SQL
+        $query = $db->prepare($sql);
 
-    // * Exécution de la requête SQL
-    $query->execute();
+        // * Rattacher les valeurs de bindValue id à la requête SQL
+        // $query->bindValue(":id", $id, PDO::PARAM_INT);
 
-    // * close de la fonction connexion réussie
-    require "disconnect.php";
+        // * Rattacher les valeurs de bindValue first_name à la requête SQL
+        $query->bindValue(":first_name", $first_name, PDO::PARAM_STR_CHAR);
 
-    // * Renvoyer le nouvel utilisateur à la page d'accueil après ajout
-    header("Location: index.php");
+        // * Rattacher les valeurs de bindValue last_name à la requête SQL
+        $query->bindValue(":last_name", $last_name, PDO::PARAM_STR_CHAR);
 
-    // * Pour terminer toutes exécution de scripts
-    exit;
+        // * Exécution de la requête SQL
+        $query->execute();
+
+        // * récupération des données de la requête sql
+        // $users = $query->fetchAll(PDO::FETCH_ASSOC);
+
+        // * close de la fonction connexion réussie
+        require "disconnect.php";
+
+        // * Renvoyer le nouvel utilisateur à la page d'accueil après ajout
+        header("Location: index.php");
+
+        // * Pour terminer toutes exécution de scripts
+        exit;
+    }
 }
 ?>
 
