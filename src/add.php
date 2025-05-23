@@ -21,16 +21,16 @@
         </ul>
     </nav>
 
-    <p>Ajouter un stagiaire</p>
-    <!-- post envoie en masquer -->
+    <p style="border: 1px solid black; width: fit-content; background-color: green;">Ajouter un stagiaire</p>
+    <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="firstName">Prénom</label>
-        <input type="text" name="firstName">
+        <input type="text" name="firstName" required>
         <label for="lastName">Nom</label>
-        <input type="text" name="lastName">
-        <label for="submit"></label>
-        <input type="submit" name="envoyer">
+        <input type="text" name="lastName" required>
+        <button type="submit">Envoyer</button>
     </form>
+
 </body>
 
 </html>

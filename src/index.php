@@ -76,7 +76,12 @@ require "diconnect.php";
         </tbody>
     </table>
 
-    <a href="./add.php"><button></button></a>
+    <br>
+    <img width="10%" src="11919432.gif" alt="gif d'ajout d'utilisateur">
+    <br>
+    <a href="./add.php"><button>Ajouter un stagiaire</button></a>
+
+    <br>
 
     <!-- NAVBAR -->
     <nav class="navbar">

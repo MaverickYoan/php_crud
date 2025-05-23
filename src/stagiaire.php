@@ -22,7 +22,9 @@ print_r($intern);
 require "diconnect.php";
 
 ?>
+
 <!-- http://localhost:8000/stagiaire.php?id=3 -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
