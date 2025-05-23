@@ -1,4 +1,5 @@
 <?php
+// * Check si connexion réussie
 require_once "connect.php";
 
 // * sql SELECT
@@ -16,6 +17,7 @@ $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 // * afficher la table interns
 print_r($interns);
 
+// * close de la fonction connexion réussie
 require "diconnect.php";
 ?>
 

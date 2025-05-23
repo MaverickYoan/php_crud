@@ -1,13 +1,32 @@
 <?php
 // * Afficher les données rentrées dans le formualire de $_POST
-if ($_POST);
-print_r($_POST);
+if ($_POST) {
+    print_r($_POST);
 
-// * Requête SQL pour ajouter des données (finir le commentaire)
-$sql = "INSERT INTO interns (firstName, lastName) VALUES "
+    // * Définitions de variables
+    $firstName = $_POST["firstName"];
 
+    // * Définitions de variables
+    $lastName = $_POST["lastName"];
 
+    // * Check si connexion réussie
+    require_once "connect.php";
 
+    // * Requête SQL pour ajouter des données (finir le commentaire)
+    $sql = "INSERT INTO interns (firstName, lastName) VALUES (:firstName, :lastName);";
+
+    // * préparation de la base de données SQL
+    $query = $db->prepare($sql);
+
+    // * Exécution de bindValue firstName dans la base de données SQL
+    $query->bindValue(":firstName", $firstName, PDO::PARAM_STR_CHAR);
+
+    // * Exécution de bindValue lastName dans la base de données SQL
+    $query->bindValue(":lastName", $lastName, PDO::PARAM_STR_CHAR);
+
+    // * close de la fonction connexion réussie
+    require "diconnect.php";
+}
 ?>
 
 
@@ -18,7 +37,7 @@ $sql = "INSERT INTO interns (firstName, lastName) VALUES "
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add_php_crud</title>
 </head>
 
@@ -41,9 +60,9 @@ $sql = "INSERT INTO interns (firstName, lastName) VALUES "
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="firstName">Prénom</label>
-        <input type="text" name="firstName" required>
+        <input type="text" Name="firstName" required>
         <label for="lastName">Nom</label>
-        <input type="text" name="lastName" required>
+        <input type="text" Name="lastName" required>
         <button type="submit">Ajouter</button>
     </form>
 

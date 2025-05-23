@@ -3,6 +3,8 @@ require_once "connect.php";
 
 // $id = "public.interns.id";
 
+
+// * Définitions de variables
 $id = $_GET["id"];
 print_r($id);
 
