@@ -5,30 +5,30 @@ if ($_POST) {
 
     // * Est-ce que les champs de formulaire sont définis
     if (
-        isset($_POST["first_name"])
-        && isset($_POST["last_name"])
-        && !empty($_POST["first_name"])
-        && !empty($_POST["last_name"])
+        isset($_POST["firstname"])
+        && isset($_POST["lastname"])
+        && !empty($_POST["firstname"])
+        && !empty($_POST["lastname"])
     ) {
 
         // * Enlève les balises HTML et PHP des STRING
-        $first_name = strip_tags($_POST["first_name"]);
-        $first_name = strip_tags($_POST["last_name"]);
+        $firstname = strip_tags($_POST["firstname"]);
+        $firstname = strip_tags($_POST["lastname"]);
 
         // * Définition de la variable id
         // $id = $_POST["id"];
 
-        // * Définition de la variable first_name
-        $first_name = $_POST["first_name"];
+        // * Définition de la variable firstname
+        $firstname = $_POST["firstname"];
 
-        // * Définition de la variable last_name
-        $last_name = $_POST["last_name"];
+        // * Définition de la variable lastname
+        $lastname = $_POST["lastname"];
 
         // * Check si connexion réussie
         require_once "connect.php";
 
         // * Requête SQL pour ajouter des données (finir le commentaire)
-        $sql = "INSERT INTO users (first_name, last_name) VALUES (:first_name, :last_name)";
+        $sql = "INSERT INTO users (firstname, lastname) VALUES (:firstname, :lastname)";
 
         // * préparation de la base de données SQL
         $query = $db->prepare($sql);
@@ -36,11 +36,11 @@ if ($_POST) {
         // * Rattacher les valeurs de bindValue id à la requête SQL
         // $query->bindValue(":id", $id, PDO::PARAM_INT);
 
-        // * Rattacher les valeurs de bindValue first_name à la requête SQL
-        $query->bindValue(":first_name", $first_name, PDO::PARAM_STR_CHAR);
+        // * Rattacher les valeurs de bindValue firstname à la requête SQL
+        $query->bindValue(":firstname", $firstname, PDO::PARAM_STR_CHAR);
 
-        // * Rattacher les valeurs de bindValue last_name à la requête SQL
-        $query->bindValue(":last_name", $last_name, PDO::PARAM_STR_CHAR);
+        // * Rattacher les valeurs de bindValue lastname à la requête SQL
+        $query->bindValue(":lastname", $lastname, PDO::PARAM_STR_CHAR);
 
         // * Exécution de la requête SQL
         $query->execute();
@@ -92,10 +92,10 @@ if ($_POST) {
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
-        <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" required>
-        <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" required>
+        <label for="firstname">Prénom</label>
+        <input type="text" Name="firstname" required>
+        <label for="lastname">Nom</label>
+        <input type="text" Name="lastname" required>
         <button type="submit">Ajouter</button>
     </form>
 

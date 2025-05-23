@@ -7,26 +7,26 @@ require_once "connect.php";
 if (
     isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
     && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
-){
+) {
 
-// * Définitions de variables
-$id = $_GET["id"];
-print_r($id);
+    // * Définitions de variables
+    $id = $_GET["id"];
+    print_r($id);
 
-// * sql SELECT
-$sql = "SELECT * FROM users WHERE id = :id";
+    // * sql SELECT
+    $sql = "SELECT * FROM users WHERE id = :id";
 
-// * préparation de la requête sql
-$query = $db->prepare($sql);
-$query->bindValue(":id", $id, PDO::PARAM_INT);
+    // * préparation de la requête sql
+    $query = $db->prepare($sql);
+    $query->bindValue(":id", $id, PDO::PARAM_INT);
 
-// * exécution de la requête sql
-$query->execute();
+    // * exécution de la requête sql
+    $query->execute();
 
-$intern = $query->fetch();
-print_r($intern);
+    $intern = $query->fetch();
+    print_r($intern);
 
-require "disconnect.php";
+    require "disconnect.php";
 }
 ?>
 
@@ -68,14 +68,14 @@ require "disconnect.php";
     <p>Nom : YDM</p>
 
     <?php
-    else:
-?>
+    // else:
+    ?>
 
-<p>user nok</p>
+    <p>user nok</p>
 
     <?php
-    endif;
-?>
+    // endif;
+    ?>
 
 </body>
 

@@ -52,8 +52,8 @@ require "disconnect.php";
     <table style="border:1px solid black;">
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">first_name</th>
-            <th style="border:1px solid black;">last_name</th>
+            <th style="border:1px solid black;">firstname</th>
+            <th style="border:1px solid black;">lastname</th>
             <th style="border:1px solid black;">actions</th>
         </thead>
         <tbody style="border:1px solid black;">
@@ -68,8 +68,8 @@ require "disconnect.php";
             foreach ($users as $intern): ?>
                 <tr>
                     <td><?= $intern['id'] ?></td>
-                    <td><?= $intern['first_name'] ?></td>
-                    <td><?= $intern['last_name'] ?></td>
+                    <td><?= $intern['firstname'] ?></td>
+                    <td><?= $intern['lastname'] ?></td>
                     <td><a href="stagiaire.php?id=<?= $intern['id'] ?>">Infos</a></td>
 
                 </tr>
