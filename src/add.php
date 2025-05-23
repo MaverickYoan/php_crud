@@ -1,4 +1,7 @@
 <?php
+// * Check si connexion réussie
+require_once "connect.php";
+
 // * Afficher les données rentrées dans le formualire de $_POST
 if ($_POST) {
     print_r($_POST);
@@ -24,11 +27,8 @@ if ($_POST) {
         // * Définition de la variable last_name
         $last_name = $_POST["last_name"];
 
-        // * Check si connexion réussie
-        require_once "connect.php";
-
         // * Requête SQL pour ajouter des données (finir le commentaire)
-        $sql = "INSERT INTO users (first_name, last_name) VALUES (:first_name, :last_name)";
+        $sql = "INSERT INTO users (id, first_name, last_name) VALUES (:id, :first_name, :last_name)";
 
         // * préparation de la base de données SQL
         $query = $db->prepare($sql);

@@ -60,12 +60,12 @@ require "disconnect.php";
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
-                <td style="border:1px solid black;">999</td>
+                <td style="border:1px solid black;">001</td>
                 <td style="border:1px solid black;">yoan</td>
-                <td style="border:1px solid black;">dym</td>
+                <td style="border:1px solid black;">ydm</td>
                 <!-- <td style="border:1px solid black;">no action</td> -->
-                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
-                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+                <td style="border:1px solid black;">-</td>
+                <td style="border:1px solid black;">-</td>
 
             </tr>
 

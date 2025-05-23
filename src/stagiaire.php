@@ -1,6 +1,4 @@
 <?php
-require_once "connect.php";
-
 // * Est-ce que les champs de formulaire sont définis
 if (
     isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
@@ -8,6 +6,7 @@ if (
 ) {
 
     // * Définitions de variables
+    require_once "connect.php";
     $id = $_GET["id"];
     print_r($id);
 
@@ -16,13 +15,13 @@ if (
 
     // * préparation de la requête sql
     $query = $db->prepare($sql);
-    $query->bindValue(":id", $id, PDO::PARAM_INT);
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
 
     // * exécution de la requête sql
     $query->execute();
 
-    $user = $query->fetch();
-    print_r($user);
+    $stagiaire = $query->fetch();
+    print_r($stagiaire);
 
     require "disconnect.php";
 }
@@ -39,9 +38,11 @@ if (
     <link rel="icon" href="favicon.ico" type="image/x-svg">
     <!-- TITRE -->
     <?php
-    if (isset($stagiaire));
+    // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
+    if (isset($stagiaire) && !empty($stagiaire)):
+        print_r($stagiaire);
     ?>
-    <title>Stagiaire_php_crud</title>
+        <title> Page de <?= $stagiaire['first_name'] ?></title>
 </head>
 
 <body>
@@ -60,20 +61,21 @@ if (
     <hr />
     <img width="10%" src="w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
     <br>
-    <h1>Stagiaire</h1>
+    <h1>Page de <?= $stagiaire['first_name'] ?></h1>
     <p>Prénom : Yo</p>
     <p>Nom : YDM</p>
 
-    <?php
-    // else:
-    ?>
+<?php
+    else:
+?>
 
-    <!-- <p>user nok</p> -->
+    <p>user nok</p>
 
-    <?php
-    // endif;
-    ?>
+<?php
+    endif;
+?>
 
 </body>
+ydm
 
 </html>

@@ -61,22 +61,22 @@ require "disconnect.php";
         <tbody style="border:1px solid black;">
             <tr>
                 <!-- <td style="border:1px solid black;">123</td> -->
-                <td style="border:1px solid black;">id</td>
+                <td style="border:1px solid black;">001</td>
                 <td style="border:1px solid black;">yoan</td>
-                <td style="border:1px solid black;">dym</td>
-                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
-                <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+                <td style="border:1px solid black;">ydm</td>
+                <td style="border:1px solid black;"><a href="stagiaire.php?id=<?= $user['id'] ?>">-</a></td>
+                <td style="border:1px solid black;"><a href="stagiaire.php?id=<?= $user['id'] ?>">-</a></td>
 
             </tr>
 
             <?php
             foreach ($users as $user): ?>
                 <tr>
-                    <td><?= $user['id'] ?></td>
-                    <td><?= $user['last_name'] ?></td>
-                    <td><?= $user['last_name'] ?></td>
-                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
-                    <td><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+                    <td style="border:1px solid black;"><?= $user['id'] ?></td>
+                    <td style="border:1px solid black;"><?= $user['last_name'] ?></td>
+                    <td style="border:1px solid black;"><?= $user['last_name'] ?></td>
+                    <td style="border:1px solid black;"><a href="stagiaire.php?id=<?= $user['id'] ?>">Voir</a></td>
+                    <td style="border:1px solid black;"><a href="stagiaire.php?id=<?= $user['id'] ?>">Supprimer</a></td>
 
                 </tr>
             <?php endforeach ?>
