@@ -8,7 +8,7 @@ if (
     $id = filter_var($_GET["id"], FILTER_VALIDATE_INT);
 
     // * sql DELETE
-    $sql = "DELETE FROM users WHERE id=::id;";
+    $sql = "DELETE FROM interns WHERE id= :id;";
 
     // * préparation de la requête sql
     $query = $db->prepare($sql);

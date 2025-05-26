@@ -1,8 +1,6 @@
 <?php
 // * Afficher les données rentrées dans le formualire de $_POST, il utilise le header, si on met dans une même page un header et un print_r ALORS ERREUR
 if ($_POST) {
-    // print_r($_POST);
-
     // * Est-ce que les champs de formulaire sont définis
     if (
         isset($_POST["first_name"])
@@ -11,6 +9,7 @@ if ($_POST) {
         && !empty($_POST["first_name"])
         && !empty($_POST["last_name"])
     ) {
+        print_r(value: $_POST);
 
         // * Enlève les balises HTML et PHP des STRING
         $first_name = strip_tags($_POST["first_name"]);
@@ -19,23 +18,11 @@ if ($_POST) {
         // * Check si connexion réussie
         require_once "connect.php";
 
-        // * Définition de la variable id
-        // $id = $_POST["id"];
-
-        // * Définition de la variable first_name
-        // $first_name = $_POST["first_name"];
-
-        // * Définition de la variable last_name
-        // $last_name = $_POST["last_name"];
-
         // * Requête SQL pour ajouter des données (finir le commentaire)
-        $sql = "INSERT INTO users (first_name, last_name) VALUES (:first_name, :last_name);";
+        $sql = "INSERT INTO interns (first_name, last_name) VALUES (:first_name, :last_name);";
 
         // * préparation de la base de données SQL
         $query = $db->prepare($sql);
-
-        // * Rattacher les valeurs de bindValue id à la requête SQL
-        // $query->bindValue(":id", $id, PDO::PARAM_INT);
 
         // * Rattacher les valeurs de bindValue first_name à la requête SQL
         $query->bindValue(":first_name", $first_name, PDO::PARAM_STR);
@@ -47,7 +34,7 @@ if ($_POST) {
         $query->execute();
 
         // * récupération des données de la requête sql
-        // $users = $query->fetchAll(PDO::FETCH_ASSOC);
+        // $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
         // * close de la fonction connexion réussie
         require "disconnect.php";
@@ -56,7 +43,7 @@ if ($_POST) {
         header("Location: index.php");
 
         // * Pour terminer toutes exécution de scripts
-        // exit;
+        exit;
     }
 }
 ?>
@@ -89,8 +76,6 @@ if ($_POST) {
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
-        <label for="id">id</label>
-        <input type="int" Name="id" required>
         <label for="first_name">Prénom</label>
         <input type="text" Name="first_name" required>
         <label for="last_name">Nom</label>

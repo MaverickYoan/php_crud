@@ -27,51 +27,40 @@ if (
 }
 ?>
 
-<!-- http://localhost:8000/stagiaire.php?id=3 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
-    <!-- TITRE -->
-    <?php
-    // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
-    if (isset($stagiaire) && !empty($stagiaire)):
-        // print_r($stagiaire);
-    ?>
-        <title> Page de <?= $stagiaire['first_name'] ?></title>
+    <meta Name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modif_php_crud</title>
 </head>
 
 <body>
+
+    <img width="10%" src="src\img\user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
+            <a href="/">Back to menu</a>
         </ul>
     </nav>
 
-    <hr />
-    <img width="10%" src="src/img/w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
-    <br>
-    <h1>Page de <?= $stagiaire['first_name'] ?></h1>
-    <p>Prénom : Yo</p>
-    <p>Nom : YDM</p>
+    <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Modifier un stagiaire</b></p>
 
-<?php
-    else:
-?>
-
-    <p>user nok</p>
-    <a href="/">Back to menu</a>
-
-<?php
-    endif;
-?>
+    <!-- post envoie en masquer un formulaire -->
+    <form method="post">
+        <label for="first_name">Prénom</label>
+        <input type="text" Name="first_name" required>
+        <label for="last_name">Nom</label>
+        <input type="text" Name="last_name" required>
+        <input type="submit" value="Modifier">
+    </form>
 
 </body>
 

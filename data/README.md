@@ -6,19 +6,19 @@ Ce fichier `config.json` permet de configurer automatiquement la connexion entre
 
 ```json
 {
-	"Servers": {
-		"1": {
-			// Identifiant unique du serveur
-			"Name": "PostgreSQL Docker", // Nom affiché dans l'interface PGAdmin
-			"Group": "Servers", // Groupe auquel appartient le serveur
-			"Host": "db", // Nom d'hôte (nom du service dans docker-compose)
-			"Port": 5432, // Port PostgreSQL standard
-			"MaintenanceDB": "introsql", // Base de données par défaut
-			"Username": "test", // Nom d'utilisateur
-			"Password": "test", // Mot de passe
-			"SSLMode": "prefer" // Mode de connexion SSL
-		}
-	}
+ "Servers": {
+  "1": {
+   // Identifiant unique du serveur
+   "Name": "PostgreSQL Docker", // Nom affiché dans l'interface PGAdmin
+   "Group": "Servers", // Groupe auquel appartient le serveur
+   "Host": "db", // Nom d'hôte (nom du service dans docker-compose)
+   "Port": 5432, // Port PostgreSQL standard
+   "MaintenanceDB": "introsql", // Base de données par défaut
+   "Username": "test", // Nom d'utilisateur
+   "Password": "test", // Mot de passe
+   "SSLMode": "prefer" // Mode de connexion SSL
+  }
+ }
 }
 ```
 
@@ -41,6 +41,6 @@ Cela permet à PGAdmin de se connecter automatiquement à votre base de données
 ## Comment l'utiliser
 
 1. Lorsque vous accédez à PGAdmin via `http://localhost:8080` (changer le port si nécessaire)
-2. Connectez-vous avec les identifiants configurés (admin@admin.com / admin)
+2. Connectez-vous avec les identifiants configurés (<admin@admin.com> / admin)
 3. Vous verrez automatiquement le serveur "PostgreSQL Docker" dans le panneau de gauche
 4. Vous pourrez y accéder directement sans configuration supplémentaire

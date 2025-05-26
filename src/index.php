@@ -2,7 +2,7 @@
 require_once "connect.php";
 
 // * sql SELECT
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM interns";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -11,10 +11,10 @@ $query = $db->prepare($sql);
 $query->execute();
 
 // * récupération des données de la requête sql
-$users = $query->fetchAll(PDO::FETCH_ASSOC);
+$interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// * afficher la table users
-// print_r($users);
+// * afficher la table interns
+print_r($interns);
 
 require "disconnect.php";
 ?>
@@ -29,7 +29,7 @@ require "disconnect.php";
     <!-- // - 2 - META -->
     <meta charset=utf-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
-    <link rel="icon" href="favicon.ico" type="image/x-svg">
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="style.css">
     <!-- TITRE -->
     <title>Index_php_crud</title>
@@ -40,22 +40,22 @@ require "disconnect.php";
 <body id="content">
 
     <h1>Index</h1>
-    <p>créer table sql users</p>
+    <p>créer table sql interns</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL users</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
 
-    <!-- // * Table users -->
+    <!-- // * Table interns -->
     <table style="border:1px solid black;">
         <!-- <pre> -->
         <?php
-        print_r($users)
+        print_r($interns)
         ?>
         <!-- </pre> -->
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
             <th style="border:1px solid black;">Prénom</th>
             <th style="border:1px solid black;">Nom</th>
-            <th style="border:1px solid black;">Action</th>
+            <th style="border:1px solid black;">Actions</th>
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
@@ -66,15 +66,16 @@ require "disconnect.php";
             </tr>
 
             <?php
-            foreach ($users as $stagiaire): ?>
+            foreach ($interns as $stagiaire): ?>
 
                 <tr>
-                    <td><?= $stagiaire['id'] ?> </td>
-                    <td><?= $stagiaire['first_name'] ?> </td>
-                    <td><?= $stagiaire['last_name'] ?> </td>
-                    <td>
-                        <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
-                        <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
+                    <td style="border:1px solid black;"><?= $stagiaire['id'] ?> </td>
+                    <td style="border:1px solid black;"><?= $stagiaire['first_name'] ?> </td>
+                    <td style="border:1px solid black;"><?= $stagiaire['last_name'] ?> </td>
+                    <td style="border:1px solid black;">
+                        <a style="border:1px solid black;" href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
+                        <a style="border:1px solid black;" href="modifier.php?id=<?= $stagiaire['id'] ?>">Modifier</a>
+                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
                     </td>
                 </tr>
             <?php endforeach ?>
@@ -83,7 +84,7 @@ require "disconnect.php";
     </table>
 
     <br>
-    <img width="10%" src="11919432.gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="src\img\11919432.gif" alt="gif d'ajout d'utilisateur">
     <br>
     <a href="./add.php"><button>Ajouter un stagiaire</button></a>
 
@@ -98,6 +99,7 @@ require "disconnect.php";
             <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>
@@ -107,11 +109,11 @@ require "disconnect.php";
 
     <?php
 
-    // Affiche toutes les inuserss, comme le ferait INFO_ALL
+    // Affiche toutes les infos, comme le ferait INFO_ALL
     // phpinfo();
 
-    // Affiche uniquement le module d'inusers.
-    // phpinfo(8) fournirait les mêmes inuserss.
+    // Affiche uniquement le module d'infos.
+    // phpinfo(8) fournirait les mêmes infos.
     // phpinfo(INFO_MODULES);
 
     ?>
