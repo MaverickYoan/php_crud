@@ -7,9 +7,8 @@ if ($_POST) {
     if (
         !empty($_POST["first_name"])
         && !empty($_POST["last_name"])
-
     ) {
-        $id = filter_var($_GET["id"], FILTER_VALIDATE_INT);
+        $id = filter_var($_POST["id"], FILTER_VALIDATE_INT);
         $first_name = htmlspecialchars(strip_tags($_POST["first_name"]));
         $last_name = htmlspecialchars(strip_tags($_POST["last_name"]));
 
@@ -79,7 +78,7 @@ if (
     <title>modif_php_crud</title>
 </head>
 
-<body>
+<body style="background-image: url(img/tHi.gif); background-repeat: no-repeat;">
 
     <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
@@ -104,9 +103,18 @@ if (
         <label for="last_name">Nom</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ last_name -->
         <input type="text" Name="last_name" id="last_name" value="<?= $stagiaire["last_name"] ?>" required>
+        <!--// * Champ caché -->
+        <input type="hidden" name="id" value="<?= $stagiaire["id"] ?>">
         <input type="submit" value="Modifier">
     </form>
 
 </body>
+
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+    </div>
+</footer>
 
 </html>
