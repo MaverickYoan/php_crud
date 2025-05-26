@@ -37,7 +37,7 @@ require "disconnect.php";
 
 <!-- BODY -->
 
-<body id="content">
+<body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
     <p>créer table sql interns</p>
@@ -90,9 +90,14 @@ require "disconnect.php";
 
     <br><br>
 
-    <?php echo "helluuuuu"; ?>
+    <hr />
+
+    <div style="display: flex; justify-content:center;">
+        <?php echo "helluuuuu"; ?>
+    </div>
 
     <hr>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
@@ -103,7 +108,6 @@ require "disconnect.php";
             <a href="/">Back to menu</a>
         </ul>
     </nav>
-
 
     <hr />
 
