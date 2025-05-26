@@ -1,35 +1,73 @@
 <?php
+// * Check si connexion réussie
+require_once "connect.php";
+
 // * $_POST (superglobale check si l'utilisateur à cliqué sur submit si le form est en method = $_POST)
 if ($_POST) {
-
-
-    // * Est-ce que les champs de formulaire sont définis
     if (
-        isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
-        && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
+        !empty($_POST["first_name"])
+        && !empty($_POST["last_name"])
+
     ) {
+        $id = filter_var($_GET["id"], FILTER_VALIDATE_INT);
+        $first_name = htmlspecialchars(strip_tags($_POST["first_name"]));
+        $last_name = htmlspecialchars(strip_tags($_POST["last_name"]));
 
-        // * Définitions de variables
-        require_once "connect.php";
-        $id = $_GET["id"];
-        print_r($id);
+        // * Mise à jour des données first_name et/ou last_name
+        $sql = "UPDATE interns 
+        SET first_name = :first_name, last_name = :last_name 
+        WHERE id=:id;";
 
-        // * sql SELECT 
-        $sql = "SELECT * FROM interns WHERE id = :id";
-
-        // * préparation de la requête sql
         $query = $db->prepare($sql);
-        $query->bindValue(':id', $id, PDO::PARAM_INT);
 
-        // * exécution de la requête sql
+        // * Rattacher les valeurs de bindValue id à la requête SQL
+        $query->bindValue(":id", $id, PDO::PARAM_INT);
+
+        // * Rattacher les valeurs de bindValue first_name à la requête SQL
+        $query->bindValue(":first_name", $first_name, PDO::PARAM_STR);
+
+        // * Rattacher les valeurs de bindValue last_name à la requête SQL
+        $query->bindValue(":last_name", $last_name, PDO::PARAM_STR);
+
+        // * Exécution de la requête SQL
         $query->execute();
 
-        $stagiaire = $query->fetch();
-        // print_r($stagiaire);
+        // * Renvoyer le nouvel utilisateur à la page d'accueil après ajout
+        header("Location: index.php");
 
-        require "disconnect.php";
+        // * Pour terminer toutes exécution de scripts
+        exit;
     }
 }
+
+// * Est-ce que les champs de formulaire sont définis
+if (
+    isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
+    && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
+) {
+
+    // * Définitions de variables
+    $id = $_GET["id"];
+    // print_r($id);
+
+    // * sql SELECT 
+    $sql = "SELECT * FROM interns WHERE id = :id";
+
+    // * préparation de la requête sql
+    $query = $db->prepare($sql);
+
+    // * Rattacher les valeurs de bindValue id à la requête SQL
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
+
+    // * exécution de la requête sql
+    $query->execute();
+
+    $stagiaire = $query->fetch();
+    // print_r($stagiaire);
+
+    require "disconnect.php";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -49,14 +87,14 @@ if ($_POST) {
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
-            <li><a class=" links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>
 
-    <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Modifier un stagiaire</b></p>
+    <p style="border: 1px solid black; width: fit-content; background-color: yellow; color: black"><b>Modifier un stagiaire</b></p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">

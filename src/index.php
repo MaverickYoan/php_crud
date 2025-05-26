@@ -39,7 +39,7 @@ require "disconnect.php";
 
 <body id="content">
 
-    <h1>Index</h1>
+    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
     <p>créer table sql interns</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
@@ -48,7 +48,7 @@ require "disconnect.php";
     <table style="border:1px solid black;">
         <!-- <pre> -->
         <?php
-        print_r($interns)
+        // print_r($interns)
         ?>
         <!-- </pre> -->
         <thead style="border:1px solid black;">
@@ -88,7 +88,7 @@ require "disconnect.php";
     <br>
     <a href="./add.php"><button>Ajouter un stagiaire</button></a>
 
-    <br>
+    <br><br>
 
     <?php echo "helluuuuu"; ?>
 
@@ -131,5 +131,12 @@ require "disconnect.php";
         <script src="script.js"></script>
 
 </body>
+
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+    </div>
+</footer>
 
 </html>

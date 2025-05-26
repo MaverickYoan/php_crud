@@ -55,6 +55,8 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-svg">
+
     <title>Add_php_crud</title>
 </head>
 
@@ -85,5 +87,12 @@ if ($_POST) {
     </form>
 
 </body>
+
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+    </div>
+</footer>
 
 </html>
