@@ -1,29 +1,34 @@
 <?php
-// * Est-ce que les champs de formulaire sont définis
-if (
-    isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
-    && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
-) {
+// * $_POST (superglobale check si l'utilisateur à cliqué sur submit si le form est en method = $_POST)
+if ($_POST) {
 
-    // * Définitions de variables
-    require_once "connect.php";
-    $id = $_GET["id"];
-    print_r($id);
 
-    // * sql SELECT
-    $sql = "SELECT * FROM interns WHERE id = :id";
+    // * Est-ce que les champs de formulaire sont définis
+    if (
+        isset($_GET["id"])      // Vérifie si la variable 'id' existe dans l'URL (ex: ?id=123)
+        && !empty($_GET["id"])  // Vérifie si cette variable n'est pas vide (ex: ?id=)
+    ) {
 
-    // * préparation de la requête sql
-    $query = $db->prepare($sql);
-    $query->bindValue(':id', $id, PDO::PARAM_INT);
+        // * Définitions de variables
+        require_once "connect.php";
+        $id = $_GET["id"];
+        print_r($id);
 
-    // * exécution de la requête sql
-    $query->execute();
+        // * sql SELECT 
+        $sql = "SELECT * FROM interns WHERE id = :id";
 
-    $stagiaire = $query->fetch();
-    // print_r($stagiaire);
+        // * préparation de la requête sql
+        $query = $db->prepare($sql);
+        $query->bindValue(':id', $id, PDO::PARAM_INT);
 
-    require "disconnect.php";
+        // * exécution de la requête sql
+        $query->execute();
+
+        $stagiaire = $query->fetch();
+        // print_r($stagiaire);
+
+        require "disconnect.php";
+    }
 }
 ?>
 
@@ -38,7 +43,7 @@ if (
 
 <body>
 
-    <img width="10%" src="src\img\user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -67,5 +72,3 @@ if (
 </body>
 
 </html>
-
-<br /><b>Warning</b>: Undefined variable $stagiaire in <b>/var/www/html/modifier.php</b> on line <b>60</b><br /><br /><b>Warning</b>: Trying to access array offset on null in <b>/var/www/html/modifier.php</b> on line <b>60</b><br />

@@ -9,7 +9,7 @@ if ($_POST) {
         && !empty($_POST["first_name"])
         && !empty($_POST["last_name"])
     ) {
-        print_r(value: $_POST);
+        // print_r(value: $_POST);
 
         // * Enlève les balises HTML et PHP des STRING
         $first_name = strip_tags($_POST["first_name"]);
@@ -60,7 +60,7 @@ if ($_POST) {
 
 <body>
 
-    <img width="10%" src="user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -68,6 +68,7 @@ if ($_POST) {
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>
@@ -77,9 +78,9 @@ if ($_POST) {
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" required>
+        <input type="text" Name="first_name" id="first_name" required>
         <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" required>
+        <input type="text" Name="last_name" id="last_name" required>
         <input type="submit" value="Ajouter">
     </form>
 

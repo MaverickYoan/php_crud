@@ -14,7 +14,7 @@ $query->execute();
 $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table interns
-print_r($interns);
+// print_r($interns);
 
 require "disconnect.php";
 ?>
@@ -84,7 +84,7 @@ require "disconnect.php";
     </table>
 
     <br>
-    <img width="10%" src="src\img\11919432.gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/11919432.gif" alt="gif d'ajout d'utilisateur">
     <br>
     <a href="./add.php"><button>Ajouter un stagiaire</button></a>
 
