@@ -60,7 +60,7 @@ if ($_POST) {
     <title>Add_php_crud</title>
 </head>
 
-<body>
+<body style="background-image: url(img/totoro.gif); background-repeat: no-repeat; background-position: right;">
 
     <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
