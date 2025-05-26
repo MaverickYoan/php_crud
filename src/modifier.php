@@ -21,7 +21,7 @@ if (
     $query->execute();
 
     $stagiaire = $query->fetch();
-    print_r($stagiaire);
+    // print_r($stagiaire);
 
     require "disconnect.php";
 }
@@ -43,8 +43,8 @@ if (
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/stagiaire.php?=0">stagiaire</a></li>
-            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
+            <li><a class=" links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <a href="/">Back to menu</a>
@@ -56,12 +56,16 @@ if (
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" required>
+        <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ first_name -->
+        <input type="text" Name="first_name" id="first_name" value="<?= $stagiaire["first_name"] ?>" required>
         <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" required>
+        <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ last_name -->
+        <input type="text" Name="last_name" id="last_name" value="<?= $stagiaire["last_name"] ?>" required>
         <input type="submit" value="Modifier">
     </form>
 
 </body>
 
 </html>
+
+<br /><b>Warning</b>: Undefined variable $stagiaire in <b>/var/www/html/modifier.php</b> on line <b>60</b><br /><br /><b>Warning</b>: Trying to access array offset on null in <b>/var/www/html/modifier.php</b> on line <b>60</b><br />
