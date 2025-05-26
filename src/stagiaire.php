@@ -45,7 +45,7 @@ if (
         <title>Page de <?= $stagiaire['first_name'] ?></title>
 </head>
 
-<body>
+<body style="background-image: url(img/icon-256x256.gif); background-repeat: no-repeat; background-position: center; background-size: 20%;">
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
