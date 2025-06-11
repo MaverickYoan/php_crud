@@ -138,9 +138,7 @@ require "disconnect.php";
     <!-- // * FOOTER -->
     <footer>
         <div class="droits">
-            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions
-                légales
-            </h6>
+            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
         </div>
     </footer>
 

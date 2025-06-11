@@ -44,7 +44,7 @@ if (
     if (isset($jeu) && !empty($jeu)):
         // print_r($jeu);
     ?>
-    <title>Page de <?= $jeu['jeu'] ?></title>
+        <title>Page de <?= $jeu['jeu'] ?></title>
 </head>
 
 <body id="content">
@@ -83,24 +83,23 @@ if (
     <!-- <p>Jeu : Yo</p>
     <p>Nom : YDM</p> -->
 
-    <?php
+<?php
     else:
 ?>
 
     <p>jeu non présent</p>
     <a href="http://localhost:8001/home.php">Back to menu</a>
 
-    <?php
+<?php
     endif;
 ?>
 
-    <!-- // * FOOTER -->
-    <footer>
-        <div class="droits">
-            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro |
-                Mentions légales</h6>
-        </div>
-    </footer>
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
+    </div>
+</footer>
 
 </body>
 
