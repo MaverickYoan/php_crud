@@ -39,6 +39,22 @@ require "disconnect.php";
 <!-- BODY -->
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
+<!-- NAVBAR -->
+<nav class="navbar">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
+            <li><a href="/">Back to menu</a><li>
+        </ul>
+    </nav>
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
     <p>créer table sql interns</p>
@@ -99,17 +115,7 @@ require "disconnect.php";
 
     <hr>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <ul class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
-            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-            <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
-            <a href="/">Back to menu</a>
-        </ul>
-    </nav>
-
+    
     <hr />
 
     <?php

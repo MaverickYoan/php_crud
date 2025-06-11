@@ -8,5 +8,6 @@
             "protocol": "https"
         }
     },
-    "editor.quickSuggestions": false
+    "editor.quickSuggestions": false,
+    "editor.formatOnSave": true
 }

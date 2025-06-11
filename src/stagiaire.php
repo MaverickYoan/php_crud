@@ -50,23 +50,35 @@ if (
 <body style="background-image: url(img/icon-256x256.gif); background-repeat: no-repeat; background-position: center; background-size: 20%;">
     <!-- NAVBAR -->
     <nav class="navbar">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/stagiaire.php?id=<?= $stagiaire['id'] ?>">Page de l'utilisateur</a></li>
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>            
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
-            <a href="/">Back to menu</a>
+            <li><a href="/">Back to menu</a><li>
         </ul>
     </nav>
-
-    <hr />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
     <img width="10%" src="img/w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
     <br>
-    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Page de l'utilisateur</h1>
-    <h1 style="border:1px solid black; width:fit-content"><?= $stagiaire['first_name'] ?></h1>
-    <h1 style="border:1px solid black; width:fit-content"><?= $stagiaire['last_name'] ?></h1>
+    <h1 style="border:1px solid white; background-color: black; color: white; width:fit-content">Page de l'utilisateur</h1>
+    <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['first_name'] ?></h1>
+    <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['last_name'] ?></h1>
+    </section>
+    
     <!-- <p>Prénom : Yo</p>
     <p>Nom : YDM</p> -->
 
