@@ -51,6 +51,7 @@ require "disconnect.php";
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
             <li><a href="/">Back to menu</a></li>
@@ -86,16 +87,16 @@ require "disconnect.php";
             <?php
             foreach ($interns as $stagiaire): ?>
 
-            <tr>
-                <td style="border:1px solid black;"><?= $stagiaire['id'] ?> </td>
-                <td style="border:1px solid black;"><?= $stagiaire['first_name'] ?> </td>
-                <td style="border:1px solid black;"><?= $stagiaire['last_name'] ?> </td>
-                <td style="border:1px solid black;">
-                    <a style="border:1px solid black;" href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
-                    <a style="border:1px solid black;" href="modifier.php?id=<?= $stagiaire['id'] ?>">Modifier</a>
-                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
-                </td>
-            </tr>
+                <tr>
+                    <td style="border:1px solid black;"><?= $stagiaire['id'] ?> </td>
+                    <td style="border:1px solid black;"><?= $stagiaire['first_name'] ?> </td>
+                    <td style="border:1px solid black;"><?= $stagiaire['last_name'] ?> </td>
+                    <td style="border:1px solid black;">
+                        <a style="border:1px solid black;" href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
+                        <a style="border:1px solid black;" href="modifier.php?id=<?= $stagiaire['id'] ?>">Modifier</a>
+                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
+                    </td>
+                </tr>
             <?php endforeach ?>
 
         </tbody>

@@ -3,38 +3,43 @@
 if ($_POST) {
     // * Est-ce que les champs de formulaire sont définis
     if (
-        isset($_POST["first_name"])
-        && isset($_POST["last_name"])
+        isset($_POST["jeu"])
+        && isset($_POST["genre"])
+        && isset($_POST["annee"])
         // * isset : est present même si vide; !empty oblige à inserer du contenu
-        && !empty($_POST["first_name"])
-        && !empty($_POST["last_name"])
+        && !empty($_POST["jeu"])
+        && !empty($_POST["genre"])
+        && !empty($_POST["annee"])
     ) {
         // print_r(value: $_POST);
 
         // * Enlève les balises HTML et PHP des STRING
-        $first_name = strip_tags($_POST["first_name"]);
-        $last_name = strip_tags($_POST["last_name"]);
-
+        $jeu = strip_tags($_POST["jeu"]);
+        $genre = strip_tags($_POST["genre"]);
+        $annee = strip_tags($_POST["annee"]);
         // * Check si connexion réussie
         require_once "connect.php";
 
         // * Requête SQL pour ajouter des données (finir le commentaire)
-        $sql = "INSERT INTO interns (first_name, last_name) VALUES (:first_name, :last_name);";
+        $sql = "INSERT INTO jeux (jeu, genre, annee) VALUES (:jeu, :genre, :annee);";
 
         // * préparation de la base de données SQL
         $query = $db->prepare($sql);
 
-        // * Rattacher les valeurs de bindValue first_name à la requête SQL
-        $query->bindValue(":first_name", $first_name, PDO::PARAM_STR);
+        // * Rattacher les valeurs de bindValue jeu à la requête SQL
+        $query->bindValue(":jeu", $jeu, PDO::PARAM_STR);
 
-        // * Rattacher les valeurs de bindValue last_name à la requête SQL
-        $query->bindValue(":last_name", $last_name, PDO::PARAM_STR);
+        // * Rattacher les valeurs de bindValue genre à la requête SQL
+        $query->bindValue(":genre", $genre, PDO::PARAM_STR);
+
+        // * Rattacher les valeurs de bindValue annee à la requête SQL
+        $query->bindValue(":annee", $annee, PDO::PARAM_STR);
 
         // * Exécution de la requête SQL
         $query->execute();
 
         // * récupération des données de la requête sql
-        // $interns = $query->fetchAll(PDO::FETCH_ASSOC);
+        // $jeux = $query->fetchAll(PDO::FETCH_ASSOC);
 
         // * close de la fonction connexion réussie
         require "disconnect.php";
@@ -64,7 +69,7 @@ if ($_POST) {
 
 <body style="background-image: url(img/totoro.gif); background-repeat: no-repeat; background-position: right;">
 
-    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="" alt="gif d'ajout de jeux vidéo">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -86,14 +91,16 @@ if ($_POST) {
     </nav>
 
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
-            stagiaire</b></p>
+            jeu</b></p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
-        <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" id="first_name" required>
-        <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" id="last_name" required>
+        <label for="jeu">Jeu</label>
+        <input type="text" Name="jeu" id="jeu" required>
+        <label for="genre">Genre</label>
+        <input type="text" Name="genre" id="genre" required>
+        <label for="annee">Année</label>
+        <input type="text" Name="annee" id="annee" required>
         <input type="submit" value="Ajouter">
     </form>
 
