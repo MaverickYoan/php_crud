@@ -39,8 +39,8 @@ require "disconnect.php";
 <!-- BODY -->
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
-<!-- NAVBAR -->
-<nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -49,10 +49,11 @@ require "disconnect.php";
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
-            <li><a href="/">Back to menu</a><li>
+            <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>
 
@@ -115,7 +116,7 @@ require "disconnect.php";
 
     <hr>
 
-    
+
     <hr />
 
     <?php
@@ -146,7 +147,8 @@ require "disconnect.php";
 <!-- // * FOOTER -->
 <footer>
     <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales
+        </h6>
     </div>
 </footer>
 

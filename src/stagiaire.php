@@ -38,7 +38,7 @@ if (
     <link rel="icon" href="img/favicon.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-<!-- TITRE -->
+    <!-- TITRE -->
     <?php
     // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
     if (isset($stagiaire) && !empty($stagiaire)):
@@ -47,7 +47,8 @@ if (
         <title>Page de <?= $stagiaire['first_name'] ?></title>
 </head>
 
-<body style="background-image: url(img/icon-256x256.gif); background-repeat: no-repeat; background-position: center; background-size: 20%;">
+<body
+    style="background-image: url(img/icon-256x256.gif); background-repeat: no-repeat; background-position: center; background-size: 20%;">
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
@@ -57,11 +58,12 @@ if (
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
-            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
+            <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
-            <li><a href="/">Back to menu</a><li>
+            <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>
     <br>
@@ -71,15 +73,16 @@ if (
     <br>
     <br>
     <br>
-    
+
     <section>
-    <img width="10%" src="img/w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
-    <br>
-    <h1 style="border:1px solid white; background-color: black; color: white; width:fit-content">Page de l'utilisateur</h1>
-    <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['first_name'] ?></h1>
-    <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['last_name'] ?></h1>
+        <img width="10%" src="img/w6a6775zvp661.gif" alt="gif d'ajout d'utilisateur">
+        <br>
+        <h1 style="border:1px solid white; background-color: black; color: white; width:fit-content">Page de
+            l'utilisateur</h1>
+        <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['first_name'] ?></h1>
+        <h1 style="border:1px solid white; width:fit-content"><?= $stagiaire['last_name'] ?></h1>
     </section>
-    
+
     <!-- <p>Prénom : Yo</p>
     <p>Nom : YDM</p> -->
 
@@ -99,7 +102,8 @@ if (
 <!-- // * FOOTER -->
 <footer>
     <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales
+        </h6>
     </div>
 </footer>
 

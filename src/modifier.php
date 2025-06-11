@@ -84,16 +84,24 @@ if (
 
     <!-- NAVBAR -->
     <nav class="navbar">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
-            <a href="/">Back to menu</a>
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
+            <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>
 
-    <p style="border: 1px solid black; width: fit-content; background-color: yellow; color: black"><b>Modifier un stagiaire</b></p>
+    <p style="border: 1px solid black; width: fit-content; background-color: yellow; color: black"><b>Modifier un
+            stagiaire</b></p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
@@ -113,7 +121,8 @@ if (
 <!-- // * FOOTER -->
 <footer>
     <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales</h6>
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales
+        </h6>
     </div>
 </footer>
 
