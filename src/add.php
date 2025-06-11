@@ -71,6 +71,7 @@ if ($_POST) {
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>

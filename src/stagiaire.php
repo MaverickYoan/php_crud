@@ -21,7 +21,7 @@ if (
     $query->execute();
 
     $stagiaire = $query->fetch();
-    // print_r($stagiaire);
+    print_r($stagiaire);
 
     require "disconnect.php";
 }
@@ -49,10 +49,12 @@ if (
     <!-- NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links" id="navLinks">
+            <li><a class="links" href="http://localhost:8000/stagiaire.php?id=<?= $stagiaire['id'] ?>">Page de l'utilisateur</a></li>
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>            
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
             <a href="/">Back to menu</a>
         </ul>
     </nav>

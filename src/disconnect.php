@@ -1,4 +1,4 @@
 <?php
-// * déconnexion de la base de sonnée sql
+// * déconnexion de la base de donnée sql
 $db = "NULL";
 $sql = "NULL";

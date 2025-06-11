@@ -15,11 +15,11 @@ try {
     echo "échec de connexion : " . $e->getMessage() . "<br>";
 }
 
-require 'db.php';
+# require 'db.php';
 $data = json_decode(file_get_contents("php://input"), true);
 $email = $data['email'];
 $password = $data['password'];
-$stmt = $pdo->prepare("SELECT id, password FROM users WHERE email = ?");
+$stmt = $db->prepare("SELECT id, password FROM users WHERE email = ?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
 if ($user && password_verify($password, $user['password'])) {

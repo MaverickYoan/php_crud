@@ -1,14 +1,19 @@
 <?php
 // src/db.php
-// Configuration de la connexion
+
 $host = 'localhost';
-$db = 'project_crud';
-$user = 'test';
-$pass = '';
-$dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
-$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+$dbName = 'project_crud';
+$user = 'test';$password = 'test';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$dbName;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES => false,
+];
+
 try {
-$pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, $user, $password, $options);
 } catch (PDOException $e) {
- exit('Erreur connexion : ' . $e->getMessage());
+    exit('Erreur de connexion : ' . $e->getMessage());
 }
