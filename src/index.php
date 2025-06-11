@@ -31,7 +31,7 @@ require "disconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- TITRE -->
     <title>Index_php_crud</title>
 </head>
@@ -129,18 +129,6 @@ require "disconnect.php";
     // phpinfo(INFO_MODULES);
 
     ?>
-
-    <!-- back-to-top section -------------->
-    <a href="#content" class="back-to-top">
-        <span>Retour en haut</span>
-        <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-        <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-        </svg>
-
-        <!-- Script Section : Script pour activer le menu mobile -->
-        <script src="script.js"></script>
 
 </body>
 

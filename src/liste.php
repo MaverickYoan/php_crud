@@ -31,6 +31,7 @@ require "disconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="src\favicon.ico" type="image/x-svg">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
     <!-- TITRE -->
     <title>Index_Jeux_Vidéos</title>
 </head>
@@ -145,25 +146,23 @@ require "disconnect.php";
 
     ?>
 
-    <!-- // * FOOTER -->
-    <footer>
-        <div class="droits">
-            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro |
-                Mentions légales</h6>
-        </div>
-    </footer>
-
-    <!-- back-to-top section -------------->
-    <a href="#content" class="back-to-top">
-        <span>top</span>
-        <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-        <svg width="10" height="10" viewbox=" 0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-        </svg>
-
-        <script type="text/javascript" src="script.js"></script>
-
 </body>
+
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro |
+            Mentions légales</h6>
+    </div>
+</footer>
+
+<!-- back-to-top section -------------->
+<a href="#content" class="back-to-top">
+    <span>Retour en haut</span>
+    <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
+    <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+    </svg>
 
 </html>
