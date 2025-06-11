@@ -30,7 +30,8 @@ require "disconnect.php";
     <meta charset=utf-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <!-- TITRE -->
     <title>Index_php_crud</title>
 </head>

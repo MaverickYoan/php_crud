@@ -36,7 +36,9 @@ if (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-svg">
-    <!-- TITRE -->
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+<!-- TITRE -->
     <?php
     // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
     if (isset($stagiaire) && !empty($stagiaire)):

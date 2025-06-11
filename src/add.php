@@ -56,6 +56,8 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-svg">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Add_php_crud</title>
 </head>
@@ -66,6 +68,11 @@ if ($_POST) {
 
     <!-- NAVBAR -->
     <nav class="navbar">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <ul class="nav-links" id="navLinks">
             <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
