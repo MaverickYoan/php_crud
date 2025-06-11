@@ -14,7 +14,7 @@ $query->execute();
 $jeux = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table jeux
-print_r($jeux);
+// print_r($jeux);
 
 require "disconnect.php";
 ?>
