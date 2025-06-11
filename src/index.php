@@ -14,7 +14,7 @@ $query->execute();
 $interns = $query->fetchAll(PDO::FETCH_ASSOC);
 
 // * afficher la table interns
-// print_r($interns);
+print_r($interns);
 
 require "disconnect.php";
 ?>

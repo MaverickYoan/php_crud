@@ -16,16 +16,16 @@ try {
 }
 
 # require 'db.php';
-$data = json_decode(file_get_contents("php://input"), true);
-$email = $data['email'];
-$password = $data['password'];
-$stmt = $db->prepare("SELECT id, password FROM users WHERE email = ?");
-$stmt->execute([$email]);
-$user = $stmt->fetch();
-if ($user && password_verify($password, $user['password'])) {
-    session_start();
-    $_SESSION['user_id'] = $user['id'];
-    echo json_encode(['success' => true]);
-} else {
-    echo json_encode(['success' => false, 'error' => 'Identifiants invalides']);
-}
+// $data = json_decode(file_get_contents("php://input"), true);
+// $email = $data['email'];
+// $password = $data['password'];
+// $stmt = $db->prepare("SELECT id, password FROM users WHERE email = ?");
+// $stmt->execute([$email]);
+// $user = $stmt->fetch();
+// if ($user && password_verify($password, $user['password'])) {
+//     session_start();
+//     $_SESSION['user_id'] = $user['id'];
+//     echo json_encode(['success' => true]);
+// } else {
+//     echo json_encode(['success' => false, 'error' => 'Identifiants invalides']);
+// }
