@@ -91,16 +91,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-                <tr>
-                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
+            <tr>
+                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                <td style="border:1px solid black;">
+                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                </td>
+            </tr>
             <?php endforeach ?>
 
         </tbody>
@@ -109,14 +109,14 @@ require "disconnect.php";
     <br>
     <img width="10%" src="img/11919432.gif" alt="gif d'ajout d'un jeu vidéo">
     <br>
-    <a href="./add_jeux.php"><button>Ajouter un jeu</button></a>
+    <a href="./contact.php"><button>Contactez-nous</button></a>
 
     <br><br>
 
     <hr />
 
     <div style="display: flex; justify-content:center;">
-        <?php echo "helluuuuu"; ?>
+        <?php echo "Merci d'être passé nous voir"; ?>
     </div>
 
     <hr>
@@ -134,8 +134,6 @@ require "disconnect.php";
     // phpinfo(INFO_MODULES);
 
     ?>
-
-    <a href="./contact.php"><button>Contactez-nous</button></a>
 
     <!-- // * FOOTER -->
     <footer>
