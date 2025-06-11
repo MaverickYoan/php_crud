@@ -90,12 +90,12 @@ if (
             <div class="bar"></div>
         </div>
         <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
+            <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
             <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
-            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
             <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>

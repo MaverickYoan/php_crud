@@ -57,17 +57,17 @@ if (
                 <div class="bar"></div>
             </div>
             <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
-                <li><a href="http://localhost:8001/home.php">home</a></li>
-                <li><a href="http://localhost:8001/jeux.php">Jeux</a></li>
-                <li><a href="http://localhost:8001/index.php">Index</a></li>
-                <li><a href="http://localhost:8001/liste.php">Liste de Jeux</a></li>
-                <li><a href="http://localhost:8001/jeu.php">Jeu</a></li>
-                <li><a href="https://fabulous-platypus-fdb4a3.netlify.app/">Wink</a></li>
-                <li><a href="http://localhost:8001/add.php">Ajout jeu</a></li>
-                <li><a href="http://localhost:8001/modifier.php">Modifier jeu</a></li>
-                <li><a href="http://localhost:8001/home.php">Back to menu</a></li>
+                <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
+                <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+                <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
+                <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+                <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
+                <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
+                <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
+                <li><a href="/">Back to menu</a></li>
             </ul>
         </nav>
+
     </header>
 
     <a href="https://fabulous-platypus-fdb4a3.netlify.app">Wink Netlify WebbApp</a>

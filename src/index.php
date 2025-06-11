@@ -2,7 +2,7 @@
 require_once "connect.php";
 
 // * sql SELECT
-$sql = "SELECT * FROM interns";
+$sql = "SELECT * FROM jeux";
 
 // * préparation de la requête sql
 $query = $db->prepare($sql);
@@ -11,10 +11,10 @@ $query = $db->prepare($sql);
 $query->execute();
 
 // * récupération des données de la requête sql
-$interns = $query->fetchAll(PDO::FETCH_ASSOC);
+$jeux = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// * afficher la table interns
-print_r($interns);
+// * afficher la table jeux
+print_r($jeux);
 
 require "disconnect.php";
 ?>
@@ -50,55 +50,55 @@ require "disconnect.php";
                 <div class="bar"></div>
             </div>
             <ul style="font-size: 1rem;" class="nav-links" id="navLinks">
-                <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li>
+                <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
                 <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
                 <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
                 <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
                 <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
-                <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
-                <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
+                <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
+                <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
                 <li><a href="/">Back to menu</a></li>
             </ul>
         </nav>
     </header>
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
-    <p>créer table sql interns</p>
+    <p>créer table sql jeux</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL interns</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL jeux</h1>
 
-    <!-- // * Table interns -->
+    <!-- // * Table jeux -->
     <table style="border:1px solid black;">
         <!-- <pre> -->
         <?php
-        // print_r($interns)
+        // print_r($jeux)
         ?>
         <!-- </pre> -->
         <thead style="border:1px solid black;">
             <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">Prénom</th>
-            <th style="border:1px solid black;">Nom</th>
+            <th style="border:1px solid black;">Jeu</th>
+            <th style="border:1px solid black;">Genre</th>
             <th style="border:1px solid black;">Actions</th>
         </thead>
         <tbody style="border:1px solid black;">
             <tr>
                 <td style="border:1px solid black;">123</td>
-                <td style="border:1px solid black;">yoan</td>
-                <td style="border:1px solid black;">ydm</td>
+                <td style="border:1px solid black;">grid</td>
+                <td style="border:1px solid black;">course</td>
                 <td style="border:1px solid black;">no action</td>
             </tr>
 
             <?php
-            foreach ($interns as $stagiaire): ?>
+            foreach ($jeux as $jeu): ?>
 
                 <tr>
-                    <td style="border:1px solid black;"><?= $stagiaire['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $stagiaire['first_name'] ?> </td>
-                    <td style="border:1px solid black;"><?= $stagiaire['last_name'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
                     <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $stagiaire['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
+                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
                     </td>
                 </tr>
             <?php endforeach ?>
@@ -107,9 +107,9 @@ require "disconnect.php";
     </table>
 
     <br>
-    <img width="10%" src="img/11919432.gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/11919432.gif" alt="gif d'ajout d'un jeu vidéo">
     <br>
-    <a href="./add.php"><button>Ajouter un stagiaire</button></a>
+    <a href="./add_jeux.php"><button>Ajouter un jeu</button></a>
 
     <br><br>
 
