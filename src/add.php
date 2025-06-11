@@ -97,14 +97,15 @@ if ($_POST) {
         <input type="submit" value="Ajouter">
     </form>
 
-</body>
+    <!-- // * FOOTER -->
+    <footer>
+        <div class="droits">
+            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions
+                légales
+            </h6>
+        </div>
+    </footer>
 
-<!-- // * FOOTER -->
-<footer>
-    <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_crud | @onlineformapro | Mentions légales
-        </h6>
-    </div>
-</footer>
+</body>
 
 </html>

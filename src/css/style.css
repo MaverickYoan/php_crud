@@ -36,7 +36,14 @@ body {
     padding: 0;
     background-color: black;
     /* background-color: white; */
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 /* Paramètre - .navbar */
@@ -73,7 +80,7 @@ body {
     /* color: white; */
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', serif;
-    font-size: 0.5rem;
+    font-size: 1rem;
     /* font-weight: 900; */
     text-decoration: none;
     padding: 5px 10px;
@@ -184,32 +191,8 @@ summary {
 }
 
 .dropdown {
-    border: 0.5px solid #0295AB;
-    font-size: large;
-}
-
-#slogan,
-.li-destination {
-    display: flex;
-    justify-self: center;
-    font-size: large;
-}
-
-/* * - FADE IN */
-#slogan,
-.li-destination,
-img {
-    -webkit-animation: fadein 10s;
-    animation: fadein 10s;
-    /* Safari et Chrome */
-}
-
-.li-destination {
-    color: rgb(0, 255, 238);
-    font-size: x-large;
-    display: inline-block;
-    justify-content: start;
-    gap: 1rem;
+    border: 0.5px solid #02ab02;
+    font-size: smaller;
 }
 
 .menu {
@@ -238,68 +221,6 @@ img {
     }
 }
 
-details {
-    width: 100%;
-    display: grid;
-    justify-self: center;
-}
-
-/* * bordures blanches autour Témoignages*/
-.grid,
-.text-une {
-    border: 2px solid #fff;
-}
-
-/* * padding background témoignages section */
-.une {
-    padding: 8px
-}
-
-/* * Témoignages */
-.text-une {
-    font-size: 1.875rem;
-    margin-bottom: 12px;
-}
-
-/* * disposition éléments Témoignages */
-.tem1 {
-    border-radius: .5rem;
-    box-shadow: .5rem;
-    padding: 6px;
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 4px;
-}
-
-/* * disposition des initiales - témoignages */
-.entete {
-    height: 1.875rem;
-    background-size: 100;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    color: var(--green);
-    margin-right: 4px;
-    align-items: center;
-    border: 2px solid green;
-    width: 50%;
-    font-size: 1rem;
-    padding: .5rem;
-}
-
-.une-font,
-.tem1 {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
-/* * commentaires témoignages */
-.une-comm-font {
-    color: gray;
-    font-style: italic
-}
-
 @media (max-width: 768px) {
 
     /* body {
@@ -314,7 +235,7 @@ details {
         display: none;
         flex-direction: column;
         width: 100%;
-        font-size: 10pt;
+        font-size: 0.8rem;
 
     }
 
@@ -344,15 +265,6 @@ details {
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(10px, -5px);
         /* transform: translateY(0px) rotate(135deg); */
-    }
-
-    figure {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    figcaption {
-        margin: 0rem;
     }
 
     .home img {
@@ -400,7 +312,7 @@ details {
     width: 1px;
 }
 
-*/ .back-to-top {
+.back-to-top {
     --green: oklch(85.33% 0.15 141.46);
 }
 
