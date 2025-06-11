@@ -44,17 +44,18 @@ if (
     if (isset($jeu) && !empty($jeu)):
         // print_r($jeu);
     ?>
-        <title>Page de <?= $jeu['jeu'] ?></title>
+    <title>Page de <?= $jeu['jeu'] ?></title>
 </head>
 
-<body id="content"><!-- NAVBAR -->
+<body id="content">
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <ul class="nav-links" id="navLinks">
+        <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
             <li><a href="http://localhost:8001/home.php">home</a></li>
             <li><a href="http://localhost:8001/jeux.php">Jeux</a></li>
             <li><a href="http://localhost:8001/index.php">Index</a></li>
@@ -80,23 +81,24 @@ if (
     <!-- <p>Jeu : Yo</p>
     <p>Nom : YDM</p> -->
 
-<?php
+    <?php
     else:
 ?>
 
     <p>jeu non présent</p>
     <a href="http://localhost:8001/home.php">Back to menu</a>
 
-<?php
+    <?php
     endif;
 ?>
 
-<!-- // * FOOTER -->
-<footer>
-    <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro | Mentions légales</h6>
-    </div>
-</footer>
+    <!-- // * FOOTER -->
+    <footer>
+        <div class="droits">
+            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro |
+                Mentions légales</h6>
+        </div>
+    </footer>
 
 </body>
 
