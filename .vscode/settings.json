@@ -8,8 +8,14 @@
             "protocol": "https"
         }
     },
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "emmet.useInlineCompletions": true
 }

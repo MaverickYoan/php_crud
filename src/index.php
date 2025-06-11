@@ -62,7 +62,7 @@ require "disconnect.php";
         </nav>
     </header>
 
-    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
+    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Home</h1>
     <p>créer table sql jeux</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL jeux</h1>
