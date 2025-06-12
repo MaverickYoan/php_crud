@@ -45,31 +45,11 @@ if (
         if (isset($editeur) && !empty($editeur));
         // print_r($jeu);
     ?>
-    <title>Page de <?= $jeu['jeu'] ?></title>
+        <title>Page de <?= $jeu['jeu'] ?></title>
 </head>
 
 <body id="content">
-    <header>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
-                <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
-                <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-                <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
-                <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-                <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
-                <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
-                <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
-                <li><a href="/">Back to menu</a></li>
-            </ul>
-        </nav>
 
-    </header>
 
     <!-- <img width="10%" src="0Jvtfvy.gif" alt="Gran turismo 2 sur playstation"> -->
     <br>
@@ -84,33 +64,50 @@ if (
     <!-- <p>Jeu : Yo</p>
     <p>Nom : YDM</p> -->
 
-    <?php
+<?php
     else:
 ?>
 
     <p>jeu non présent</p>
     <a href="http://localhost:8000/home.php">Back to menu</a>
 
-    <?php
+<?php
     endif;
 ?>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
+        <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
+        <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+        <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
+        <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+        <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
+        <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
+        <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
+        <li><a href="/">Back to menu</a></li>
+    </ul>
+</nav>
 
+<a href="./contact.php"><button>Contactez-nous</button></a>
+<br>
+<br>
+<br>
+<a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank"> Netlify WebbApp</a>
 
-    <a href="./contact.php"><button>Contactez-nous</button></a>
-    <br>
-    <br>
-    <br>
-    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank"> Netlify WebbApp</a>
-
-    <!-- // * FOOTER -->
-    <footer>
-        <div class=" droits">
-            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
-        </div>
-    </footer>
+<!-- // * FOOTER -->
+<footer>
+    <div class=" droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
+    </div>
+</footer>
 
 </body>
 
-<script src="script.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
 
 </html>

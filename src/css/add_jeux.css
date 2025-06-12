@@ -13,6 +13,9 @@
 }  */
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     color: white;
     font-family: Arial, sans-serif;
@@ -62,6 +65,12 @@ body {
     transition: 0.4s;
 }
 
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -97,6 +106,13 @@ body {
         /* transform: rotate(-45deg) translate(5px, -5px); */
         transform: translateY(0px) rotate(135deg);
     }
+        
+    #form, IMG {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5rem;
+        }
 }
 
 /* BackToTop */

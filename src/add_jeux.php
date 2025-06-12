@@ -95,10 +95,10 @@ if ($_POST) {
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un jeu</b>
     </p>
 
-    <img width="30%" src="img/totoro.gif" alt="gif du pokemon Totoro"> <br> <br>
+    <img width="30%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br>
 
     <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
-    <form method="post">
+    <form id="form" method="post">
         <label for="jeu">Jeu</label>
         <input type="text" Name="jeu" id="jeu" required> <br> <br>
         <label for="genre">Genre</label>

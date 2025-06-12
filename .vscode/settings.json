@@ -101,5 +101,13 @@
     "workbench.preferredDarkColorTheme": "Default High Contrast",
     "workbench.preferredLightColorTheme": "Default High Contrast",
     "workbench.preferredHighContrastLightColorTheme": "Default High Contrast",
-    "terminal.integrated.automationProfile.linux": {}
+    "terminal.integrated.automationProfile.linux": {},
+    "editor.formatOnSaveMode": "modifications",
+    "notebook.formatOnSave.enabled": true,
+    "prettyxml.settings.formatOnSave": true,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "interactiveWindow.promptToSaveOnClose": true,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "cSpell.autoFormatConfigFile": true,
+    "workbench.editor.highlightModifiedTabs": true
 }
