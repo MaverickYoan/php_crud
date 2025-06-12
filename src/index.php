@@ -29,7 +29,7 @@ require "disconnect.php";
     <!-- // - 2 - META -->
     <meta charset=utf-8>
     <meta content="width=device-width,initial-scale=1" name=viewport>
-    <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
+    <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <!-- TITRE -->
@@ -93,16 +93,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-                <tr>
-                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
+            <tr>
+                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                <td style="border:1px solid black;">
+                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                </td>
+            </tr>
             <?php endforeach ?>
 
         </tbody>

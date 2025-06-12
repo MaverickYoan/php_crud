@@ -33,6 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
     <title>Message Envoyé</title>
 </head>
 
@@ -72,6 +75,9 @@ img {
             <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
         </div>
     </footer>
+
 </body>
+
+<script src="script.js"></script>
 
 </html>
