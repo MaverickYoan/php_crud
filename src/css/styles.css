@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-/*--créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
+/*--créer des outlines sur tous les éléments de la page (permet un debuggage rapide)--*/
 * {
     border: 1px solid rgb(76, 0, 255);
-}--*/
+}
 
 /*--couleur du fond--*/
 body {

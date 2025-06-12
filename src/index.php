@@ -150,11 +150,6 @@ require "disconnect.php";
         </div>
         </div>
 
-        <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
-        <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-        <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
 
         <!-- Tableau de liens utiles -->
         <div class=table>
@@ -164,30 +159,39 @@ require "disconnect.php";
                         <b class=Restaurant>Site</b>
                     <th>
                         <b class=Restaurant>Ajouter</b>
-                    <th>
-                        <b class=table-titre>Contact</b>
+
                 <tr>
                     <td class=ligne>
-                        <a class="links" href="http://localhost:8000/index.php"
-                            style=text-decoration:none;color:var(--txtcolor)>Index</a>
+
+                <tr>
                     <td class=ligne>
-                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
-                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
+
+
                     <td class=ligne>
-                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
-                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
+                        <a class="links" href="http://localhost:8000/add.php">Ajout User</a> <br>
+
+                        <a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a> <br>
+
+                        <a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a> <br>
+
+                        <a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a> <br>
+
+                        <a class="links" href="http://localhost:8000/jeu.php">jeu</a> <br>
+
+
                 <tr>
                     <td class=ligne>
                         <a class="links" href="http://localhost:8000/home.php"
-                            style=text-decoration:none;color:var(--txtcolor)>home</a>
-                <tr>
-                    <td class=ligne>
+                            style=text-decoration:none;color:var(--txtcolor)>home</a> <br>
+
+                        <a class="links" href="http://localhost:8000/index.php"
+                            style=text-decoration:none;color:var(--txtcolor)>Index</a> <br>
+
                         <a class="links" href="http://localhost:8000/liste.php"
-                            style=text-decoration:none;color:var(--txtcolor)>Liste</a>
-                        <br>
-                    <td class=ligne>
-                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
-                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
+                            style=text-decoration:none;color:var(--txtcolor)>Liste</a> <br>
+
+                        <a class="links" href="http://localhost:8000/contact.php"
+                            style=text-decoration:none;color:var(--txtcolor)>Contact</a> <br>
 
             </table>
             <br>
