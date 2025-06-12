@@ -84,14 +84,14 @@ img {
 
     <image src="img/ob_aea8c1_thanks.gif" alt="Merci" style="width: 40%; height: auto;" />
 
-
-
     <!-- // * FOOTER -->
     <footer>
         <div class="droits">
             <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
         </div>
     </footer>
+
+    <a href="/">Back to menu</a>
 
 </body>
 

@@ -149,6 +149,18 @@ require "disconnect.php";
             <br>
         </div>
         </div>
+
+        <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
+        <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
+        <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
+        <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+        <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
+        <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
+        <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
+        <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
+        <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
+        <li><a href="/">Back to menu</a></li>
+
         <!-- Tableau de liens utiles -->
         <div class=table>
             <table>
