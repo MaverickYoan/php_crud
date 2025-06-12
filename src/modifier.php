@@ -116,6 +116,8 @@ if (
         <input type="submit" value="Modifier">
     </form>
 
+    <a href="./contact.php"><button>Contactez-nous</button></a>
+
     <!-- // * FOOTER -->
     <footer>
         <div class="droits">

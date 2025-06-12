@@ -97,6 +97,8 @@ if (
     endif;
 ?>
 
+<a href="./contact.php"><button>Contactez-nous</button></a>
+
 <!-- // * FOOTER -->
 <footer>
     <div class="droits">
