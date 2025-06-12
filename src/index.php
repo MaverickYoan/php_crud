@@ -32,6 +32,7 @@ require "disconnect.php";
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
     <!-- TITRE -->
     <title>Home</title>
 </head>
@@ -93,16 +94,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-            <tr>
-                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                <td style="border:1px solid black;">
-                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                </td>
-            </tr>
+                <tr>
+                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                    <td style="border:1px solid black;">
+                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                    </td>
+                </tr>
             <?php endforeach ?>
 
         </tbody>
@@ -209,11 +210,12 @@ require "disconnect.php";
     </div>
 
 </body>
+
 <!-- back-to-top section -------------->
 <a href="#content" class="back-to-top">
     <span>Retour en haut</span>
     <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-    <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
+    <svg width="15" height="15" viewbox=" 0 0 24 24" aria-hidden="true">
         <path d="M5 12h14" />
         <path d="m12 5 7 7-7 7" />
     </svg>

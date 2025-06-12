@@ -62,14 +62,13 @@ if ($_POST) {
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/add_jeux.css">
 
     <title>Add_php_crud</title>
 </head>
 
-<body style="background-image: url(img/totoro.gif); background-repeat: no-repeat; background-position: right;">
-
-    <img width="10%" src="" alt="gif d'ajout de jeux vidéo">
+<body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -96,14 +95,16 @@ if ($_POST) {
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un jeu</b>
     </p>
 
+    <img width="30%" src="img/totoro.gif" alt="gif du pokemon Totoro"> <br> <br>
+
     <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
     <form method="post">
         <label for="jeu">Jeu</label>
-        <input type="text" Name="jeu" id="jeu" required>
+        <input type="text" Name="jeu" id="jeu" required> <br> <br>
         <label for="genre">Genre</label>
-        <input type="text" Name="genre" id="genre" required>
+        <input type="text" Name="genre" id="genre" required> <br> <br>
         <label for="annee">Année</label>
-        <input type="text" Name="annee" id="annee" required>
+        <input type="text" Name="annee" id="annee" required> <br> <br>
         <input type="submit" value="Ajouter">
     </form>
 

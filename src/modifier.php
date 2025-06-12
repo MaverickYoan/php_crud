@@ -69,6 +69,10 @@ if (
 
 ?>
 
+<!--  -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +80,7 @@ if (
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/modifier.css">
 
     <title>modif_php_crud</title>
 </head>
@@ -85,7 +89,7 @@ if (
 
     <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
-    <!-- NAVBAR -->
+    <!--  NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
@@ -130,6 +134,6 @@ if (
 
 </body>
 
-<script src="script.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
 
 </html>
