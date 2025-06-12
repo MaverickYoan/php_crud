@@ -23,6 +23,7 @@ body {
 
 /*dispose les éléments et met sur la même ligne */
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;

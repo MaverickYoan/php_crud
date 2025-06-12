@@ -31,7 +31,7 @@ require "disconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- TITRE -->
     <title>Home</title>
 </head>
@@ -209,5 +209,15 @@ require "disconnect.php";
     </div>
 
 </body>
+<!-- back-to-top section -------------->
+<a href="#content" class="back-to-top">
+    <span>Retour en haut</span>
+    <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
+    <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+    </svg>
+    <!-- Script Section : Script pour activer le menu mobile -->
+    <script src="script.js"></script>
 
 </html>
