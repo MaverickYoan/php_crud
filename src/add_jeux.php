@@ -80,12 +80,15 @@ if ($_POST) {
         </div>
         <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
             <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
-            <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
+            <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
+            <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
+            <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
             <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>
