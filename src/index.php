@@ -151,47 +151,51 @@ require "disconnect.php";
         </div>
 
         <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
-        <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
-        <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
         <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
         <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
         <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
         <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
-        <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
-        <li><a href="/">Back to menu</a></li>
 
         <!-- Tableau de liens utiles -->
         <div class=table>
             <table>
                 <tr>
                     <th>
-                        <b class=Restaurant>Restaurant</b>
+                        <b class=Restaurant>Site</b>
+                    <th>
+                        <b class=Restaurant>Ajouter</b>
                     <th>
                         <b class=table-titre>Contact</b>
                 <tr>
                     <td class=ligne>
-                        <a href=https://jadoo.store/# target=_blank style=text-decoration:none;color:var(--txtcolor)>
-                            <span><br>Les nouveautés</span>
-                        </a>
+                        <a class="links" href="http://localhost:8000/index.php"
+                            style=text-decoration:none;color:var(--txtcolor)>Index</a>
                     <td class=ligne>
-                        <a href=https://jadoo.store/# target=_blank style=text-decoration:none;color:var(--txtcolor)>
-                            <span><br>Prendre RDV</span>
-                        </a>
+                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
+                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
+                    <td class=ligne>
+                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
+                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
                 <tr>
                     <td class=ligne>
-                        <a href=https://jadoo.store/# target=_blank style=text-decoration:none;color:var(--txtcolor)>
-                            <span><br>Découvrir</span>
-                        </a>
+                        <a class="links" href="http://localhost:8000/home.php"
+                            style=text-decoration:none;color:var(--txtcolor)>home</a>
                 <tr>
                     <td class=ligne>
-                        <a href=https://jadoo.store/# target=_blank style=text-decoration:none;color:var(--txtcolor)>
-                            <br>Commander
-                        </a>
+                        <a class="links" href="http://localhost:8000/liste.php"
+                            style=text-decoration:none;color:var(--txtcolor)>Liste</a>
+                        <br>
+                    <td class=ligne>
+                        <a class="links" href="http://localhost:8000/contact.php" target=_blank
+                            style=text-decoration:none;color:var(--txtcolor)>Contact</a>
+
             </table>
             <br>
+
         </div>
-    </footer>
+    </footer> <br>
+
+    <a href="/">Back to home</a>
 
     <!-- Droits Section : Informations sur les droits réservés et le créateur -->
 

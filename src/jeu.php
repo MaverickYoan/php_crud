@@ -71,8 +71,6 @@ if (
 
     </header>
 
-    <a href="https://fabulous-platypus-fdb4a3.netlify.app">Wink Netlify WebbApp</a>
-
     <!-- <img width="10%" src="0Jvtfvy.gif" alt="Gran turismo 2 sur playstation"> -->
     <br>
 
@@ -97,11 +95,16 @@ if (
     endif;
 ?>
 
+
     <a href="./contact.php"><button>Contactez-nous</button></a>
+    <br>
+    <br>
+    <br>
+    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank"> Netlify WebbApp</a>
 
     <!-- // * FOOTER -->
     <footer>
-        <div class="droits">
+        <div class=" droits">
             <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
         </div>
     </footer>
