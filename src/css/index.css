@@ -103,7 +103,7 @@ body {
 /*  flèche retour en haut  */
 .back-to-top {
     /*  Basic styling  */
-    background-color: oklch(100% 0 0);
+    background-color: green;
     border: 2px solid currentColor;
     border-radius: 0.5rem;
     display: inline-block;
