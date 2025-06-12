@@ -7,7 +7,8 @@
       "default",
       {
         "ignore": [
-          "animation-timeline"
+          "animation-timeline",
+          "animation-timeline: scroll()"
         ]
       }
     ]
