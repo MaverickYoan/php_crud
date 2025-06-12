@@ -16,7 +16,6 @@ body {
     background-color: #ffffff;
     font-family: 'Poppins', 'Volkohv', 'Opens_Sans';
     /*background-color: #d3ded3a1;*/
-    color: #14183E;
     margin: 0;
     padding: 0;
 }
@@ -240,44 +239,11 @@ body {
     font-weight: 700;
 }
 
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger-menu .bar {
+/*menu burger taille et position*/
+.burger {
+    position: relative;
+    right: 50px;
     width: 25px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.menu {
-    list-style: none;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-
-    /* sur Safari et Chrome */
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
 
 /**/
@@ -311,6 +277,120 @@ header {
     font-style: normal;
     color: #ffffff;
     font-weight: bold;
+}
+
+/*--titre UN VOYAGE CULINAIRE GOURMET ET GOURMAND.--*/
+#titre {
+    left: 0;
+    margin-left: 4rem;
+    font-family: 'Poppins';
+    color: var(--titre);
+    font-weight: bold;
+    font-size: 15pt;
+    text-align: left;
+}
+
+#voyage {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+/*--Bienvenue au restaurant Jadoo avec une image bottom--*/
+.Bienvenue {
+    background-image: url(souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/*--sous-texte Bienvenue Jadoo vous accueille dans son ambiance zen et épurée...--*/
+.titre {
+    font-family: 'Poppins';
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12pt;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/*_______________________________________________________________________*/
+
+/*--global style du bouton Découvrir la carte--*/
+.favorite-styled1 {
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    width: 220px;
+    height: 50px;
+    background-color: var(--accentcolor);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    transition-property: var(--accentcolor);
+    transition-duration: 4ms;
+}
+
+/*--header style du bouton Découvrir la carte--*/
+.favorite-styled2,
+.favorite-styled3 {
+    display: flex;
+}
+
+/*--header style du bouton Découvrir la carte quand nous passons la souris dessus--*/
+.favorite-styled2,
+.favorite-styled3:hover {
+    background-color: #c271c9b4;
+}
+
+/*--header style du bouton Découvrir la carte quand nous cliquons dessus--*/
+.favorite-styled2,
+.favorite-styled3:active {
+    background-color: green;
+}
+
+/*--header style du bouton Découvrir la carte--*/
+.favorite-styled2,
+.favorite-styled3 {
+    display: flex;
+    justify-self: center;
+    border: #000000;
+    border-radius: 10px;
+    background-color: var(--accentcolor);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    transition-property: var(--accentcolor);
+    transition-duration: 4ms;
+    width: 220px;
+}
+
+.favorite-styled2 {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1rem;
+    font-size: 15pt;
+    text-align: center;
+    font-family: 'Volkhov';
+    font-style: normal;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.favorite-styled3 {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1rem;
+    font-size: 15pt;
+    font-family: 'Volkhov';
+    font-style: normal;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.bouton3 {
+    padding-bottom: 20px;
 }
 
 /*________________________________________________________________________*/
@@ -443,6 +523,123 @@ header {
     gap: 1rem;
 }
 
+.plats {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+/*--encadré en dessous des slider-container slider-1--*/
+.plat_1,
+.plat_2,
+.plat_3 {
+    border: 2px solid #000000;
+    width: 300px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins';
+    font-family: 'Poppins';
+    color: #696C8A;
+    font-size: 13.5pt;
+    width: auto;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/*--section des makis--*/
+
+.maki-bold {
+    display: block;
+    justify-content: center;
+}
+
+/*--section des makis--*/
+.maki {
+    margin-top: 2rem;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*--encadré avec border radius et titre makis bold et sous-texte --*/
+/*--titre makis bold--*/
+.maki-bold {
+    font-family: 'Poppins';
+    color: #000000;
+    font-size: 13.5pt;
+    font-weight: bold;
+}
+
+/*-- encadré avec border radius et sous-texte--*/
+.maki_1,
+.maki_2,
+.maki_3,
+.maki_4 {
+    border-radius: 25px;
+    font-family: 'Poppins';
+    font-size: 12pt;
+    font-weight: 200;
+    color: #696C8A;
+    text-align: center;
+    width: auto;
+}
+
+.maki_3,
+.maki_4 {
+    z-index: 0;
+}
+
+.background_carre {
+    width: 250px;
+    height: 250px;
+}
+
+.background_carre:hover {
+    position: relative;
+    background-color: #d4d0d0;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #b2b9b2e1;
+    border-radius: 25px;
+}
+
+.rose {
+    border: 1px solid #DF6951;
+    background-color: #DF6951;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    left: -50px;
+    position: absolute;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.rose:hover {
+    transform: rotate(0deg);
+    transition-duration: 0.9s;
+    opacity: 1;
+    animation: ro 0.9s 1 ease-in-out;
+    isolation: isolate;
+}
+
+@keyframes ro {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
 /*_______________________________________________________________________*/
 
 /*--section chef--*/
@@ -451,6 +648,69 @@ iframe {
     padding: 1% 0% 0% 2%;
     border: #000000;
     border-radius: "20px"
+}
+
+/*--image de fond de la section chef--*/
+.chef {
+    background-image: url(illustration_chef.jpg);
+    background-size: cover;
+}
+
+#voyage {
+    margin-left: 2rem;
+}
+
+/*--texte Un voyage gastro... avec une image bottom--*/
+.voyage {
+    background-image: url(souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/*--texte top section chef avec classe commander--*/
+.voyage {
+    font-family: 'Volkhov';
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    width: 100%;
+}
+
+.cheftext {
+    margin-left: 10%;
+}
+
+/*--texte bottom section chef avec classe commander--*/
+.cheftextbis {
+    font-family: 'Poppins';
+    font-size: 12.5pt;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+
+/*_______________________________________________________________________*/
+
+/*--section chef avec image commander, classes rapide et commandez sur le site Jadoo--*/
+
+/*--deux images qui se supperposent de moitié avec la section commandez sur le site--*/
+#wrapper {
+    position: absolute;
+    transform: translateY(-40%);
+    padding-left: 0;
+    height: auto;
+    /*z-index: 99;*/
+}
+
+/*--image--*/
+.commander {
+    position: relative;
+    background-image: url(illustration_commander.jpg);
+    background-size: cover;
 }
 
 h5 {
@@ -471,6 +731,16 @@ h6 {
     width: 80%;
 }
 
+/*--suite du texte commandez...--*/
+.sur {
+    margin-left: 0%;
+    font-family: 'Volkhov';
+    color: #000000;
+    font-size: 37.5pt;
+    font-weight: bold;
+    width: 80%;
+}
+
 /*--textes des liens...--*/
 .liens {
     margin-left: 10%;
@@ -481,10 +751,69 @@ h6 {
     width: 90%;
 }
 
+#UberEats {
+    width: 50px;
+}
+
+/*--texte rapide--*/
+.rapide {
+    font-family: 'Poppins';
+    color: var(--txtcolor);
+    font-size: 12pt;
+    width: 80%;
+    margin-top: 200px;
+}
+
+/*--textes au dessus du formulaire--*/
+
+/*--titre au dessus de la section du formulaire--*/
+.rdv {
+    margin-top: 3rem;
+    font-family: 'Poppins';
+    font-size: 13.5pt;
+    font-weight: bold;
+    text-align: center;
+    color: var(--txtcolor);
+}
+
+/*--sous-titre au dessus de la section du formulaire--*/
+.nous {
+    color: #000000;
+    font-family: 'Volkhov';
+    font-size: 37.5pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-sous-titre {
+    color: var(--txtcolor);
+    text-align: left;
+    margin-top: 1rem;
+}
+
 .form {
     width: 100px;
     margin-left: 2rem;
     opacity: 1;
+}
+
+/*--section contact--*/
+.article-form {
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-img {
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 2rem;
 }
 
 
@@ -496,12 +825,18 @@ h6 {
 }
 
 /*--footer flex-center-row-background-color--*/
-.footer {
+.footer,
+.uber,
+.uber-download {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-flow: row wrap;
     background-color: #F3F3F3;
+}
+
+.uber-download {
+    margin-bottom: 10px;
 }
 
 /*--padding--*/
@@ -510,11 +845,34 @@ h6 {
 }
 
 /*--font--*/
+.gastro,
+.uber,
+.ligne,
 .droits {
     font-family: 'Poppins';
     font-size: 13.5pt;
     font-weight: 400;
     color: var(--txtcolor);
+}
+
+/*--padding-text-font---*/
+.table {
+    padding-left: 1rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 13.5pt;
+    font-weight: lighter;
+    color: var(--txtcolor);
+}
+
+/*--padding-color-font--*/
+.Restaurant,
+.table-titre {
+    padding: 1rem;
+    color: #000000;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
 }
 
 /*--tous droits réservés--*/
@@ -558,10 +916,6 @@ body {
     text-decoration: none;
 }
 
-.nav-links.active {
-    display: flex;
-}
-
 /* Burger menu styles */
 .burger {
     display: none;
@@ -574,25 +928,6 @@ body {
     width: 25px;
     height: 3px;
     background-color: var(--accentcolor);
-}
-
-/* Disposition du menu burger */
-.hamburger-menu {
-    display: flex;
-}
-
-.hamburger-menu.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 5px);
-    /* transform: translateY(0px) rotate(-135deg); */
-}
-
-.hamburger-menu.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-menu.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(10px, -5px);
-    /* transform: translateY(0px) rotate(135deg); */
 }
 
 /* Responsive Styles */
@@ -614,93 +949,5 @@ body {
 
     .burger {
         display: flex;
-    }
-}
-
-/* BackToTop */
-/* flèche retour en haut  */
-.back-to-top {
-    /* Basic styling  */
-    background-color: oklch(100% 0 0);
-    border: 2px solid currentColor;
-    border-radius: 0.5rem;
-    display: inline-block;
-    padding: 0.3rem;
-    /* Hidden by default  */
-    position: fixed;
-    inset: auto 1rem 1rem auto;
-}
-
-/* utiliser la couleur du texte  */
-.back-to-top:is(:link, :visited) {
-    color: currentColor;
-    text-decoration: none;
-}
-
-/* masquer le texte top */
-.back-to-top span {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-}
-
-/* animation de la flèche  */
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-    animation: progress linear;
-    animation-timeline: scroll();
-}
-
-/* rotation de la flèche  */
-.back-to-top svg {
-    transform: rotate(var(--angle));
-}
-
-/* propriete de la progression de la fleche  */
-@property --progress {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 0%;
-}
-
-@property --angle {
-    syntax: '<angle>';
-    inherits: true;
-    initial-value: -90deg;
-}
-
-@keyframes progress {
-    0% {
-        --progress: 0%;
-        --angle: 90deg;
-    }
-
-    2% {
-        --angle: 90deg;
-
-    }
-
-    100% {
-        --progress: 100%;
-    }
-}
-
-@supports not (animation-timeline: scroll) {
-    .back-to-top {
-        background: var(--green);
-    }
-}
-
-@media(prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
     }
 }

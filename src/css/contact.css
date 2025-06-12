@@ -27,7 +27,7 @@
 
 /* Paramètre - body */
 body {
-    /* width: clamp(464px, 768px, 1240px); */
+    width: clamp(464px, 768px, 1240px);
     width: 100%;
     height: 100vh;
     /* color: black; */
@@ -37,7 +37,143 @@ body {
     padding: 0;
     background-color: black;
     /* background-color: white; */
-    /* height: 100vh; */
+}
+
+/*--navbar responsive--*/
+.navlinks ul {
+    font-size: larger;
+    display: flex;
+    flex-flow: wrap;
+}
+
+/*dispose les éléments et met sur la même ligne */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+
+    /*--navbar fixe au top de la page web--*/
+    .navbar {
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    /*display flex aligne les éléments*/
+    .navbar .navlinks ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    /*marge entre les éléments et taille*/
+    .navbar .navlinks ul li {
+        margin: 0;
+    }
+
+    /*espace entre les éléments et taille*/
+    .navbar .navlinks ul li.active a {
+        color: rgb(216, 137, 17);
+        font-weight: 700;
+    }
+
+    /* z-index: 99; */
+}
+
+/*--navbar fixe au top de la page web--*/
+.navbar {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*display flex aligne les éléments*/
+.navbar .navlinks ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/*marge entre les éléments et taille*/
+.navbar .navlinks ul li {
+    margin: 0;
+}
+
+/*espace entre les éléments et taille*/
+.navbar .navlinks ul li.active a {
+    color: rgb(216, 137, 17);
+    font-weight: 700;
+}
+
+/**/
+.navlinks.mobile-menu {
+    margin-left: 0;
+    display: none;
+}
+
+/*disposition de la navbar*/
+.navlinks ul {
+    display: flex;
+    flex-direction: inline;
+    align-items: center;
+    gap: 2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: var(--accentcolor);
+    text-decoration: none;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
 }
 
 header {
@@ -45,4 +181,21 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+}
+
+/*--section contact--*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    background-color: #000000;
+    text-align: center;
+    width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
 }

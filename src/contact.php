@@ -49,6 +49,57 @@
             <button type="submit">Envoyer</button>
         </form>
     </main>
+    <!-- Formulaire Section : Formulaire de contact -->
+    <?php
+// * Envoyer message dans base de donnée messages.db avec la table messages_contact.sql
+// * Vérification de l'envoi du formulaire
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // * Connexion à la base de données
+    $db = new PDO('sqlite:messages.db');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // * Préparation de la requête SQL
+    $stmt = $db->prepare("INSERT INTO messages (objet, nom, prenom, email, message) VALUES (:objet, :nom, :prenom, :email, :message)");
+    // * Liaison des paramètres
+    $stmt->bindParam(':objet', $_POST['objet']);
+    $stmt->bindParam(':nom', $_POST['nom']);
+    $stmt->bindParam(':prenom', $_POST['prenom']);
+    $stmt->bindParam(':email', $_POST['email']);
+    $stmt->bindParam(':message', $_POST['message']);
+    // * Exécution de la requête
+    if ($stmt->execute()) {
+        echo "<p>Message envoyé avec succès !</p>";
+    } else {
+        echo "<p>Erreur lors de l'envoi du message.</p>";
+    }
+    // * Fermeture de la connexion
+    $db = null;
+    ?>
+
+    <section class=article-form id="contactez-nous">
+        <form action="process_contact.php" method="POST">
+            <b class=form-titre>Formulaire de contact</b>
+            <p class=form-sous-titre> Remplissez le formulaire ci-dessous<br>pour nous contacter </p>
+            <br>
+            <aside class=contact-image>
+                <img src="illustration_formulaire.jpg" alt="Image de contact" class=contact-img>
+            </aside>
+            <div class=form>
+                <label for=objet>Objet :</label><br>
+                <input id=objet name=objet><br>
+                <label for=nom>Nom :</label><br>
+                <input id=nom name=nom><br>
+                <label for=prenom>Prénom :</label><br>
+                <input id=prenom name=prenom><br>
+                <label for=email>Email :</label><br>
+                <input id=email name=email><br>
+                <label for=message>Message :</label><br>
+                <textarea id=message name=message></textarea><br>
+                <input type=submit value=Envoyer><br><br>
+            </div>
+        </form>
+
+    </section>
+
 
     <!-- // * FOOTER -->
     <footer>
