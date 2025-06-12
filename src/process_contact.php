@@ -1,6 +1,8 @@
 <?php
+
 // * Envoyer message dans base de donnée messages.db avec la table messages.sql
 // * Vérification de l'envoi du formulaire
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // * Connexion à la base de données
@@ -24,12 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<p>Erreur lors de l'envoi du message.</p>";
         }
 
+        //todo PENSER A MODIFIER AFIN QUE CELA SE CONNECT BIEN A LA BDD messages dans PgAdmin
+
         // * afficher la table messages
         $query = $db->query("SELECT * FROM messages");
         $messages = $query->fetchAll(PDO::FETCH_ASSOC);
-        print_r($messages);
+        // print_r($messages);
     } catch (PDOException $e) {
-        echo "Erreur de connexion : " . $e->getMessage();
+        // echo "Erreur de connexion : " . $e->getMessage();
     } finally {
         // * Fermeture de la connexion
         $db = null;
@@ -67,6 +71,7 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 </style>
 
@@ -78,6 +83,8 @@ img {
     <p>Nous avons bien reçu votre message et nous vous répondrons dans les plus brefs délais.</p>
 
     <image src="img/ob_aea8c1_thanks.gif" alt="Merci" style="width: 40%; height: auto;" />
+
+
 
     <!-- // * FOOTER -->
     <footer>
