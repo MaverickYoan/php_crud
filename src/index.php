@@ -31,7 +31,7 @@ require "disconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="src/img/favicon.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- TITRE -->
     <title>Home</title>
 </head>
