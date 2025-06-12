@@ -1,6 +1,6 @@
 // todo Envoyer message dans base de donnée messages.db avec la table messages_contact.sql
 <?php
-// * Envoyer message dans base de donnée messages.db avec la table messages_contact.sql
+// * Envoyer message dans base de donnée messages.db avec la table messages.sql
 // * Vérification de l'envoi du formulaire
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // * Connexion à la base de données
@@ -20,6 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<p>Erreur lors de l'envoi du message.</p>";
     }
+
+    // * afficher la table messages
+    print_r($messages);
+
     // * Fermeture de la connexion
     $db = null;
 }
