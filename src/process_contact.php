@@ -3,7 +3,7 @@
 // * Vérification de l'envoi du formulaire
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // * Connexion à la base de données
-    $db = new PDO('pgsql:messages.db');
+    $db = new PDO('pgsql:messages');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // * Préparation de la requête SQL
     $stmt = $db->prepare("INSERT INTO messages (objet, nom, prenom, email, message) VALUES (:objet, :nom, :prenom, :email, :message)");
