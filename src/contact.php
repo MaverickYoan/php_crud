@@ -79,9 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">Envoyer</button>
         </form>
     </main>
+
     <!-- Formulaire Section : Formulaire de contact -->
-
-
     <section class=article-form id="contactez-nous">
         <form action="process_contact.php" method="POST">
             <b class=form-titre>Formulaire de contact</b>
@@ -104,7 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type=submit value=Envoyer><br><br>
             </div>
         </form>
-
     </section>
 
 

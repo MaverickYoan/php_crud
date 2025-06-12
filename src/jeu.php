@@ -42,6 +42,7 @@ if (
     <?php
     // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
     if (isset($jeu) && !empty($jeu)):
+        if (isset($editeur) && !empty($editeur));
         // print_r($jeu);
     ?>
     <title>Page de <?= $jeu['jeu'] ?></title>
@@ -74,12 +75,14 @@ if (
 
     <!-- <img width="10%" src="0Jvtfvy.gif" alt="Gran turismo 2 sur playstation"> -->
     <br>
+
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Jeu</h1>
     <h1 style="border:1px solid black; width:fit-content"><?= $jeu['jeu'] ?></h1>
     <h1 style="border:1px solid black; width:fit-content"><?= $jeu['genre'] ?></h1>
     <h1 style="border:1px solid black; width:fit-content"><?= $jeu['annee'] ?></h1>
     <h1 style="border:1px solid black; width:fit-content"><?= $jeu['editeur_id'] ?></h1>
     <img src="img/liste" alt="" />
+
     <!-- <p>Jeu : Yo</p>
     <p>Nom : YDM</p> -->
 

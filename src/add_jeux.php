@@ -96,7 +96,7 @@ if ($_POST) {
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un jeu</b>
     </p>
 
-    <!-- post envoie en masquer un formulaire -->
+    <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
     <form method="post">
         <label for="jeu">Jeu</label>
         <input type="text" Name="jeu" id="jeu" required>
