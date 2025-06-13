@@ -64,55 +64,32 @@ require "disconnect.php";
         </nav>
     </header>
 
-    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Index</h1>
-    <p>créer table sql jeux</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL jeux</h1>
-
-    <!-- // * Table jeux -->
-    <table style="border:1px solid black;">
-        <!-- <pre> -->
-        <?php
-        // print_r($jeux)
-        ?>
-        <!-- </pre> -->
-        <thead style="border:1px solid black;">
-            <th style="border:1px solid black;">id</th>
-            <th style="border:1px solid black;">Jeu</th>
-            <th style="border:1px solid black;">Genre</th>
-            <th style="border:1px solid black;">Actions</th>
-        </thead>
-        <tbody style="border:1px solid black;">
-            <tr>
-                <td style="border:1px solid black;">123</td>
-                <td style="border:1px solid black;">grid</td>
-                <td style="border:1px solid black;">course</td>
-                <td style="border:1px solid black;">no action</td>
-            </tr>
-
-            <?php
-            foreach ($jeux as $jeu): ?>
-
-                <tr>
-                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
-            <?php endforeach ?>
-
-        </tbody>
-    </table>
-
-    <br>
-    <img width="10%" src="img/11919432.gif" alt="gif d'ajout d'un jeu vidéo">
-    <br>
-
-    <a href="./contact.php"><button>Contactez-nous</button></a>
+    <!-- partial:index.partial.html -->
+    <svg width="0" height="0">
+        <!-- default filter area is just 110% of element, enlarge-->
+        <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+            <!-- push all pixels with alpha < .5 to be fully transparent-->
+            <!-- and all others to be fully opaque-->
+            <feComponentTransfer>
+                <feFuncA type="discrete" tableValues="0 1"></feFuncA>
+            </feComponentTransfer>
+            <!-- use the tiniest px blur possible to get rid of edge jaggedness-->
+            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            <!-- get rid of edge blurriness -->
+            <!-- by reducing the number of semitransparent pixels-->
+            <!-- alphas in the [0, 1] interval get mapped to the [-2, 3] one-->
+            <!-- then values get clamped to [0, 1] anyway-->
+            <feComponentTransfer>
+                <feFuncA type="table" tableValues="-2 3"></feFuncA>
+            </feComponentTransfer>
+        </filter>
+    </svg>
+    <div class="goo">
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    <!-- partial -->
 
     <br><br>
 
