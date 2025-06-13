@@ -32,7 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (PDOException $e) {
         echo "Erreur de connexion : " . $e->getMessage();
-        // echo "Erreur de connexion : " . $e->getMessage();
     } finally {
         // * Fermeture de la connexion
         $messages = null;
@@ -43,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 20px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 </style>
 
 
@@ -80,14 +79,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </main>
 <script>
-    document.getElementById("hamburgerMenu").addEventListener("click", function() {
-        var navLinks = document.getElementById("navLinks");
-        if (navLinks.style.display === "block") {
-            navLinks.style.display = "none";
-        } else {
-            navLinks.style.display = "block";
-        }
-    });
+document.getElementById("hamburgerMenu").addEventListener("click", function() {
+    var navLinks = document.getElementById("navLinks");
+    if (navLinks.style.display === "block") {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "block";
+    }
+});
 </script>
 
 <!-- // * FOOTER -->

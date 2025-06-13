@@ -25,6 +25,7 @@ services:
     ports:
       - '5432:5432' #  incrémenter si le port est déjà utilisé par un autre projet
       # * sauvegarde_Docker_PostgreSQL en PLAINt.txt
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: crud_pgadmin_
