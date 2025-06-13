@@ -88,7 +88,7 @@ if ($_POST) {
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
-            <li><a href="/">Back to menu</a></li>
+            <li><a href="/">Back to index</a></li>
         </ul>
     </nav>
 

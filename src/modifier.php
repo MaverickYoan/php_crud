@@ -100,7 +100,7 @@ if (
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
-            <li><a href="/">Back to menu</a></li>
+            <li><a href="/">Back to index</a></li>
         </ul>
     </nav>
 

@@ -64,7 +64,6 @@ if ($_POST) {
 
 <body id="content">
 
-    <img width="10%" src="img/totoro.gif" alt="gif du pokemon Totoro">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -84,13 +83,13 @@ if ($_POST) {
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
             <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
-            <li><a href="/">Back to menu</a></li>
+            <li><a href="/">Back to index</a></li>
         </ul>
     </nav>
-    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="30%" src="img/w6a6775zvp661.gif" alt="gif d'un papillon noir et blanc">
 
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
-            stagiaire</b></p>
+            utilisateur</b></p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">

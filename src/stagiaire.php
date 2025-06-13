@@ -37,18 +37,17 @@ if (
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/stagiaire.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <!-- TITRE -->
     <?php
     // * enlever le isset est possible, !empty evite l'option "utilisateur qui entre une id inexistante dans la BDD", isset ne l'évite pas *
     if (isset($stagiaire) && !empty($stagiaire)):
         // print_r($stagiaire);
     ?>
-        <title>Page de <?= $stagiaire['first_name'] ?></title>
+    <title>Page de <?= $stagiaire['first_name'] ?></title>
 </head>
 
-<body
-    style="background-image: url(img/icon-256x256.gif); background-repeat: no-repeat; background-position: center; background-size: 20%;">
+<body id="content">
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
@@ -63,7 +62,7 @@ if (
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
-            <li><a href="/">Back to menu</a></li>
+            <li><a href="/">Back to index</a></li>
         </ul>
     </nav>
     <br>
@@ -86,25 +85,25 @@ if (
     <!-- <p>Prénom : Yo</p>
     <p>Nom : YDM</p> -->
 
-<?php
+    <?php
     else:
 ?>
 
     <p>user nok</p>
-    <a href="/">Back to menu</a>
+    <a href="/">Back to index</a>
 
-<?php
+    <?php
     endif;
 ?>
 
-<a href="./contact.php"><button>Contactez-nous</button></a>
+    <a href="./contact.php"><button>Contactez-nous</button></a>
 
-<!-- // * FOOTER -->
-<footer>
-    <div class="droits">
-        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
-    </div>
-</footer>
+    <!-- // * FOOTER -->
+    <footer>
+        <div class="droits">
+            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
+        </div>
+    </footer>
 
 </body>
 

@@ -64,12 +64,12 @@ require "disconnect.php";
                 <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
                 <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
                 <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
-                <li><a href="/">Back to menu</a></li>
+                <li><a href="/">Back to index</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">home</h1>
+    <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">INDEX</h1>
     <p>créer table sql jeux</p>
 
     <h1 style="color:green; font-size:14px;">TABLE SQL jeux</h1>

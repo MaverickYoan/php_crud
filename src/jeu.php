@@ -69,7 +69,7 @@ if (
 ?>
 
     <p>jeu non présent</p>
-    <a href="http://localhost:8000/home.php">Back to menu</a>
+    <a href="http://localhost:8000/home.php">Back to index</a>
 
 <?php
     endif;
@@ -89,7 +89,7 @@ if (
         <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
         <li><a class="links" href="http://localhost:8000/modifier.php">Modifier Jeux</a></li>
         <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
-        <li><a href="/">Back to menu</a></li>
+        <li><a href="/">Back to index</a></li>
     </ul>
 </nav>
 
