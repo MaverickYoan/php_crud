@@ -21,7 +21,7 @@ if (
     $query->execute();
 
     $stagiaire = $query->fetch();
-    print_r($stagiaire);
+    // print_r($stagiaire);
 
     require "disconnect.php";
 }
