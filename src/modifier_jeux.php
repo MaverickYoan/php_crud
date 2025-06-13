@@ -109,6 +109,58 @@ if (
         </ul>
     </nav>
 
+    <!-- * home section -->
+    <section class="home">
+        <!-- home / h1 / id home / img -->
+        <h1 id="home">GlobeTrotters</h1>
+    </section>
+
+    <!-- * animation plane -->
+
+    <style type="text/css">
+    .home {
+        background: url(/images/sky.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .sky {
+        position: absolute;
+        top: 10%;
+        right: 2px;
+        animation: sky 30s linear 0s infinite reverse;
+        z-index: 99;
+    }
+
+    .sky img {
+        width: 100px;
+    }
+
+    /* trajectoire de l'avion */
+    @keyframes sky {
+        from {
+            top: 300px;
+            right: -10px;
+        }
+
+        to {
+            top: 300px;
+            right: 100%;
+        }
+    }
+    </style>
+
+    <!-- * fond d'écran -->
+
+    <div class="sky">
+        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+    </div>
+
     <p style="border: 1px solid white; width: fit-content; background-color: green; color: white"><b>Modifier un
             jeu</b></p>
 
