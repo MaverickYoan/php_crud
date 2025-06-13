@@ -5,16 +5,17 @@ require_once "connect.php";
 // * $_POST (superglobale check si l'utilisateur à cliqué sur submit si le form est en method = $_POST)
 if ($_POST) {
     if (
-        !empty($_POST["first_name"])
-        && !empty($_POST["last_name"])
+        !empty($_POST["jeu"])
+        && !empty($_POST["genre"])
+        && !empty($_POST["annee"])
     ) {
         $id = filter_var($_POST["id"], FILTER_VALIDATE_INT);
-        $first_name = htmlspecialchars(strip_tags($_POST["first_name"]));
-        $last_name = htmlspecialchars(strip_tags($_POST["last_name"]));
-
-        // * Mise à jour des données first_name et/ou last_name
-        $sql = "UPDATE interns 
-        SET first_name = :first_name, last_name = :last_name 
+        $jeu = htmlspecialchars(strip_tags($_POST["jeu"]));
+        $genre = htmlspecialchars(strip_tags($_POST["genre"]));
+        $annee = htmlspecialchars(strip_tags($_POST["annee"]));
+        // * Mise à jour des données jeu, genre et annee
+        $sql = "UPDATE jeux
+        SET jeu = :jeu, genre = :genre, annee = :annee
         WHERE id=:id;";
 
         $query = $db->prepare($sql);
@@ -22,11 +23,14 @@ if ($_POST) {
         // * Rattacher les valeurs de bindValue id à la requête SQL
         $query->bindValue(":id", $id, PDO::PARAM_INT);
 
-        // * Rattacher les valeurs de bindValue first_name à la requête SQL
-        $query->bindValue(":first_name", $first_name, PDO::PARAM_STR);
+        // * Rattacher les valeurs de bindValue jeu à la requête SQL
+        $query->bindValue(":jeu", $jeu, PDO::PARAM_STR);
 
-        // * Rattacher les valeurs de bindValue last_name à la requête SQL
-        $query->bindValue(":last_name", $last_name, PDO::PARAM_STR);
+        // * Rattacher les valeurs de bindValue genre à la requête SQL
+        $query->bindValue(":genre", $genre, PDO::PARAM_STR);
+
+        // * Rattacher les valeurs de bindValue annee à la requête SQL
+        $query->bindValue(":annee", $annee, PDO::PARAM_INT);
 
         // * Exécution de la requête SQL
         $query->execute();
@@ -50,7 +54,7 @@ if (
     // print_r($id);
 
     // * sql SELECT 
-    $sql = "SELECT * FROM interns WHERE id = :id";
+    $sql = "SELECT * FROM jeux WHERE id = :id";
 
     // * préparation de la requête sql
     $query = $db->prepare($sql);
@@ -109,14 +113,16 @@ if (
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
-        <label for="first_name">Prénom</label>
+        <label for="jeu">Jeu</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ first_name -->
-        <input type="text" Name="first_name" id="first_name" value="<?= $stagiaire["first_name"] ?>" required> <br> <br>
-        <label for="last_name">Nom</label>
+        <input type="text" Name="jeu" id="jeu" value="<?= $jeu["jeu"] ?>" required> <br> <br>
+        <label for="genre">Genre</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ last_name -->
-        <input type="text" Name="last_name" id="last_name" value="<?= $stagiaire["last_name"] ?>" required> <br>
+        <input type="text" Name="genre" id="genre" value="<?= $jeu["genre"] ?>" required> <br>
+        <label for="annee">Année</label>
+        <input type="text" Name="annee" id="annee" value="<?= $jeu["annee"] ?>" required> <br>
         <!--// * Champ caché -->
-        <input type="hidden" name="id" value="<?= $stagiaire["id"] ?>"> <br>
+        <input type="hidden" name="id" value="<?= $jeu["id"] ?>"> <br>
         <input type="submit" value="Modifier"> <br> <br>
     </form>
 
