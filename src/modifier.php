@@ -69,9 +69,6 @@ if (
 
 ?>
 
-<!--  -->
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,9 +82,9 @@ if (
     <title>modif_php_crud</title>
 </head>
 
-<body style="background-image: url(img/tHi.gif); background-repeat: no-repeat;">
+<body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
 
-    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/tHi.gif" alt="gif d'ajout d'utilisateur">
 
     <!--  NAVBAR -->
     <nav class="navbar">
@@ -107,20 +104,20 @@ if (
         </ul>
     </nav>
 
-    <p style="border: 1px solid black; width: fit-content; background-color: yellow; color: black"><b>Modifier un
-            stagiaire</b></p>
+    <p style="border: 1px solid white; width: fit-content; background-color: green; color: white"><b>Modifier un
+            jeu</b></p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="first_name">Prénom</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ first_name -->
-        <input type="text" Name="first_name" id="first_name" value="<?= $stagiaire["first_name"] ?>" required>
+        <input type="text" Name="first_name" id="first_name" value="<?= $stagiaire["first_name"] ?>" required> <br> <br>
         <label for="last_name">Nom</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ last_name -->
-        <input type="text" Name="last_name" id="last_name" value="<?= $stagiaire["last_name"] ?>" required>
+        <input type="text" Name="last_name" id="last_name" value="<?= $stagiaire["last_name"] ?>" required> <br>
         <!--// * Champ caché -->
-        <input type="hidden" name="id" value="<?= $stagiaire["id"] ?>">
-        <input type="submit" value="Modifier">
+        <input type="hidden" name="id" value="<?= $stagiaire["id"] ?>"> <br>
+        <input type="submit" value="Modifier"> <br> <br>
     </form>
 
     <a href="./contact.php"><button>Contactez-nous</button></a>

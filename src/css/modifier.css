@@ -14,10 +14,13 @@
 
 body {
     width: 100%;
-    color: white;
+    height: 100vh;
+    display: flex;
+    /* color: white; */
+    color:black;
     font-family: Arial, sans-serif;
-    background-color: black;
-    /* background-color: white; */
+    /* background-color: black; */
+    background-color: white;
 }
 
 .navbar {
