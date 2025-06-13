@@ -38,7 +38,7 @@ require "disconnect.php";
 
 <!-- BODY -->
 
-<body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
+<body id="content" style="background-image: // * url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
 
     <!-- header -->
     <header>
@@ -93,16 +93,9 @@ require "disconnect.php";
 
     <br><br>
 
-    <hr />
-
     <div style="display: flex; justify-content:center;">
-        <?php echo "Merci d'être passé nous voir"; ?>
+        <?php echo "Merci d'passer nous voir"; ?>
     </div>
-
-    <hr>
-
-
-    <hr />
 
     <?php
 
