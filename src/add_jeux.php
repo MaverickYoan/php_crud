@@ -62,10 +62,9 @@ if ($_POST) {
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/add_jeux.css">
+    <link rel="stylesheet" href="css/addjeux.css">
 
-    <title>Gamers - Add_php_crud</title>
+    <title>Gamers - Ajouter Jeux</title>
 </head>
 
 <body>
@@ -94,7 +93,7 @@ if ($_POST) {
 
     <a href="./add.php"><button>Ajouter un jeu</button></a>
 
-    <img width="30%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br>
+    <img id="pacman" width="30%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br>
 
     <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
     <form id="form" method="post">
