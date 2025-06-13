@@ -88,19 +88,29 @@ if ($_POST) {
     </nav>
     <img width="30%" src="img/w6a6775zvp661.gif" alt="gif d'un papillon noir et blanc">
 
-    <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
-            utilisateur</b></p>
+    <section class="" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>Ajouter un utilisateur</h1>
+        <p>Remplissez le formulaire ci-dessous pour ajouter un nouvel utilisateur.</p>
+        <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
+                utilisateur</b></p>
 
-    <!-- post envoie en masquer un formulaire -->
-    <form method="post">
-        <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" id="first_name" required> <br> <br>
-        <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" id="last_name" required> <br> <br>
-        <input type="submit" value="Ajouter"> <br> <br>
-    </form>
+        <!-- post envoie en masquer un formulaire -->
+        <form method="post">
+            <label for="first_name">Prénom</label>
+            <input type="text" Name="first_name" id="first_name" required> <br> <br>
+            <label for="last_name">Nom</label>
+            <input type="text" Name="last_name" id="last_name" required> <br> <br>
+            <input type="submit" value="Ajouter"> <br> <br>
+        </form>
+        <br><br>
 
-    <a href="./contact.php"><button>Contactez-nous</button></a>
+        <p>Pour ajouter un nouveau jeu cliquez ci-dessous.</p>
+
+        <a href="./add_jeux.php"><button>Ajouter un jeu</button></a>
+        <br> <br>
+        <a href="./contact.php"><button>Contactez-nous</button></a>
+        <br>
+    </section>
 
     <!-- // * FOOTER -->
     <footer>

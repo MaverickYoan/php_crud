@@ -67,10 +67,12 @@ if ($_POST) {
     <title>Gamers - Ajouter Jeux</title>
 </head>
 
-<body>
+<body
+    style="background-image: url('img/tumblr_m04ufu1tXi1r8x1sko1_500.gif'); background-size: 50%; background-repeat: no-repeat;">
 
     <!-- NAVBAR -->
     <nav class="navbar">
+
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -90,23 +92,26 @@ if ($_POST) {
             <li><a href="/">Back to index</a></li>
         </ul>
     </nav>
+    <!-- <img id="pacman" width="100%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br> -->
 
-    <a href="./add.php"><button>Ajouter un jeu</button></a>
+    <section class=""
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 15rem;">
 
-    <img id="pacman" width="30%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br>
+        <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
+        <form id="form" method="post">
+            <label for="jeu">Jeu</label>
+            <input type="text" Name="jeu" id="jeu" required> <br> <br>
+            <label for="genre">Genre</label>
+            <input type="text" Name="genre" id="genre" required> <br> <br>
+            <label for="annee">Année</label>
+            <input type="text" Name="annee" id="annee" required> <br> <br>
+            <input type="submit" value="Ajouter">
+        </form>
 
-    <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
-    <form id="form" method="post">
-        <label for="jeu">Jeu</label>
-        <input type="text" Name="jeu" id="jeu" required> <br> <br>
-        <label for="genre">Genre</label>
-        <input type="text" Name="genre" id="genre" required> <br> <br>
-        <label for="annee">Année</label>
-        <input type="text" Name="annee" id="annee" required> <br> <br>
-        <input type="submit" value="Ajouter">
-    </form>
-
-    <a href="./contact.php"><button>Contactez-nous</button></a>
+        <br> <br>
+        <a href="./contact.php"><button>Contactez-nous</button></a>
+        <br>
+    </section>
 
     <!-- // * FOOTER -->
     <footer>
