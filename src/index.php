@@ -38,7 +38,7 @@ require "disconnect.php";
     <link rel="stylesheet" href="css/index.css">
     <!-- <link rel="stylesheet" href="css/test.css"> -->
     <!-- TITRE -->
-    <title>Gamers - Home</title>
+    <title>Gamers - Index</title>
 </head>
 
 <!-- BODY -->
@@ -98,16 +98,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-                <tr>
-                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
+            <tr>
+                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                <td style="border:1px solid black;">
+                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                </td>
+            </tr>
             <?php endforeach ?>
 
         </tbody>

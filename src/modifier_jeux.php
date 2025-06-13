@@ -81,15 +81,16 @@ if (
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modifier_jeux.css">
     <script type="text/javascript" src="script/script.js"></script>
 
     <title>Gamers - Modifier Jeu</title>
 </head>
 
-<body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
+<body id="content"
+    style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif); alt:'gif d'ajout d'un jeu vidéo';">
 
-    <img width="10%" src="img/tHi.gif" alt="gif d'ajout d'utilisateur">
+    <!-- <img width=" 10%" src="img/tHi.gif" alt="gif d'un oiseau qui vole"> -->
 
     <!--  NAVBAR -->
     <nav class="navbar">
@@ -118,8 +119,9 @@ if (
     <!-- * animation plane -->
 
     <style type="text/css">
-    .home {
-        background: url(/images/sky.jpg);
+    .home,
+    #home {
+        background: url(images/.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -137,15 +139,15 @@ if (
         width: 100px;
     }
 
-    /* trajectoire de l'avion */
+    /* trajectoire de l'oiseau */
     @keyframes sky {
         from {
-            top: 300px;
+            top: 50px;
             right: -10px;
         }
 
         to {
-            top: 300px;
+            top: 50px;
             right: 100%;
         }
     }
@@ -154,13 +156,12 @@ if (
     <!-- * fond d'écran -->
 
     <div class="sky">
-        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
-        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
-        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
-        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
+        <img src="img/tHi.gif" alt="Image d'un oiseau qui vole">
+        <img id="thirdBird" src="img/tHi.gif" alt="Image troisième oiseau qui vole">
+        <img id="secondBird" src="img/tHi.gif" alt="Image secondZ oiseau qui vole">
     </div>
 
-    <p style="border: 1px solid white; width: fit-content; background-color: green; color: white"><b>Modifier un
+    <p style=" border: 1px solid white; background-color: green; color: white"><b>Modifier un
             jeu</b></p>
 
     <!-- post envoie en masquer un formulaire -->

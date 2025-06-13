@@ -104,8 +104,9 @@ if (
         </ul>
     </nav>
 
-    <p style="border: 1px solid white; width: fit-content; background-color: green; color: white"><b>Modifier un
-            jeu</b></p>
+    <p style="border: 1px solid white; width: fit-content; background-color: green; color: white">
+        <b>Modifier un jeu</b>
+    </p>
 
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
