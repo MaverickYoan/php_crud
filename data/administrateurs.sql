@@ -6,5 +6,7 @@ CREATE TABLE administrateurs (
 );
 
 INSERT INTO administrateurs (first_name, last_name, email) VALUES
-('Yoan', 'De_Menezes', 'yoan.demenezes@gmail.com');
+('Yoan', 'De_Menezes', 'yoan.demenezes@gmail.com'),
+('test', 'test', 'test@gmail.com'),
 ('admin', 'user', 'admin@admin.com');
+

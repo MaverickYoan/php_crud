@@ -62,9 +62,9 @@ if ($_POST) {
     <title>Add_php_crud</title>
 </head>
 
-<body style="background-image: url(img/totoro.gif); background-repeat: no-repeat; background-position: right;">
+<body id="content">
 
-    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
+    <img width="10%" src="img/totoro.gif" alt="gif du pokemon Totoro">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -87,6 +87,7 @@ if ($_POST) {
             <li><a href="/">Back to menu</a></li>
         </ul>
     </nav>
+    <img width="10%" src="img/user-3-16403 (1).gif" alt="gif d'ajout d'utilisateur">
 
     <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
             stagiaire</b></p>
@@ -94,10 +95,10 @@ if ($_POST) {
     <!-- post envoie en masquer un formulaire -->
     <form method="post">
         <label for="first_name">Prénom</label>
-        <input type="text" Name="first_name" id="first_name" required>
+        <input type="text" Name="first_name" id="first_name" required> <br> <br>
         <label for="last_name">Nom</label>
-        <input type="text" Name="last_name" id="last_name" required>
-        <input type="submit" value="Ajouter">
+        <input type="text" Name="last_name" id="last_name" required> <br> <br>
+        <input type="submit" value="Ajouter"> <br> <br>
     </form>
 
     <a href="./contact.php"><button>Contactez-nous</button></a>

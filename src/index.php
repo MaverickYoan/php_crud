@@ -1,5 +1,9 @@
 <?php
-require_once "connect.php";
+require_once "connect.php"; // Assure-toi que ce fichier définit bien $db
+
+if (!isset($db) || !$db) {
+    die("Erreur de connexion à la base de données.");
+}
 
 // * sql SELECT
 $sql = "SELECT * FROM jeux";
