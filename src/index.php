@@ -38,7 +38,7 @@ require "disconnect.php";
     <link rel="stylesheet" href="css/index.css">
     <!-- <link rel="stylesheet" href="css/test.css"> -->
     <!-- TITRE -->
-    <title>Home</title>
+    <title>Gamers - Home</title>
 </head>
 
 <!-- BODY -->

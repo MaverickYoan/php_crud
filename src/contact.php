@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- <link rel="stylesheet" href="css/contact.css"> -->
     <script type="text/javascript" src="script/script.js"></script>
 
-    <title>Contact</title>
+    <title>Gamers - Contact</title>
 </head>
 
 <body>

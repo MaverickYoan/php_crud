@@ -81,10 +81,10 @@ if (
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
-    <link rel="stylesheet" href="css/modifier.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="script/script.js"></script>
 
-    <title>Modifier Un jeu</title>
+    <title>Gamers - Modifier Jeu</title>
 </head>
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
@@ -112,7 +112,7 @@ if (
     <!-- * home section -->
     <section class="home">
         <!-- home / h1 / id home / img -->
-        <h1 id="home">GlobeTrotters</h1>
+        <h1 id="home">Gamers</h1>
     </section>
 
     <!-- * animation plane -->
@@ -154,7 +154,6 @@ if (
     <!-- * fond d'écran -->
 
     <div class="sky">
-        <img src="img/tHi.gif" alt="Image d'un avion de ligne">
         <img src="img/tHi.gif" alt="Image d'un avion de ligne">
         <img src="img/tHi.gif" alt="Image d'un avion de ligne">
         <img src="img/tHi.gif" alt="Image d'un avion de ligne">

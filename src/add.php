@@ -59,7 +59,7 @@ if ($_POST) {
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Add_php_crud</title>
+    <title>Gamers - Add_php_crud</title>
 </head>
 
 <body id="content">

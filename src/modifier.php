@@ -79,7 +79,7 @@ if (
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <link rel="stylesheet" href="css/modifier.css">
 
-    <title>modif_php_crud</title>
+    <title>Gamers - modif_php_crud</title>
 </head>
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">

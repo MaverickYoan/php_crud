@@ -33,7 +33,7 @@ require "disconnect.php";
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <!-- TITRE -->
-    <title>Index_php_crud</title>
+    <title>Gamers - Index_php_crud</title>
 </head>
 
 <!-- BODY -->

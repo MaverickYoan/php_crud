@@ -65,7 +65,7 @@ if ($_POST) {
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/add_jeux.css">
 
-    <title>Add_php_crud</title>
+    <title>Gamers - Add_php_crud</title>
 </head>
 
 <body>

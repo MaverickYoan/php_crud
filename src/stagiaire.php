@@ -44,7 +44,7 @@ if (
     if (isset($stagiaire) && !empty($stagiaire)):
         // print_r($stagiaire);
     ?>
-    <title>Page de <?= $stagiaire['first_name'] ?></title>
+        <title>Gamers - Page de <?= $stagiaire['first_name'] ?></title>
 </head>
 
 <body id="content">
@@ -85,25 +85,25 @@ if (
     <!-- <p>Prénom : Yo</p>
     <p>Nom : YDM</p> -->
 
-    <?php
+<?php
     else:
 ?>
 
     <p>user nok</p>
     <a href="/">Back to index</a>
 
-    <?php
+<?php
     endif;
 ?>
 
-    <a href="./contact.php"><button>Contactez-nous</button></a>
+<a href="./contact.php"><button>Contactez-nous</button></a>
 
-    <!-- // * FOOTER -->
-    <footer>
-        <div class="droits">
-            <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
-        </div>
-    </footer>
+<!-- // * FOOTER -->
+<footer>
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | @onlineformapro</h6>
+    </div>
+</footer>
 
 </body>
 

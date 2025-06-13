@@ -13,29 +13,29 @@ if (!isset($_SESSION['username'])) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Espace Privé</title>
+    <title>Gamers - Espace Privé</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-    .container {
-        max-width: 600px;
-        margin: 80px auto;
-        padding: 30px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        text-align: center;
-    }
+        .container {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
 
-    a {
-        color: #0078d7;
-        text-decoration: none;
-    }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+        }
 
-    a:hover {
-        text-decoration: underline;
-    }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 

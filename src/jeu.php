@@ -45,7 +45,7 @@ if (
         if (isset($editeur) && !empty($editeur));
         // print_r($jeu);
     ?>
-        <title>Page de <?= $jeu['jeu'] ?></title>
+        <title>Gamers - Page de <?= $jeu['jeu'] ?></title>
 </head>
 
 <body id="content">
