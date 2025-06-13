@@ -38,7 +38,8 @@ require "disconnect.php";
 
 <!-- BODY -->
 
-<body id="content" style="background-image: // * url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
+<body id="content"
+    style="background-image: url(img/logoTeK2OuF.jpg); background-size: cover; background-attachment: fixed;">
 
     <!-- header -->
     <header>
