@@ -64,33 +64,6 @@ require "disconnect.php";
         </nav>
     </header>
 
-
-    <!-- partial:index.partial.html -->
-    <svg width="0" height="0">
-        <!-- default filter area is just 110% of element, enlarge-->
-        <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
-            <!-- push all pixels with alpha < .5 to be fully transparent-->
-            <!-- and all others to be fully opaque-->
-            <feComponentTransfer>
-                <feFuncA type="discrete" tableValues="0 1"></feFuncA>
-            </feComponentTransfer>
-            <!-- use the tiniest px blur possible to get rid of edge jaggedness-->
-            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-            <!-- get rid of edge blurriness -->
-            <!-- by reducing the number of semitransparent pixels-->
-            <!-- alphas in the [0, 1] interval get mapped to the [-2, 3] one-->
-            <!-- then values get clamped to [0, 1] anyway-->
-            <feComponentTransfer>
-                <feFuncA type="table" tableValues="-2 3"></feFuncA>
-            </feComponentTransfer>
-        </filter>
-    </svg>
-    <div class="goo">
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-    <!-- partial -->
-
     <br><br>
 
     <div style="display: flex; justify-content:center;">

@@ -7,10 +7,10 @@
     padding: 0;
 }
 
-/*  créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
+/*  créer des outlines sur tous les éléments de la page (permet un debuggage rapide) 
 * {
     border: 1px solid blue;
-}  */
+} */
 html, body, div {
     display: grid;
   }
@@ -35,6 +35,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     /* background-color: white; */
+    z-index: 1;
+
 }
 
 .navbar {
@@ -80,50 +82,6 @@ body {
 }
 
 
-  /* take SVG with zero dimnsions out of document flow */
-  svg[height="0"] {
-    position: fixed;
-  }
-  
-  .goo {
-    /* particles next to one another, not one underneath the other */
-    grid-auto-flow: column;
-    /* some space between them */
-    grid-gap: 4em;
-    /* put it in the middle of the single blody grid cell */
-    place-self: center;
-    filter: url(#goo);
-  }
-  
-  .particle {
-    --i: 0;
-    padding: 5em;
-    border-radius: 50%;
-    /* make them round, but you don't need to */
-    translate: -50%;
-    /* background depending on particle (index) 
-     * just some random numbers to compute to different hues */
-    background: hsl(calc(var(--i)*145 - 96), 85%, 75%);
-    font-size: clamp(.5em, 2.5vmin, 10em);
-    /* different blur value depending on particle */
-    /* this make all disappear if bigger than half the smallest 
-     * particle dimension, but other than that, anything goes */
-    /* blurring makes edge pixels semitransparent - this is very important */
-    filter: blur(calc((2 + var(--i))*1em));
-    /* animation so they alternate moving apart and moving closer together */
-    animation: t 4s ease-in-out calc(var(--i)*-4s) infinite alternate;
-    /* another index for second particle */
-  }
-  .particle:nth-child(2) {
-    --i: 1 ;
-  }
-  
-  @keyframes t {
-    to {
-      translate: 50%;
-    }
-  }
-
 
 @media (max-width: 768px) {
     .nav-links {
@@ -159,104 +117,5 @@ body {
         /* transform: rotate(-45deg) translate(5px, -5px); */
         transform: translateY(0px) rotate(135deg);
     }
-}
-
-/* BackToTop */
-/*_________________flèche retour en haut____________________*/
-/*  flèche retour en haut  */
-.back-to-top {
-    /*  Basic styling  */
-    background-color: green;
-    border: 2px solid currentColor;
-    border-radius: 0.5rem;
-    display: inline-block;
-    padding: 0.3rem;
-    /*  Hidden by default  */
-    position: fixed;
-    inset: auto 2rem 2rem auto;
-}
-
-/*  utiliser la couleur du texte  */
-.back-to-top:is(:link, :visited) {
-    color: currentColor;
-    text-decoration: none;
-}
-
-/*  masquer le texte retour en haut  */
-.back-to-top span {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-}
-
-/*  animation progression de couleur la flèche  */
-@keyframes progress {
-    0% {
-        --progress: 0%;
-    }
-
-    100% {
-        --progress: 100%;
-    }
-}
-
-/*  animation de la flèche  */
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-    animation: progress linear;
-    animation-timeline: scroll();
-}
-
-/*  rotation de la flèche  */
-.back-to-top svg {
-    transform: rotate(var(--angle));
-}
-
-/*  propriete de la progression de la fleche  */
-@property --progress {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 0%;
-}
-
-@property --angle {
-    syntax: '<angle>';
-    inherits: true;
-    initial-value: -90deg;
-}
-
-@keyframes progress {
-    0% {
-        --progress: 0%;
-        --angle: 90deg;
-    }
-
-    2% {
-        --angle: 90deg;
-
-    }
-
-    100% {
-        --progress: 100%;
-    }
-}
-
-@supports not (animation-timeline: scroll) {
-    .back-to-top {
-        background: var(--green);
-    }
-}
-
-@media(prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+  
 }
