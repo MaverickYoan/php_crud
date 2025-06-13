@@ -82,8 +82,9 @@ if (
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <link rel="stylesheet" href="css/modifier.css">
+    <script type="text/javascript" src="script/script.js"></script>
 
-    <title>modif_php_crud</title>
+    <title>Modifier Un jeu</title>
 </head>
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
