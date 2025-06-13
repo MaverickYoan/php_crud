@@ -92,8 +92,7 @@ if ($_POST) {
         </ul>
     </nav>
 
-    <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un jeu</b>
-    </p>
+    <a href="./add.php"><button>Ajouter un jeu</button></a>
 
     <img width="30%" src="img/tumblr_m04ufu1tXi1r8x1sko1_500.gif" alt="gif de PacMan"> <br> <br>
 
