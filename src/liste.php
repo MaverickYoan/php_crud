@@ -61,8 +61,6 @@ require "disconnect.php";
         </nav>
     </header>
 
-    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank">Wink Netlify WebbApp</a>
-
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Liste des jeux vidéos
     </h1>
     <p>table sql PgAdmin</p>

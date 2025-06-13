@@ -100,6 +100,10 @@ if (
     <br>
     <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank"> Netlify WebbApp</a>
 
+    <p>Sites perso</p>
+    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank">Wink Netlify WebbApp</a>
+    <a href="https://amazing-puppy-e2c060.netlify.app/" target="_blank">TeK2ouF - Gaming Underground Netlify WebbApp</a>
+
     <!-- // * FOOTER -->
     <footer>
         <div class=" droits">

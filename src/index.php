@@ -142,6 +142,10 @@ require "disconnect.php";
 
     <a href="./contact.php"><button>Contactez-nous</button></a>
 
+    <p>Sites perso</p>
+    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank">Wink Netlify WebbApp</a>
+    <a href="https://amazing-puppy-e2c060.netlify.app/" target="_blank">TeK2ouF - Gaming Underground Netlify WebbApp</a>
+
     <!-- Footer Section : Index du site -->
     <footer class=footer>
         <div class=logo>

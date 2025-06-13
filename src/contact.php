@@ -81,6 +81,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </nav>
 
     <main>
+        <p class="textBeforeFooter">Pour toute question, suggestion ou demande d'information, n'hésitez pas à nous
+            contacter via le formulaire ci-dessous.
+            Nous sommes là pour vous aider !</p>
+
         <form action="process_contact.php" method="POST">
             <label for="name">Nom:</label>
             <input type="text" id="name" name="name" required>
@@ -119,6 +123,72 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </form>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2>CONTACTS & LIENS</h2>
+            <div class="contact-links">
+                <div class="contact-link">
+                    <p>Facebook</p>
+                    <a href="https://www.facebook.com/maverick.bash">Maverick Yo</a>
+                </div>
+                <div class="contact-link">
+                    <p>YouTube</p>
+                    <a href="http://www.youtube.com/@TeK2OuF">TeK2OuF</a>
+                </div>
+                <div class="contact-link">
+                    <p>Soundcloud</p>
+                    <a href="https://soundcloud.com/yoan-de-menezes/sets/tek2ouf">TeK2OuF_00</a>
+                </div>
+                <div class="contact-link">
+                    <p>Soundcloud</p>
+                    <a href="https://soundcloud.com/tek2ouf">TeK2OuF_01</a>
+                </div>
+                <div class="contact-link">
+                    <p>Soundcloud</p>
+                    <a href="https://soundcloud.com/mav-yo">TeK2OuF_02</a>
+                </div>
+                <div class="contact-link">
+                    <p>Mixcloud</p>
+                    <a href="https://www.mixcloud.com/yo_t2osound6tm/">TeK2OuF</a>
+                </div>
+                <div class="contact-link">
+                    <p>Bandcamp</p>
+                    <a href="https://bandcamp.com/tek2ouf">TeK2OuF</a>
+                </div>
+                <div class="contact-link">
+                    <p>Bandcamp</p>
+                    <a href="https://artistsinaction.bandcamp.com/music">Artists In Action</a>
+                </div>
+                <div class="contact-link">
+                    <p>Site</p>
+                    <a href="http://www.technoplus.org/t,1/1071/qui-sommes-nous-?">TECHNO PLUS</a>
+                </div>
+                <div class="contact-link">
+                    <p>Site</p>
+                    <a href="http://freeform.fr/qui-sommes-nous/">Freeform.fr</a>
+                </div>
+                <div class="contact-link">
+                    <p>LinkedIn</p>
+                    <a href="http://www.keep-smiling.com/?p=238">KEEP SMILING</a>
+                </div>
+                <div class="contact-link">
+                    <p>Forum</p>
+                    <a href="http://sound-system-unity.forumactif.org">Sound System Unity</a>
+                </div>
+                <div class="contact-link">
+                    <p>Mail</p>
+                    <p>000tek2ouf000@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="beforeFooter">
+        <img class="imgLogo" src="a1698447057_16.jpg" alt="">
+    </div>
+
+    <p>Sites perso</p>
+    <a href="https://fabulous-platypus-fdb4a3.netlify.app" target="_blank">Wink Netlify WebbApp</a>
+    <a href="https://amazing-puppy-e2c060.netlify.app/" target="_blank">TeK2ouF - Gaming Underground Netlify WebbApp</a>
 
     <!-- // * FOOTER -->
     <footer>
