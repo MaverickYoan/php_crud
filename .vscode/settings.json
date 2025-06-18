@@ -120,5 +120,6 @@
     "editor.minimap.autohide": true,
     "editor.inlineSuggest.suppressSuggestions": true,
     "files.autoGuessEncoding": true,
-    "files.autoSaveWhenNoErrors": true
+    "files.autoSaveWhenNoErrors": true,
+    "github.copilot.nextEditSuggestions.enabled": true
 }
