@@ -1,12 +1,16 @@
-body {
-    background: linear-gradient(135deg, #0f0 0%, #222 100%);
-    animation: neonMove 10s infinite linear alternate;
-  }
-  @keyframes neonMove {
-    0% { filter: hue-rotate(0deg);}
-    100% { filter: hue-rotate(90deg);}
-  }
-  
+index.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catalogue Neon Gaming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- css 2. style.css -->
+
+<style>
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
@@ -136,3 +140,86 @@ footer {
   pointer-events: none;
   z-index: 0;
 }
+</style>
+
+
+
+<body>
+  <canvas id="particles"></canvas>
+  <nav>
+    <h1 class="neon-glow">Neon Game Catalog</h1>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Catalogue</a></li>
+      <li><a href="#">Genres</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h2 class="glitch">Bienvenue dans le futur du gaming</h2>
+    <button class="cta-neon">Découvrir</button>
+  </header>
+  <main class="catalogue">
+    <div class="game-card neon-glow">
+      <img src="game1.jpg" alt="Cyber Shooter">
+      <h3>Cyber Shooter</h3>
+      <p>FPS - Cyberpunk</p>
+    </div>
+    <div class="game-card neon-glow">
+      <img src="game2.jpg" alt="Neon Drift">
+      <h3>Neon Drift</h3>
+      <p>Racing - Synthwave</p>
+    </div>
+    <!-- Tu peux ajouter plus de jeux ici -->
+  </main>
+  <footer>
+    <p>&copy; 2025 Neon Game Catalog</p>
+  </footer>
+  <script src="script.js"></script>
+
+
+<!-- 3. script.js -->
+<script>
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+for (let i = 0; i < 60; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2 + 1,
+    dx: (Math.random() - 0.5) * 0.5,
+    dy: (Math.random() - 0.5) * 0.5,
+    color: `rgba(57,255,20,${Math.random() * 0.8 + 0.2})`
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let p of particles) {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, 2 * Math.PI);
+    ctx.fillStyle = p.color;
+    ctx.shadowColor = '#39ff14';
+    ctx.shadowBlur = 15;
+    ctx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  }
+  requestAnimationFrame(animate);
+}
+animate();
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
+
+
+</body>
+</html>

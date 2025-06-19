@@ -31,7 +31,7 @@ require "disconnect.php";
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/test.css">
     <!-- TITRE -->
     <title>Gamers - Home</title>
 </head>

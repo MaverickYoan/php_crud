@@ -1,0 +1,30 @@
+
+
+
+
+
+
+/video_game_catalog/
+│
+├── docker-compose.yml
+├── Dockerfile
+└── src/
+    └── index.php
+
+
+
+/video_game_catalog/
+│
+├── docker-compose.yml
+├── Dockerfile
+└── src/
+    ├── auth.php          # Page d'inscription et d'authentification
+    ├── admin.php          # Page d'administration
+    ├── index.php          # Page d'accueil
+    ├── catalogue.php      # Page du catalogue
+    ├── contact.php        # Page de contact
+    ├── add_game.php       # Page d'ajout de jeu
+    ├── db.php             # Script pour la connexion à la base de données
+    ├── upload/            # Dossier pour stocker les images téléchargées
+    │   └── (images)     
+    └── style.css          # Fichier CSS pour le style
