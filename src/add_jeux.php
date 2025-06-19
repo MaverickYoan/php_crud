@@ -63,12 +63,12 @@ if ($_POST) {
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
     <script type="text/javascript" src="script/script.js"></script>
     <link rel="stylesheet" href="css/test.css">
-
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
     <title>Gamers - Ajouter Jeux</title>
 </head>
 
-<body
-    style="background-image: url('img/tumblr_m04ufu1tXi1r8x1sko1_500.gif'); background-size: 50%; background-repeat: no-repeat;">
+<body id="content">
+    <!-- style="background-image: url('img/tumblr_m04ufu1tXi1r8x1sko1_500.gif'); background-size: 50%; background-repeat: no-repeat;"> -->
 
     <!-- NAVBAR -->
     <nav class="navbar">

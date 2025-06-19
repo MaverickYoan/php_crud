@@ -150,7 +150,7 @@ require "disconnect.php";
     <footer class=footer>
         <div class=logo>
             <a>
-                <img src=logo_jadoo_2bis.svg alt="titre jadoo" class=logo2bis href=https://jadoo.store/#>
+                <img src=logo_jadoo_2bis.svg alt="titre jadoo" class=logo2bis href="./liste.php">
             </a>
             <img src=logo_jadoo_1bis.svg alt="icone sushi jadoo" class=logo1bis>
             <br>
@@ -225,7 +225,5 @@ require "disconnect.php";
         <path d="M5 12h14" />
         <path d="m12 5 7 7-7 7" />
     </svg>
-    <!-- Script Section : Script pour activer le menu mobile -->
-    <script src="script.js"></script>
 
 </html>
