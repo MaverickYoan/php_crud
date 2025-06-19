@@ -1,3 +1,7 @@
+image_path en local ici : C:\Users\tek2o\Documents\php_crud-1\src\img 
+
+à ajouter dans cette bdd sql s'il te plai 
+
 id	jeu	genre	annee	editeur_id	Actions
 3	Gran Turismo	Course	1997	14	no action
 1	The Legend of Zelda: Breath of the Wild	Action-aventure	2017	1	Voir Modifier Supprimer
