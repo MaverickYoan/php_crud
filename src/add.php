@@ -63,8 +63,6 @@ if ($_POST) {
 </head>
 
 <body id="content">
-
-
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
@@ -73,20 +71,20 @@ if ($_POST) {
             <div class="bar"></div>
         </div>
         <ul style="font-size: 1rem;" class="nav-links" id="navLinks">
-            <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
             <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
             <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
+            <li><a class="links" href="http://localhost:8000/liste_avec_images.php">Liste Avec Images</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
             <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/modifier_jeux.php">Modifier Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
             <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
-            <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
-            <li><a href="/">Back to index</a></li>
+            <li><a class="links" href="http://localhost:8000/espace_prive.php">espace_prive</a></li>
         </ul>
     </nav>
-    <img width="30%" src="img/w6a6775zvp661.gif" alt="gif d'un papillon noir et blanc">
+    </div>
+    <img width="30%" src="img/w6a6775zvp661.gif" alt="gif d'un papillon noir et blanc" />
 
     <section class="" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <h1>Ajouter un utilisateur</h1>
@@ -94,7 +92,7 @@ if ($_POST) {
         <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
                 utilisateur</b></p>
 
-        <!-- post envoie en masquer un formulaire -->
+        post envoie en masquer un formulaire -->
         <form method="post">
             <label for="first_name">Prénom</label>
             <input type="text" Name="first_name" id="first_name" required> <br> <br>

@@ -40,26 +40,29 @@ require "disconnect.php";
 <!-- BODY  style="background-image: url(b3b48a35785465ed53f20d332f191a5c.gif);-->
 
 <body id="content">
-    <header>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul style="font-size: 1rem;" class="nav-links" id="navLinks">
+            <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
+            <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
+            <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
+            <li><a class="links" href="http://localhost:8000/liste_avec_images.php">Liste Avec Images</a></li>
+            <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
+            <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
+            <li><a class="links" href="http://localhost:8000/modifier_jeux.php">Modifier Jeux</a></li>
+            <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
+            <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
+            <li><a class="links" href="http://localhost:8000/espace_prive.php">espace_prive</a></li>
+        </ul>
+    </nav>
+    </div>
+    <li><a href="/">Back to index</a></li>
 
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
-                <li><a class="links" href="http://localhost:8000/index.php">index</a></li>
-                <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
-                <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-                <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
-                <li><a class="links" href="http://localhost:8000/modifier.php">Modifier User</a></li>
-                <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer User</a></li>
-                <li><a href="/">Back to index</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Liste des jeux vidéos
     </h1>
@@ -99,18 +102,18 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-                <tr>
-                    <td style="border:1px solid white;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid white;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid white;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid white;"><?= $jeu['annee'] ?> </td>
-                    <td style="border:1px solid white;"><?= $jeu['editeur_id'] ?> </td>
-                    <td style="border:1px solid white;">
-                        <a id="link" style="border:1px solid white;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a id="link" style="border:1px solid white;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a id="link" style="border:1px solid white;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
+            <tr>
+                <td style="border:1px solid white;"><?= $jeu['id'] ?> </td>
+                <td style="border:1px solid white;"><?= $jeu['jeu'] ?> </td>
+                <td style="border:1px solid white;"><?= $jeu['genre'] ?> </td>
+                <td style="border:1px solid white;"><?= $jeu['annee'] ?> </td>
+                <td style="border:1px solid white;"><?= $jeu['editeur_id'] ?> </td>
+                <td style="border:1px solid white;">
+                    <a id="link" style="border:1px solid white;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                    <a id="link" style="border:1px solid white;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                    <a id="link" style="border:1px solid white;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                </td>
+            </tr>
             <?php endforeach ?>
 
         </tbody>
