@@ -1,0 +1,59 @@
+"id","jeu","genre","annee","editeur_id","image_path","image_path_url"
+1,"The Legend of Zelda: Breath of the Wild","Action-aventure",2017,1,"images/the_legend_of_zelda_breath_of_the_wild.jpg","https://monserveur.com/images/the_legend_of_zelda_breath_of_the_wild.jpg"
+2,"Cyberpunk 2077","RPG",2020,2,"images/cyberpunk_2077.jpg","https://monserveur.com/images/cyberpunk_2077.jpg"
+3,"Hollow Knight","Metroidvania",2017,3,"images/hollow_knight.jpg","https://monserveur.com/images/hollow_knight.jpg"
+4,"Half-Life 2","FPS",2004,4,"images/half_life_2.jpg","https://monserveur.com/images/half_life_2.jpg"
+5,"Red Dead Redemption 2","Action",2018,5,"images/red_dead_redemption_2.jpg","https://monserveur.com/images/red_dead_redemption_2.jpg"
+6,"Dark Souls III","Action-RPG",2016,6,"images/dark_souls_iii.jpg","https://monserveur.com/images/dark_souls_iii.jpg"
+7,"Elden Ring","Action-RPG",2022,6,"images/elden_ring.jpg","https://monserveur.com/images/elden_ring.jpg"
+8,"The Witcher 3: Wild Hunt","RPG",2015,2,"images/the_witcher_3_wild_hunt.jpg","https://monserveur.com/images/the_witcher_3_wild_hunt.jpg"
+9,"Grand Theft Auto V","Action",2013,7,"images/grand_theft_auto_v.jpg","https://monserveur.com/images/grand_theft_auto_v.jpg"
+10,"Resident Evil 4","Survival Horror",2005,8,"images/resident_evil_4.jpg","https://monserveur.com/images/resident_evil_4.jpg"
+11,"Super Mario Odyssey","Plateforme",2017,1,"images/super_mario_odyssey.jpg","https://monserveur.com/images/super_mario_odyssey.jpg"
+12,"Celeste","Plateforme",2018,9,"images/celeste.jpg","https://monserveur.com/images/celeste.jpg"
+13,"Doom Eternal","FPS",2020,10,"images/doom_eternal.jpg","https://monserveur.com/images/doom_eternal.jpg"
+14,"Sekiro: Shadows Die Twice","Action",2019,6,"images/sekiro_shadows_die_twice.jpg","https://monserveur.com/images/sekiro_shadows_die_twice.jpg"
+15,"Monster Hunter World","Action-RPG",2018,11,"images/monster_hunter_world.jpg","https://monserveur.com/images/monster_hunter_world.jpg"
+16,"Divinity: Original Sin 2","RPG",2017,12,"images/divinity_original_sin_2.jpg","https://monserveur.com/images/divinity_original_sin_2.jpg"
+17,"Stardew Valley","Simulation",2016,13,"images/stardew_valley.jpg","https://monserveur.com/images/stardew_valley.jpg"
+18,"Minecraft","Sandbox",2011,14,"images/minecraft.jpg","https://monserveur.com/images/minecraft.jpg"
+19,"The Last of Us Part II","Action",2020,15,"images/the_last_of_us_part_ii.jpg","https://monserveur.com/images/the_last_of_us_part_ii.jpg"
+20,"Uncharted 4: A Thief`s End","Action-aventure",2016,15,"images/uncharted_4_a_thiefs_end.jpg","https://monserveur.com/images/uncharted_4_a_thiefs_end.jpg"
+21,"Persona 5","RPG",2016,16,"images/persona_5.jpg","https://monserveur.com/images/persona_5.jpg"
+22,"Bloodborne","Action-RPG",2015,6,"images/bloodborne.jpg","https://monserveur.com/images/bloodborne.jpg"
+23,"God of War","Action",2018,15,"images/god_of_war.jpg","https://monserveur.com/images/god_of_war.jpg"
+24,"Metroid Dread","Metroidvania",2021,1,"images/metroid_dread.jpg","https://monserveur.com/images/metroid_dread.jpg"
+25,"Cuphead","Plateforme",2017,17,"images/cuphead.jpg","https://monserveur.com/images/cuphead.jpg"
+26,"Terraria","Sandbox",2011,18,"images/terraria.jpg","https://monserveur.com/images/terraria.jpg"
+27,"Hades","Rogue-like",2020,19,"images/hades.jpg","https://monserveur.com/images/hades.jpg"
+28,"Slay the Spire","Cartes/Rogue-like",2017,20,"images/slay_the_spire.jpg","https://monserveur.com/images/slay_the_spire.jpg"
+29,"Halo Infinite","FPS",2021,21,"images/halo_infinite.jpg","https://monserveur.com/images/halo_infinite.jpg"
+30,"Forza Horizon 5","Course",2021,22,"images/forza_horizon_5.jpg","https://monserveur.com/images/forza_horizon_5.jpg"
+31,"Age of Empires IV","Stratégie",2021,23,NULL,NULL
+32,"Sid Meier`s Civilization VI","Stratégie",2016,24,NULL,NULL
+33,"XCOM 2","Stratégie",2016,25,NULL,NULL
+34,"Overwatch 2","FPS",2022,26,NULL,NULL
+35,"League of Legends","MOBA",2009,27,NULL,NULL
+36,"Valorant","FPS",2020,27,NULL,NULL
+37,"Fortnite","Battle Royale",2017,28,NULL,NULL
+38,"Apex Legends","Battle Royale",2019,29,NULL,NULL
+39,"Dead Cells","Metroidvania/Rogue-like",2018,30,NULL,NULL
+40,"Hollow Knight: Silksong","Metroidvania",2024,3,NULL,NULL
+41,"No Man`s Sky","Exploration",2016,31,NULL,NULL
+42,"Destiny 2","FPS/MMO",2017,32,NULL,NULL
+43,"World of Warcraft","MMORPG",2004,33,NULL,NULL
+44,"Final Fantasy XIV","MMORPG",2010,31,NULL,NULL
+45,"Genshin Impact","Action-RPG",2020,31,NULL,NULL
+46,"Pokémon Legends: Arceus","RPG",2022,1,NULL,NULL
+47,"Fire Emblem: Three Houses","RPG/Stratégie",2019,1,NULL,NULL
+48,"Horizon Forbidden West","Action-aventure",2022,15,NULL,NULL
+49,"Death Stranding","Aventure",2019,33,NULL,NULL
+50,"Metal Gear Solid V: The Phantom Pain","Action-aventure",2015,31,NULL,NULL
+51,"NieR: Automata","Action-RPG",2017,31,NULL,NULL
+52,"Dragon Quest XI","RPG",2017,31,NULL,NULL
+53,"Persona 4 Golden","RPG",2012,16,NULL,NULL
+54,"Monster Hunter Rise","Action-RPG",2021,11,NULL,NULL
+55,"Ghost of Tsushima","Action-aventure",2020,15,NULL,NULL
+56,"Returnal","Rogue-like/Action",2021,31,NULL,NULL
+57,"Ratchet & Clank: Rift Apart","Action-aventure",2021,15,NULL,NULL
+67,"Test Game","RPG",2025,1,"images/test_game.jpg","https://monserveur.com/images/test_game.jpg"
