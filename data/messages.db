@@ -1,0 +1,6 @@
+-- Place only SQL statements here, for example:
+-- CREATE TABLE messages (
+--   id INTEGER PRIMARY KEY AUTOINCREMENT,
+--   content TEXT NOT NULL,
+--   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+-- );
