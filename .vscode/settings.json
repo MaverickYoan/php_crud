@@ -129,7 +129,7 @@
     "editor.autoClosingOvertype": "always",
     "editor.autoClosingQuotes": "always",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.defaultFormatter": "rifi2k.format-html-in-php",
+    "editor.defaultFormatter": null,
     "editor.stickyTabStops": false,
     "editor.stablePeek": true,
     "editor.showFoldingControls": "always",

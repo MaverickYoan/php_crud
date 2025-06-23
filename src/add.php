@@ -92,7 +92,7 @@ if ($_POST) {
         <p style="border: 1px solid black; width: fit-content; background-color: green; color: white"><b>Ajouter un
                 utilisateur</b></p>
 
-        post envoie en masquer un formulaire -->
+        <!-- post envoie en masquer un formulaire -->
         <form method="post">
             <label for="first_name">Prénom</label>
             <input type="text" Name="first_name" id="first_name" required> <br> <br>

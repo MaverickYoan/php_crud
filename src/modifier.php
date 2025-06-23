@@ -108,7 +108,7 @@ if (
         <b>Modifier un jeu</b>
     </p>
 
-    <!-- post envoie en masquer un formulaire -->
+    //* post envoie en masquer un formulaire -->
     <form method="post">
         <label for="first_name">Prénom</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ first_name -->

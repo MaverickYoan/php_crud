@@ -96,7 +96,6 @@ if ($_POST) {
     <section class=""
         style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 15rem;">
 
-        <!-- post envoie en masquer un formulaire pour ajouter un jeu -->
         <form id="form" method="post">
             <label for="jeu">Jeu</label>
             <input type="text" Name="jeu" id="jeu" required> <br> <br>

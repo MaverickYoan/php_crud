@@ -126,38 +126,38 @@ if (
     <!-- * animation plane -->
 
     <style type="text/css">
-    .home,
-    #home {
-        background: url(images/.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-
-    .sky {
-        position: absolute;
-        top: 10%;
-        right: 2px;
-        animation: sky 30s linear 0s infinite reverse;
-        z-index: 99;
-    }
-
-    .sky img {
-        width: 100px;
-    }
-
-    /* trajectoire de l'oiseau */
-    @keyframes sky {
-        from {
-            top: 50px;
-            right: -10px;
+        .home,
+        #home {
+            background: url(images/.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
         }
 
-        to {
-            top: 50px;
-            right: 100%;
+        .sky {
+            position: absolute;
+            top: 10%;
+            right: 2px;
+            animation: sky 30s linear 0s infinite reverse;
+            z-index: 99;
         }
-    }
+
+        .sky img {
+            width: 100px;
+        }
+
+        /* trajectoire de l'oiseau */
+        @keyframes sky {
+            from {
+                top: 50px;
+                right: -10px;
+            }
+
+            to {
+                top: 50px;
+                right: 100%;
+            }
+        }
     </style>
 
     <!-- * fond d'écran -->
@@ -171,7 +171,7 @@ if (
     <p style=" border: 1px solid white; background-color: green; color: white"><b>Modifier un
             jeu</b></p>
 
-    <!-- post envoie en masquer un formulaire -->
+    //* post envoie en masquer un formulaire -->
     <form method="post">
         <label for="jeu">Jeu</label>
         <!--// * Nous insérons la valeur du prénom du stagiaire dans le champ first_name -->
