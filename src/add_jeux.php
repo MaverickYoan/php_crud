@@ -6,10 +6,14 @@ if ($_POST) {
         isset($_POST["jeu"])
         && isset($_POST["genre"])
         && isset($_POST["annee"])
+        && isset($_POST["image_path"])
+        && isset($_POST["image_path_url"])
         // * isset : est present même si vide; !empty oblige à inserer du contenu
         && !empty($_POST["jeu"])
         && !empty($_POST["genre"])
         && !empty($_POST["annee"])
+        && !empty($_POST["image_path"])
+        && !empty($_POST["image_path_url"])
     ) {
         // print_r(value: $_POST);
 
@@ -17,11 +21,13 @@ if ($_POST) {
         $jeu = strip_tags($_POST["jeu"]);
         $genre = strip_tags($_POST["genre"]);
         $annee = strip_tags($_POST["annee"]);
+        $image_path = strip_tags($_POST["image_path"]);
+        $image_path_url = strip_tags($_POST["image_path_url"]);
         // * Check si connexion réussie
         require_once "connect.php";
 
         // * Requête SQL pour ajouter des données (finir le commentaire)
-        $sql = "INSERT INTO jeux (jeu, genre, annee) VALUES (:jeu, :genre, :annee);";
+        $sql = "INSERT INTO jeux (jeu, genre, annee, image_path, image_path_url) VALUES (:jeu, :genre, :annee, :image_path, :image_path_url);";
 
         // * préparation de la base de données SQL
         $query = $db->prepare($sql);
@@ -34,6 +40,8 @@ if ($_POST) {
 
         // * Rattacher les valeurs de bindValue annee à la requête SQL
         $query->bindValue(":annee", $annee, PDO::PARAM_STR);
+        $query->bindValue(":image_path", $image_path, PDO::PARAM_STR);
+        $query->bindValue(":image_path_url", $image_path_url, PDO::PARAM_STR);
 
         // * Exécution de la requête SQL
         $query->execute();
@@ -103,6 +111,16 @@ if ($_POST) {
             <input type="text" Name="genre" id="genre" required> <br> <br>
             <label for="annee">Année</label>
             <input type="text" Name="annee" id="annee" required> <br> <br>
+            <label for="editeur_id">Éditeur ID</label>
+            <input type="text" Name="editeur_id" id="editeur_id" required> <br> <br>
+            <label for="image_path">Image Path</label>
+            <input type="text" Name="image_path" id="image_path"> <br> <br>
+            <label for="image_path_url">Image URL</label>
+            <input type="text" Name="image_path_url" id="image_path_url"> <br> <br>
+            <!-- <label for="video">Video</label>
+            <input type="text" Name="video" id="video"> <br> <br>
+            <label for="description">Description</label>
+            <textarea Name="description" id="description"></textarea> <br> <br> -->
             <input type="submit" value="Ajouter">
         </form>
 

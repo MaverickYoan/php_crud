@@ -9,7 +9,7 @@ CREATE TABLE jeux (
 );
 
 INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('The Legend of Zelda: Breath of the Wild', 'Action-aventure', 2017, 1, "images/the_legend_of_zelda_breath_of_the_wild.jpg","https://monserveur.com/images/the_legend_of_zelda_breath_of_the_wild.jpg"),
+('The Legend of Zelda: Breath of the Wild', 'Action-aventure', 2017, 1, 'mages/the_legend_of_zelda_breath_of_the_wild.jpg', 'https://monserveur.com/images/the_legend_of_zelda_breath_of_the_wild.jpg'),
 ('Cyberpunk 2077', 'RPG', 2020, 2),
 ('Hollow Knight', 'Metroidvania', 2017, 3),
 ('Half-Life 2', 'FPS', 2004, 4),
