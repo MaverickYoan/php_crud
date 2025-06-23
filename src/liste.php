@@ -66,9 +66,8 @@ require "disconnect.php";
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">Liste des jeux vidéos
     </h1>
-    <p>table sql PgAdmin</p>
 
-    <h1 style="color:green; font-size:14px;">TABLE SQL jeux</h1>
+    <h1 style="color:green; font-size:14px;">TABLE SQL PgAdmin jeux</h1>
 
     <!-- <div class="test">
         <p>ljsinsinjpvj,ô,ô,qô,ô,^,z</p>
@@ -102,18 +101,18 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-            <tr>
-                <td style="border:1px solid white;"><?= $jeu['id'] ?> </td>
-                <td style="border:1px solid white;"><?= $jeu['jeu'] ?> </td>
-                <td style="border:1px solid white;"><?= $jeu['genre'] ?> </td>
-                <td style="border:1px solid white;"><?= $jeu['annee'] ?> </td>
-                <td style="border:1px solid white;"><?= $jeu['editeur_id'] ?> </td>
-                <td style="border:1px solid white;">
-                    <a id="link" style="border:1px solid white;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                    <a id="link" style="border:1px solid white;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                    <a id="link" style="border:1px solid white;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                </td>
-            </tr>
+                <tr>
+                    <td style="border:1px solid white;"><?= $jeu['id'] ?> </td>
+                    <td style="border:1px solid white;"><?= $jeu['jeu'] ?> </td>
+                    <td style="border:1px solid white;"><?= $jeu['genre'] ?> </td>
+                    <td style="border:1px solid white;"><?= $jeu['annee'] ?> </td>
+                    <td style="border:1px solid white;"><?= $jeu['editeur_id'] ?> </td>
+                    <td style="border:1px solid white;">
+                        <a id="link" style="border:1px solid white;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                        <a id="link" style="border:1px solid white;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                        <a id="link" style="border:1px solid white;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                    </td>
+                </tr>
             <?php endforeach ?>
 
         </tbody>
