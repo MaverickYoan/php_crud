@@ -37,4 +37,5 @@ INSERT INTO editeurs (nom, pays) VALUES
 ('Bungie', 'États-Unis'),
 ('Square Enix', 'Japon'),
 ('miHoYo', 'Chine'),
-('Kojima Productions', 'Japon');
+('Kojima Productions', 'Japon'),
+('Codemaster', 'Royaume-Unis');

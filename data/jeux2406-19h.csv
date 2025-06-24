@@ -1,0 +1,5 @@
+"id","jeu","genre","annee","editeur_id","image_path","image_path_url"
+1,"The Legend of Zelda: Breath of the Wild","Action-aventure",2017,1,"images/the_legend_of_zelda_breath_of_the_wild.jpg","https://monserveur.com/images/the_legend_of_zelda_breath_of_the_wild.jpg"
+2,"Resident Evil","RPG",1996,NULL,"C:\Users\tek2o\Documents\php_crud-1\src\img\jeux","https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Resident_Evil_logo.svg/langfr-250px-The_Resident_Evil_logo.svg.png"
+3,"Resident Evil","RPG",1996,NULL,"C:\Users\tek2o\Documents\php_crud-1\src\img\jeux","https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Resident_Evil_logo.svg/langfr-250px-The_Resident_Evil_logo.svg.png"
+4,"Resident Evil","RPG",1996,NULL,"C:\Users\tek2o\Documents\php_crud-1\src\img\jeux","https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Resident_Evil_logo.svg/langfr-250px-The_Resident_Evil_logo.svg.png"
