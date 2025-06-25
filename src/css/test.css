@@ -139,3 +139,63 @@ footer {
   pointer-events: none;
   z-index: 0;
 }
+
+
+/* ___________________________Animation oiseaux */
+
+p {
+  height: 10%;
+  width: fit-content;
+}
+
+/* troisième oiseau modifie sa trajectoire */
+#thirdBird {
+  transform: translateY(70%);
+  transform: translateX(120%);
+
+}
+
+#thirdBird {
+  position: absolute;
+  top: 10%;
+  right: 2px;
+  animation: sky 30s linear 0s infinite reverse;
+  z-index: 99;
+}
+
+#thirdBird img {
+  width: 110px;
+}
+
+#secondBird {
+  position: absolute;
+  top: 10%;
+  right: 2px;
+  animation: sky 30s linear 0s infinite reverse;
+  z-index: 99;
+}
+
+#secondBird img {
+  width: 50px;
+}
+
+#secondBird {
+  position: absolute;
+  top: 10%;
+  right: 2px;
+  animation: second 30s linear 0s infinite reverse;
+  z-index: 99;
+}
+
+  /* trajectoire de l'oiseau */
+  @keyframes second {
+      from {
+          top: 30px;
+          right: -50px;
+      }
+
+      to {
+          top: 300px;
+          right: 100%;
+      }
+  }

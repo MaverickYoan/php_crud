@@ -45,6 +45,58 @@ require "disconnect.php";
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
 
+
+    <!-- * home section -->
+    <section class="home">
+        <!-- home / h1 / id home / img -->
+        <h1 id="home">Gamers</h1>
+    </section>
+
+    <!-- * animation plane -->
+
+    <style type="text/css">
+    .home,
+    #home {
+        background: url(images/.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .sky {
+        position: absolute;
+        top: 10%;
+        right: 2px;
+        animation: sky 30s linear 0s infinite reverse;
+        z-index: 99;
+    }
+
+    .sky img {
+        width: 100px;
+    }
+
+    /* trajectoire de l'oiseau */
+    @keyframes sky {
+        from {
+            top: 50px;
+            right: -10px;
+        }
+
+        to {
+            top: 50px;
+            right: 100%;
+        }
+    }
+    </style>
+
+    <!-- * fond d'écran -->
+
+    <div class="sky">
+        <img src="img/tHi.gif" alt="Image d'un oiseau qui vole">
+        <img id="thirdBird" src="img/tHi.gif" alt="Image troisième oiseau qui vole">
+        <img id="secondBird" src="img/tHi.gif" alt="Image secondZ oiseau qui vole">
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
@@ -96,16 +148,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-                <tr>
-                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                    <td style="border:1px solid black;">
-                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                    </td>
-                </tr>
+            <tr>
+                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                <td style="border:1px solid black;">
+                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                </td>
+            </tr>
             <?php endforeach ?>
 
         </tbody>
