@@ -22,7 +22,7 @@ require "disconnect.php";
 
     <style>
     .jeu-card {
-        border: 1px solid #ccc;
+        border: 1px solid #28ff02;
         border-radius: 8px;
         padding: 1rem;
         margin: 1rem;
@@ -32,7 +32,7 @@ require "disconnect.php";
     }
 
     .jeu-card img {
-        max-width: 100%;
+        width: 100px;
         height: auto;
         border-radius: 4px;
     }
@@ -41,6 +41,9 @@ require "disconnect.php";
 
 <body>
     <h1>Liste des Jeux Vidéo</h1>
+
+    <a href="/">Back to home</a> <br>
+
 
     <?php foreach ($jeux as $jeu): ?>
     <div class="jeu-card">
@@ -59,6 +62,14 @@ require "disconnect.php";
         <?php endif; ?>
     </div>
     <?php endforeach; ?>
+
+    <!-- Droits Section : Informations sur les droits réservés et le créateur -->
+
+    <div class="droits">
+        <h6 style="display: flex; justify-content:center;">&copy; 2025 Projet_jeux_Vidéos | <a
+                href=https://www.onlineformapro.com/ target=_blank> @onlineformapro</a></h6>
+    </div>
+
 
 </body>
 
