@@ -39,7 +39,7 @@ require "disconnect.php";
     </style>
 </head>
 
-<body>
+<body class="content">
     <h1>Liste des Jeux Vidéo</h1>
 
     <a href="/">Back to home</a> <br>
@@ -70,7 +70,12 @@ require "disconnect.php";
                 href=https://www.onlineformapro.com/ target=_blank> @onlineformapro</a></h6>
     </div>
 
+    <!-- back-to-top section -------------->
+    <!-- Back to top button -->
+    <a id="button"></a>
 
+    <script src="script/back-to-top.js"></script>
 </body>
+
 
 </html>

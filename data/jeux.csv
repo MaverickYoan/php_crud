@@ -1,6 +1,6 @@
 "id","jeu","genre","annee","editeur_id","image_path","image_path_url"
 1,"The Legend of Zelda: Breath of the Wild","Action-aventure",2017,1,"images/the_legend_of_zelda_breath_of_the_wild.jpg","https://monserveur.com/images/the_legend_of_zelda_breath_of_the_wild.jpg"
-2,"Cyberpunk 2077","RPG",2020,2,"images/cyberpunk_2077.jpg","https://monserveur.com/images/cyberpunk_2077.jpg"
+2,"Cyberpunk 2077","RPG",2020,2,"img/81bc5780815973.5cec6bcf6c85a.gif","https://www.jeuxvideo.com/jeux/jeu-79026/"
 3,"Hollow Knight","Metroidvania",2017,3,"images/hollow_knight.jpg","https://monserveur.com/images/hollow_knight.jpg"
 4,"Half-Life 2","FPS",2004,4,"images/half_life_2.jpg","https://monserveur.com/images/half_life_2.jpg"
 5,"Red Dead Redemption 2","Action",2018,5,"images/red_dead_redemption_2.jpg","https://monserveur.com/images/red_dead_redemption_2.jpg"
@@ -27,6 +27,9 @@
 26,"Terraria","Sandbox",2011,18,"images/terraria.jpg","https://monserveur.com/images/terraria.jpg"
 27,"Hades","Rogue-like",2020,19,"images/hades.jpg","https://monserveur.com/images/hades.jpg"
 28,"Slay the Spire","Cartes/Rogue-like",2017,20,"images/slay_the_spire.jpg","https://monserveur.com/images/slay_the_spire.jpg"
+
+ici
+
 29,"Halo Infinite","FPS",2021,21,"images/halo_infinite.jpg","https://monserveur.com/images/halo_infinite.jpg"
 30,"Forza Horizon 5","Course",2021,22,"images/forza_horizon_5.jpg","https://monserveur.com/images/forza_horizon_5.jpg"
 31,"Age of Empires IV","Stratégie",2021,23,NULL,NULL
