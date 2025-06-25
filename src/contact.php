@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_enlightment.ico" type="image/x-svg">
-    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+    <link rel="stylesheet" href="css/test.css">
     <script type="text/javascript" src="script/script.js"></script>
 
     <title>Gamers - Contact</title>
