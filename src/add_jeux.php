@@ -86,8 +86,7 @@ if ($_POST) {
             <div class="bar"></div>
         </div>
         <ul style="font-size: 1rem;" class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
-            <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/liste_avec_images.php">Liste Avec Images</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>

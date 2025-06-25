@@ -200,7 +200,7 @@ body {
 
 body {
     /* Dégradé animé type néon */
-    background: linear-gradient(-45deg, #0fffc3, #3f5efb, #1eff00, #f9d423);
+    background: linear-gradient(-45deg, #043c2e, #4c195d, #0a4d01, #4d420a);
     background-size: 400% 400%;
     animation: neonBG 10s ease-in-out infinite;
     min-height: 100vh;
@@ -232,7 +232,7 @@ body {
     opacity: 0.8;
   }
   .glitch:before {
-    color: #f0f;
+    color: rgb(0, 255, 21);
     animation: glitchTop 1s infinite linear alternate-reverse;
     top: -2px;
   }
@@ -258,3 +258,62 @@ body {
     100% { left: 0; }
   }
   
+
+/* ___________________________Animation oiseaux */
+
+p {
+    height: 10%;
+    width: fit-content;
+  }
+  
+  /* troisième oiseau modifie sa trajectoire */
+  #thirdBird {
+    transform: translateY(70%);
+    transform: translateX(120%);
+  
+  }
+  
+  #thirdBird {
+    position: absolute;
+    top: 10%;
+    right: 2px;
+    animation: sky 30s linear 0s infinite reverse;
+    z-index: 99;
+  }
+  
+  #thirdBird img {
+    width: 110px;
+  }
+  
+  #secondBird {
+    position: absolute;
+    top: 10%;
+    right: 2px;
+    animation: sky 30s linear 0s infinite reverse;
+    z-index: 99;
+  }
+  
+  #secondBird img {
+    width: 50px;
+  }
+  
+  #secondBird {
+    position: absolute;
+    top: 10%;
+    right: 2px;
+    animation: second 30s linear 0s infinite reverse;
+    z-index: 99;
+  }
+  
+    /* trajectoire de l'oiseau */
+    @keyframes second {
+        from {
+            top: 30px;
+            right: -50px;
+        }
+  
+        to {
+            top: 300px;
+            right: 100%;
+        }
+    }

@@ -100,8 +100,7 @@ if (
             <div class="bar"></div>
         </div>
         <ul style="font-size: 1rem;" class="nav-links" id="navLinks">
-            <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
-            <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
+            <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
             <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
             <li><a class="links" href="http://localhost:8000/liste_avec_images.php">Liste Avec Images</a></li>
             <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
@@ -126,38 +125,38 @@ if (
     <!-- * animation plane -->
 
     <style type="text/css">
-        .home,
-        #home {
-            background: url(images/.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
+    .home,
+    #home {
+        background: url(images/.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .sky {
+        position: absolute;
+        top: 10%;
+        right: 2px;
+        animation: sky 30s linear 0s infinite reverse;
+        z-index: 99;
+    }
+
+    .sky img {
+        width: 100px;
+    }
+
+    /* trajectoire de l'oiseau */
+    @keyframes sky {
+        from {
+            top: 50px;
+            right: -10px;
         }
 
-        .sky {
-            position: absolute;
-            top: 10%;
-            right: 2px;
-            animation: sky 30s linear 0s infinite reverse;
-            z-index: 99;
+        to {
+            top: 50px;
+            right: 100%;
         }
-
-        .sky img {
-            width: 100px;
-        }
-
-        /* trajectoire de l'oiseau */
-        @keyframes sky {
-            from {
-                top: 50px;
-                right: -10px;
-            }
-
-            to {
-                top: 50px;
-                right: 100%;
-            }
-        }
+    }
     </style>
 
     <!-- * fond d'écran -->

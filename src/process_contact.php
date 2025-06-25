@@ -41,11 +41,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 20px;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 </style>
 
 
@@ -62,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="bar"></div>
     </div>
     <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
+        <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
         <li><a href="/">Back to index</a></li>
     </ul>
 </nav>
