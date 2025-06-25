@@ -96,16 +96,16 @@ require "disconnect.php";
             <?php
             foreach ($jeux as $jeu): ?>
 
-            <tr>
-                <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
-                <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
-                <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
-                <td style="border:1px solid black;">
-                    <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
-                    <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
-                    <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
-                </td>
-            </tr>
+                <tr>
+                    <td style="border:1px solid black;"><?= $jeu['id'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['jeu'] ?> </td>
+                    <td style="border:1px solid black;"><?= $jeu['genre'] ?> </td>
+                    <td style="border:1px solid black;">
+                        <a style="border:1px solid black;" href="jeu.php?id=<?= $jeu['id'] ?>">Voir</a>
+                        <a style="border:1px solid black;" href="modifier.php?id=<?= $jeu['id'] ?>">Modifier</a>
+                        <a style="border:1px solid black;" href="supprimer.php?id=<?= $jeu['id'] ?>">Supprimer</a>
+                    </td>
+                </tr>
             <?php endforeach ?>
 
         </tbody>
@@ -150,9 +150,9 @@ require "disconnect.php";
     <footer class=footer>
         <div class=logo>
             <a>
-                <img src=logo_jadoo_2bis.svg alt="titre jadoo" class=logo2bis href="./liste.php">
+                <img src=img/logo_TeK2OuF.jpg alt="logo TeK2OuF" class=logo2bis width="100px" href="./liste.php">
             </a>
-            <img src=logo_jadoo_1bis.svg alt="icone sushi jadoo" class=logo1bis>
+            <img src=img/logoTeK2OuF.jpg alt="logo TeK2OuF" width="100px" class=logo1bis>
             <br>
         </div>
         </div>
@@ -217,13 +217,5 @@ require "disconnect.php";
 
 </body>
 
-<!-- back-to-top section -------------->
-<a href="#content" class="back-to-top">
-    <span>Retour en haut</span>
-    <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-    <svg width="15" height="15" viewbox=" 0 0 24 24" aria-hidden="true">
-        <path d="M5 12h14" />
-        <path d="m12 5 7 7-7 7" />
-    </svg>
 
 </html>

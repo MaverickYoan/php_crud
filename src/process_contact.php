@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':message', $_POST['message']);
         // * Exécution de la requête
         if ($stmt->execute()) {
-            // echo "<p>Message envoyé avec succès !</p>";
+            echo "<p>Message envoyé avec succès !</p>";
         } else {
-            // echo "<p>Erreur lors de l'envoi du message.</p>";
+            echo "<p>Erreur lors de l'envoi du message.</p>";
         }
 
         //todo PENSER A MODIFIER AFIN QUE CELA SE CONNECT BIEN A LA BDD messages dans PgAdmin
@@ -28,8 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // * afficher la table messages
         $query = $db->query("SELECT * FROM messages");
         $db = $query->fetchAll(PDO::FETCH_ASSOC);
-        // print_r($messages);
-
+        print_r($messages);
     } catch (PDOException $e) {
         echo "Erreur de connexion : " . $e->getMessage();
     } finally {
@@ -42,11 +41,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <style>
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
 </style>
 
 
@@ -63,31 +62,21 @@ img {
         <div class="bar"></div>
     </div>
     <ul style="font-size: 0.8rem;" class="nav-links" id="navLinks">
-        <!-- <li><a class="links" href="http://localhost:8000/stagiaire.php">stagiaire</a></li> -->
-        <li><a class="links" href="http://localhost:8000/jeu.php">jeu</a></li>
-        <li><a class="links" href="http://localhost:8000/home.php">home</a></li>
-        <li><a class="links" href="http://localhost:8000/liste.php">Liste</a></li>
-        <li><a class="links" href="http://localhost:8000/add.php">Ajout User</a></li>
-        <li><a class="links" href="http://localhost:8000/add_jeux.php">Ajout Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/modifier_jeux.php">Modifier Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/supprimer.php">Supprimer Jeux</a></li>
-        <li><a class="links" href="http://localhost:8000/contact.php">Contact</a></li>
-        <li><a class="links" href="http://localhost:8000/index.php">Index</a></li>
         <li><a href="/">Back to index</a></li>
     </ul>
 </nav>
 
 </main>
-<script>
-document.getElementById("hamburgerMenu").addEventListener("click", function() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "block") {
-        navLinks.style.display = "none";
-    } else {
-        navLinks.style.display = "block";
-    }
-});
-</script>
+<!-- <script>
+    document.getElementById("hamburgerMenu").addEventListener("click", function() {
+        var navLinks = document.getElementById("navLinks");
+        if (navLinks.style.display === "block") {
+            navLinks.style.display = "none";
+        } else {
+            navLinks.style.display = "block";
+        }
+    });
+</script> -->
 
 <!-- // * FOOTER -->
 <footer>

@@ -127,6 +127,9 @@ footer {
   margin-top: 2rem;
 }
 
+.logo2bis, .logo1bis{
+  width: 10px;
+}
 #particles {
   position: fixed;
   top: 0;
