@@ -1,6 +1,7 @@
 <?php
 const SERVER_NAME = "db";
-const DB_NAME = 'messages';
+// Change 'messages' to the name of an existing database, or create the 'messages' database in PostgreSQL
+const DB_NAME = 'postgres'; // or your actual database name
 const USERNAME = "test";
 const PASSWORD = "test";
 const PORT = "5432";
