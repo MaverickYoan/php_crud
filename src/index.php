@@ -45,58 +45,6 @@ require "disconnect.php";
 
 <body id="content" style="background-image: url(img/b3b48a35785465ed53f20d332f191a5c.gif);">
 
-
-    <!-- * home section -->
-    <section class="home">
-        <!-- home / h1 / id home / img -->
-        <h1 id="home">Gamers</h1>
-    </section>
-
-    <!-- * animation plane -->
-
-    <style type="text/css">
-    .home,
-    #home {
-        background: url(images/.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
-
-    .sky {
-        position: absolute;
-        top: 10%;
-        right: 2px;
-        animation: sky 30s linear 0s infinite reverse;
-        z-index: 99;
-    }
-
-    .sky img {
-        width: 100px;
-    }
-
-    /* trajectoire de l'oiseau */
-    @keyframes sky {
-        from {
-            top: 50px;
-            right: -10px;
-        }
-
-        to {
-            top: 50px;
-            right: 100%;
-        }
-    }
-    </style>
-
-    <!-- * fond d'écran -->
-
-    <div class="sky">
-        <img src="img/tHi.gif" alt="Image d'un oiseau qui vole">
-        <img id="thirdBird" src="img/tHi.gif" alt="Image troisième oiseau qui vole">
-        <img id="secondBird" src="img/tHi.gif" alt="Image secondZ oiseau qui vole">
-    </div>
-
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="hamburger-menu" id="hamburgerMenu">
@@ -117,6 +65,7 @@ require "disconnect.php";
         </ul>
     </nav>
     </div>
+
 
     <h1 style="border:1px solid black; background-color: black; color: white; width:fit-content">INDEX</h1>
     <p>créer table sql jeux</p>

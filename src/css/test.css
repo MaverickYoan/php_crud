@@ -1,4 +1,4 @@
-body {
+/* body {
     background: linear-gradient(135deg, #0f0 0%, #222 100%);
     animation: neonMove 10s infinite linear alternate;
   }
@@ -6,7 +6,7 @@ body {
     0% { filter: hue-rotate(0deg);}
     100% { filter: hue-rotate(90deg);}
   }
-  
+   */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
@@ -130,75 +130,8 @@ footer {
 .logo2bis, .logo1bis{
   width: 10px;
 }
-#particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 0;
-}
 
 
-/* ___________________________Animation oiseaux */
-
-p {
-  height: 10%;
-  width: fit-content;
-}
-
-/* troisième oiseau modifie sa trajectoire */
-#thirdBird {
-  transform: translateY(70%);
-  transform: translateX(120%);
-
-}
-
-#thirdBird {
-  position: absolute;
-  top: 10%;
-  right: 2px;
-  animation: sky 30s linear 0s infinite reverse;
-  z-index: 99;
-}
-
-#thirdBird img {
-  width: 110px;
-}
-
-#secondBird {
-  position: absolute;
-  top: 10%;
-  right: 2px;
-  animation: sky 30s linear 0s infinite reverse;
-  z-index: 99;
-}
-
-#secondBird img {
-  width: 50px;
-}
-
-#secondBird {
-  position: absolute;
-  top: 10%;
-  right: 2px;
-  animation: second 30s linear 0s infinite reverse;
-  z-index: 99;
-}
-
-  /* trajectoire de l'oiseau */
-  @keyframes second {
-      from {
-          top: 30px;
-          right: -50px;
-      }
-
-      to {
-          top: 300px;
-          right: 100%;
-      }
-  }
   body {
     /* Dégradé animé type néon */
     background: linear-gradient(-45deg, #0fffc3, #3f5efb, #fc466b, #f9d423);
@@ -259,3 +192,68 @@ p {
     100% { left: 0; }
   }
   
+  
+@media (max-width: 768px) {
+
+  /* body {
+      align-items: center;
+  } */
+  .navbar,
+  .nav-links {
+      mix-blend-mode: difference;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      font-size: 0.8rem;
+
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  /* Disposition du menu burger */
+  .hamburger-menu {
+      display: flex;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 5px);
+      /* transform: translateY(0px) rotate(-135deg); */
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -5px);
+      /* transform: translateY(0px) rotate(135deg); */
+  }
+
+  .home img {
+      margin-left: 5%;
+      display: flex;
+      justify-content: center;
+      opacity: 0%;
+
+  }
+
+  .fade-in img {
+      width: 100%
+  }
+
+#pacman {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+}
