@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // * afficher la table messages
         $query = $db->query("SELECT * FROM messages");
         $messages = $query->fetchAll(PDO::FETCH_ASSOC);
-        print_r($messages);
+        // print_r($messages);
         // print_r($messages);
     } catch (PDOException $e) {
         echo "Erreur de connexion : " . $e->getMessage();

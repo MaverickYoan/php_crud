@@ -8,7 +8,7 @@ if (
     // * Définitions de variables
     require_once "connect.php";
     $id = $_GET["id"];
-    print_r($id);
+    // print_r($id);
 
     // * sql SELECT
     $sql = "SELECT * FROM interns WHERE id = :id";
