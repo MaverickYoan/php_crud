@@ -197,3 +197,64 @@ body {
         scroll-behavior: smooth;
     }
 }
+
+body {
+    /* Dégradé animé type néon */
+    background: linear-gradient(-45deg, #0fffc3, #3f5efb, #1eff00, #f9d423);
+    background-size: 400% 400%;
+    animation: neonBG 10s ease-in-out infinite;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  @keyframes neonBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  h1, h2 {
+    color: #fff;
+    text-shadow:
+      0 0 5px #0fffc3,
+      0 0 10px #0c3229,
+      0 0 20px #3f5efb,
+      0 0 40px #01ff12;
+  }
+  .glitch {
+    color: white;
+    position: relative;
+  }
+  .glitch:before, .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0; width: 100%;
+    opacity: 0.8;
+  }
+  .glitch:before {
+    color: #f0f;
+    animation: glitchTop 1s infinite linear alternate-reverse;
+    top: -2px;
+  }
+  .glitch:after {
+    color: #0ff;
+    animation: glitchBottom 1s infinite linear alternate-reverse;
+    top: 2px;
+  }
+  @keyframes glitchTop {
+    0% { left: 0; }
+    20% { left: 2px; }
+    40% { left: -2px; }
+    60% { left: 2px; }
+    80% { left: -2px; }
+    100% { left: 0; }
+  }
+  @keyframes glitchBottom {
+    0% { left: 0; }
+    20% { left: -2px; }
+    40% { left: 2px; }
+    60% { left: -2px; }
+    80% { left: 2px; }
+    100% { left: 0; }
+  }
+  
