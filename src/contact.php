@@ -122,57 +122,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </form>
     </section>
+
+    <!-- Section Contact -->
     <section id="contact">
         <div class="container">
             <h2>CONTACTS & LIENS</h2>
             <div class="contact-links">
                 <div class="contact-link">
                     <p>Facebook</p>
-                    <a href="https://www.facebook.com/maverick.bash">Maverick Yo</a>
+                    <a href="https://www.facebook.com/maverick.bash" target="_blank">Maverick Yo</a>
                 </div>
                 <div class="contact-link">
                     <p>YouTube</p>
-                    <a href="http://www.youtube.com/@TeK2OuF">TeK2OuF</a>
+                    <a href="http://www.youtube.com/@TeK2OuF" target="_blank">TeK2OuF</a>
                 </div>
                 <div class="contact-link">
                     <p>Soundcloud</p>
-                    <a href="https://soundcloud.com/yoan-de-menezes/sets/tek2ouf">TeK2OuF_00</a>
+                    <a href="https://soundcloud.com/yoan-de-menezes/sets/tek2ouf" target="_blank">TeK2OuF_00</a>
                 </div>
                 <div class="contact-link">
                     <p>Soundcloud</p>
-                    <a href="https://soundcloud.com/tek2ouf">TeK2OuF_01</a>
+                    <a href="https://soundcloud.com/tek2ouf" target="_blank">TeK2OuF_01</a>
                 </div>
                 <div class="contact-link">
                     <p>Soundcloud</p>
-                    <a href="https://soundcloud.com/mav-yo">TeK2OuF_02</a>
+                    <a href="https://soundcloud.com/mav-yo" target="_blank">TeK2OuF_02</a>
                 </div>
                 <div class="contact-link">
                     <p>Mixcloud</p>
-                    <a href="https://www.mixcloud.com/yo_t2osound6tm/">TeK2OuF</a>
+                    <a href="https://www.mixcloud.com/yo_t2osound6tm/" target="_blank">TeK2OuF</a>
                 </div>
                 <div class="contact-link">
                     <p>Bandcamp</p>
-                    <a href="https://bandcamp.com/tek2ouf">TeK2OuF</a>
+                    <a href="https://bandcamp.com/tek2ouf" target="_blank">TeK2OuF</a>
                 </div>
                 <div class="contact-link">
                     <p>Bandcamp</p>
-                    <a href="https://artistsinaction.bandcamp.com/music">Artists In Action</a>
+                    <a href="https://artistsinaction.bandcamp.com/music" target="_blank">Artists In Action</a>
                 </div>
                 <div class="contact-link">
                     <p>Site</p>
-                    <a href="http://www.technoplus.org/t,1/1071/qui-sommes-nous-?">TECHNO PLUS</a>
+                    <a href="http://www.technoplus.org/t,1/1071/qui-sommes-nous-?" target="_blank">TECHNO PLUS</a>
                 </div>
                 <div class="contact-link">
                     <p>Site</p>
-                    <a href="http://freeform.fr/qui-sommes-nous/">Freeform.fr</a>
+                    <a href="http://freeform.fr/qui-sommes-nous/" target="_blank">Freeform.fr</a>
                 </div>
                 <div class="contact-link">
                     <p>LinkedIn</p>
-                    <a href="http://www.keep-smiling.com/?p=238">KEEP SMILING</a>
+                    <a href="http://www.keep-smiling.com/?p=238" target="_blank">KEEP SMILING</a>
                 </div>
                 <div class="contact-link">
                     <p>Forum</p>
-                    <a href="http://sound-system-unity.forumactif.org">Sound System Unity</a>
+                    <a href="http://sound-system-unity.forumactif.org" target="_blank">Sound System Unity</a>
                 </div>
                 <div class="contact-link">
                     <p>Mail</p>
@@ -181,6 +183,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section>
+
+    <!-- * Avant le footer -->
     <div class="beforeFooter">
         <img class="imgLogo" src="a1698447057_16.jpg" alt="">
     </div>
