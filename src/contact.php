@@ -99,8 +99,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Formulaire Section : Formulaire de contact -->
     <section class=article-form id="contactez-nous">
-        <form action="process_contact.php" method="POST">
-            <b class=form-titre>Formulaire de contact</b>
+        <form action="process_contact.php" method="POST"><br>
+            <b class=form-titre>Formulaire de contact</b><br>
             <p class=form-sous-titre> Remplissez le formulaire ci-dessous<br>pour nous contacter </p>
             <br>
             <aside class=contact-image>

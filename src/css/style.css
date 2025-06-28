@@ -40,6 +40,9 @@ body {
     /* background-color: white; */
     /* height: 100vh; */
 }
+p {
+    color: black;
+}
 
 header {
     height: 20vh;
@@ -159,7 +162,7 @@ summary {
 }
 
 #home {
-    color: rgb(35, 59, 59);
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'liberation', serif; */
     font-weight: 900;

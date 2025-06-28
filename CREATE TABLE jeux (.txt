@@ -40,22 +40,22 @@ INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VAL
 ('Elden Ring', 'Action-RPG', 2022, 6, 'img/1633006670-7022-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/jeu-1056358/')
 
 INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('The Witcher 3: Wild Hunt', 'RPG', 2015, 2, 'img/1422469608-7141-jaquette-avant.jpg','https://www.jeuxvideo.com/jeux/jeu-77555/')
+('The Witcher 3: Wild Hunt', 'RPG', 2015, 2, 'img/1422469608-7141-jaquette-avant.jpg','https://www.jeuxvideo.com/jeux/jeu-77555/'),
 
 INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('Grand Theft Auto V', 'Action', 2013, 7, 'img/1631287693-8700-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/jeu-73734/')
-
-
-INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('Resident Evil 4', 'Survival Horror', 2005, 8, 'img/resipc0f.webp','https://www.jeuxvideo.com/jeux/jeu-58628/')
+('Grand Theft Auto V', 'Action', 2013, 7, 'img/1631287693-8700-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/jeu-73734/'),
 
 
 INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('Super Mario Odyssey', 'Plateforme', 2017, 1, 'img/1501664378-9988-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/switch/jeu-593682/')
+('Resident Evil 4', 'Survival Horror', 2005, 8, 'img/resipc0f.webp','https://www.jeuxvideo.com/jeux/jeu-58628/'),
 
 
 INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
-('Celeste', 'Plateforme', 2018, 9, 'img/1704295675-7242-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/jeu-758962/')
+('Super Mario Odyssey', 'Plateforme', 2017, 1, 'img/1501664378-9988-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/switch/jeu-593682/'),
+
+
+INSERT INTO jeux (jeu, genre, annee, editeur_id, image_path, image_path_url) VALUES
+('Celeste', 'Plateforme', 2018, 9, 'img/1704295675-7242-jaquette-avant.webp','https://www.jeuxvideo.com/jeux/jeu-758962/'),
 
 --------07h45---------------
 ici

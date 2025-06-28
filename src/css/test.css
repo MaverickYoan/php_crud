@@ -10,8 +10,9 @@
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: #101820 url('camouflage.png') repeat;
-  color: #e0ffe0;
+  /* background: #101820 url('camouflage.png') repeat; */
+  /* color: #e0ffe0; */
+  color: #000000;
   overflow-x: hidden;
 }
 
@@ -132,124 +133,153 @@ footer {
 }
 
 
-  body {
-    /* Dégradé animé type néon */
-    background: linear-gradient(-45deg, #0fffc3, #3f5efb, #fc466b, #f9d423);
-    background-size: 400% 400%;
-    animation: neonBG 10s ease-in-out infinite;
-    min-height: 100vh;
-    margin: 0;
-  }
+body {
+  /* Dégradé animé type néon */
+  background: linear-gradient(-45deg, #0fffc3, #3f5efb, #fc466b, #f9d423);
+  background-size: 400% 400%;
+  animation: neonBG 10s ease-in-out infinite;
+  min-height: 100vh;
+  margin: 0;
+}
   
-  @keyframes neonBG {
+@keyframes neonBG {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
   }
   
-  h1, h2 {
-    color: #fff;
-    text-shadow:
-      0 0 5px #0fffc3,
-      0 0 10px #0fffc3,
-      0 0 20px #3f5efb,
-      0 0 40px #fc466b;
-  }
-  .glitch {
-    color: white;
-    position: relative;
-  }
+h1, h2 {
+  color: #fff;
+  text-shadow:
+  0 0 5px #0fffc3,
+  0 0 10px #0fffc3,
+  0 0 20px #3f5efb,
+  0 0 40px #fc466b;
+}
+
+.glitch {
+  color: white;
+  position: relative;
+}
+
   .glitch:before, .glitch:after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0; width: 100%;
-    opacity: 0.8;
-  }
-  .glitch:before {
-    color: #f0f;
-    animation: glitchTop 1s infinite linear alternate-reverse;
-    top: -2px;
-  }
-  .glitch:after {
-    color: #0ff;
-    animation: glitchBottom 1s infinite linear alternate-reverse;
-    top: 2px;
-  }
-  @keyframes glitchTop {
-    0% { left: 0; }
-    20% { left: 2px; }
-    40% { left: -2px; }
-    60% { left: 2px; }
-    80% { left: -2px; }
-    100% { left: 0; }
-  }
-  @keyframes glitchBottom {
-    0% { left: 0; }
-    20% { left: -2px; }
-    40% { left: 2px; }
-    60% { left: -2px; }
-    80% { left: 2px; }
-    100% { left: 0; }
-  }
+  content: attr(data-text);
+  position: absolute;
+  left: 0; width: 100%;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  color: #f0f;
+  animation: glitchTop 1s infinite linear alternate-reverse;
+  top: -2px;
+}
+
+.glitch:after {
+  color: #0ff;
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+  top: 2px;
+}
+
+@keyframes glitchTop {
+  0% { left: 0; }
+  20% { left: 2px; }
+  40% { left: -2px; }
+  60% { left: 2px; }
+  80% { left: -2px; }
+  100% { left: 0; }
+}
+
+@keyframes glitchBottom {
+  0% { left: 0; }
+  20% { left: -2px; }
+  40% { left: 2px; }
+  60% { left: -2px; }
+  80% { left: 2px; }
+  100% { left: 0; }
+}
   
   
 @media (max-width: 768px) {
 
-  /* body {
-      align-items: center;
-  } */
-  .navbar,
+.jeu-card {
+  font-weight: 900;
+  font-size: 15pt;
+   color: black;
+  border: 1px solid #28ff02;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+}
+
+.jeu-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.jeux-list {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+/* body {
+  align-items: center;
+} */
+
+.navbar,
   .nav-links {
-      mix-blend-mode: difference;
+  mix-blend-mode: difference;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Disposition du menu burger */
+.hamburger-menu {
+  display: flex;
   }
 
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      font-size: 0.8rem;
-
+.nav-links.active {
+  display: flex;
   }
 
-  .nav-links li {
-      margin: 10px 0;
-      text-align: center;
-  }
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 5px);
+  /* transform: translateY(0px) rotate(-135deg); */
+}
 
-  /* Disposition du menu burger */
-  .hamburger-menu {
-      display: flex;
-  }
+.hamburger-menu.active .bar:nth-child(2) {
+   opacity: 0;
+}
 
-  .nav-links.active {
-      display: flex;
-  }
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -5px);
+  /* transform: translateY(0px) rotate(135deg); */
+}
 
-  .hamburger-menu.active .bar:nth-child(1) {
-      transform: rotate(45deg) translate(10px, 5px);
-      /* transform: translateY(0px) rotate(-135deg); */
-  }
+.home img {
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  opacity: 0%;
 
-  .hamburger-menu.active .bar:nth-child(2) {
-      opacity: 0;
-  }
+}
 
-  .hamburger-menu.active .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(10px, -5px);
-      /* transform: translateY(0px) rotate(135deg); */
-  }
-
-  .home img {
-      margin-left: 5%;
-      display: flex;
-      justify-content: center;
-      opacity: 0%;
-
-  }
-
-  .fade-in img {
-      width: 100%
-  }
+.fade-in img {
+  width: 100%;
+}
 
 #pacman {
   margin-bottom: 1rem;
@@ -316,7 +346,7 @@ footer {
 }
 .content h1 {
   margin-bottom: -10px;
-  color: #03a9f4;
+  color: #00ff0d;
   line-height: 1.5;
 }
 .content h3 {
